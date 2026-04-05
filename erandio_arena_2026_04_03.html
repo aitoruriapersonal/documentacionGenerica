@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏆 Erandio Arena — Estadísticas 03/04/2026</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --gold: #f5a623;
+      --silver: #b0b0b0;
+      --bronze: #cd7f32;
+      --text: #eaeaea;
+      --muted: #a0a0b0;
+      --win: #4caf50;
+      --lose: #f44336;
+      --draw: #ff9800;
+      --border: #2a3a5a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 60%, #e94560 100%);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+      border-bottom: 3px solid var(--accent);
+    }
+    header h1 { font-size: 2.4rem; font-weight: 800; letter-spacing: 1px; }
+    header .meta { color: var(--muted); margin-top: 0.4rem; font-size: 0.95rem; }
+    header a { color: var(--gold); text-decoration: none; }
+    header a:hover { text-decoration: underline; }
+    .container { max-width: 1400px; margin: 0 auto; padding: 2rem 1rem; }
+    .notice {
+      background: #1e2d4a;
+      border-left: 4px solid var(--gold);
+      border-radius: 6px;
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    h2 {
+      font-size: 1.4rem;
+      color: var(--gold);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--border);
+    }
+    h3 { font-size: 1.1rem; color: var(--accent); margin: 1.5rem 0 0.6rem; }
+    .table-wrap { overflow-x: auto; margin-bottom: 1.5rem; border-radius: 8px; border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    thead tr { background: var(--card); }
+    thead th {
+      padding: 0.75rem 0.9rem;
+      text-align: left;
+      font-weight: 700;
+      color: var(--gold);
+      white-space: nowrap;
+      border-bottom: 2px solid var(--border);
+    }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+    tbody tr:hover { background: #1c2d4a; }
+    tbody tr:nth-child(even) { background: #111827; }
+    tbody tr:nth-child(even):hover { background: #1c2d4a; }
+    td { padding: 0.65rem 0.9rem; vertical-align: middle; white-space: nowrap; }
+    td.wrap { white-space: normal; min-width: 120px; }
+    .rank-1 { color: var(--gold); font-weight: 800; }
+    .rank-2 { color: var(--silver); font-weight: 700; }
+    .rank-3 { color: var(--bronze); font-weight: 700; }
+    .pill {
+      display: inline-block;
+      border-radius: 12px;
+      padding: 2px 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin: 1px;
+    }
+    .pill-win  { background: #1b3a1f; color: var(--win); }
+    .pill-lose { background: #3a1b1b; color: #ef9a9a; }
+    .pill-draw { background: #3a2d00; color: var(--draw); }
+    .pill-w { background: #0a2040; color: #90caf9; }
+    .pill-b { background: #1a0a00; color: #ffb74d; }
+    .pts { font-weight: 800; color: var(--gold); font-size: 1rem; }
+    .elo-up   { color: var(--win); }
+    .elo-down { color: var(--lose); }
+    .elo-same { color: var(--muted); }
+    .error-low  { color: #81c784; }
+    .error-mid  { color: #ffb74d; }
+    .error-high { color: #ef9a9a; }
+    .vs-icon { font-size: 0.75rem; }
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.2rem 1.5rem;
+    }
+    .stat-card .big { font-size: 2.2rem; font-weight: 800; color: var(--accent); }
+    .stat-card .label { font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem; }
+    .progress-bar-bg {
+      background: var(--border);
+      border-radius: 6px;
+      height: 12px;
+      margin: 4px 0 8px;
+      overflow: hidden;
+    }
+    .progress-bar { height: 100%; border-radius: 6px; }
+    .encounter-cell {
+      font-size: 0.78rem;
+      white-space: nowrap;
+      padding: 0.4rem 0.5rem;
+    }
+    .ec-win  { color: var(--win); }
+    .ec-lose { color: #ef9a9a; }
+    .ec-draw { color: var(--draw); }
+    .ec-none { color: var(--border); }
+    .player-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .player-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.8rem;
+    }
+    .player-name { font-size: 1.3rem; font-weight: 800; }
+    .player-elo  { font-size: 0.9rem; color: var(--muted); }
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+    .mini-stat { background: var(--card); border-radius: 6px; padding: 0.5rem 0.8rem; font-size: 0.82rem; }
+    .mini-stat .val { font-size: 1.05rem; font-weight: 700; color: var(--gold); }
+    .progress-row { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.5rem; }
+    .prog-item {
+      font-size: 0.74rem;
+      padding: 3px 8px;
+      border-radius: 10px;
+      background: var(--card);
+      border: 1px solid var(--border);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      td, th { padding: 0.5rem 0.5rem; font-size: 0.78rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>♟ Erandio Arena</h1>
+  <div class="meta">
+    Lichess · 03 de Abril de 2026 · 18:00 &nbsp;|&nbsp;
+    <a href="https://lichess.org/tournament/2wCiE6DW" target="_blank">🔗 Ver torneo</a>
+    &nbsp;|&nbsp; Análisis: Stockfish 17 (10s)
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="notice">
+    ⚠️ <strong>2 partidas abandonadas sin jugadas</strong> (g23: Erandio1–erandio38 y g32: Cayajo–erandio38): contabilizadas con índice de error = 0.<br>
+    ⚠️ <strong>Partidas sin índice de error</strong>: g33 (erandio38 vs Hector_2017, jugadas pero sin dato) y g38 (Erlantzu vs erandio38): excluidas de los promedios de error.<br>
+    ⚠️ El <em>Score</em> oficial de Lichess incluye bonificaciones por racha y berserk — aquí se muestra el recuento de victorias/tablas/derrotas sin bonificación.
+  </div>
+
+  <h2>1. Listado General de Participantes</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Jugador</th>
+          <th>Elo Inicial</th>
+          <th>Elo Final</th>
+          <th>Δ Elo</th>
+          <th>Rank</th>
+          <th>Score Lichess</th>
+          <th>Performance</th>
+          <th>Partidas</th>
+          <th>♟ B</th>
+          <th>♟ N</th>
+          <th>V-B</th>
+          <th>D-B</th>
+          <th>T-B</th>
+          <th>V-N</th>
+          <th>D-N</th>
+          <th>T-N</th>
+          <th>Pts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rank-1">🥇</td>
+          <td><strong>aitoruria</strong></td>
+          <td>2101</td><td>2124</td>
+          <td class="elo-up">+23</td>
+          <td>2</td><td>27</td><td>2214</td>
+          <td>11</td><td>5</td><td>6</td>
+          <td>3</td><td>1</td><td>1</td>
+          <td>6</td><td>0</td><td>0</td>
+          <td class="pts">9.5</td>
+        </tr>
+        <tr>
+          <td class="rank-1">🥇</td>
+          <td><strong>Erlantzu</strong></td>
+          <td>2191</td><td>2176</td>
+          <td class="elo-down">-15</td>
+          <td>1</td><td>35</td><td>1795</td>
+          <td>10</td><td>5</td><td>5</td>
+          <td>5</td><td>0</td><td>0</td>
+          <td>4</td><td>1</td><td>0</td>
+          <td class="pts">9.0</td>
+        </tr>
+        <tr>
+          <td class="rank-2">🥈</td>
+          <td><strong>txo1983</strong></td>
+          <td>1813</td><td>1815</td>
+          <td class="elo-up">+2</td>
+          <td>3</td><td>23</td><td>1699</td>
+          <td>13</td><td>7</td><td>6</td>
+          <td>4</td><td>0</td><td>3</td>
+          <td>4</td><td>1</td><td>1</td>
+          <td class="pts">8.5</td>
+        </tr>
+        <tr>
+          <td class="rank-3">🥉</td>
+          <td><strong>PabloErandio</strong></td>
+          <td>1927</td><td>1923</td>
+          <td class="elo-down">-4</td>
+          <td>4</td><td>22</td><td>1744</td>
+          <td>12</td><td>6</td><td>6</td>
+          <td>4</td><td>0</td><td>2</td>
+          <td>3</td><td>0</td><td>3</td>
+          <td class="pts">7.0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>Erandio1</strong></td>
+          <td>1509</td><td>1456</td>
+          <td class="elo-down">-53</td>
+          <td>5</td><td>17</td><td>1382</td>
+          <td>12</td><td>6</td><td>6</td>
+          <td>2</td><td>0</td><td>4</td>
+          <td>3</td><td>0</td><td>3</td>
+          <td class="pts">5.0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>erandio38</strong></td>
+          <td>1096</td><td>1358</td>
+          <td class="elo-up">+262</td>
+          <td>6</td><td>14</td><td>1443</td>
+          <td>16</td><td>8</td><td>8</td>
+          <td>3</td><td>0</td><td>5</td>
+          <td>2</td><td>0</td><td>6</td>
+          <td class="pts">5.0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>Cayajo</strong></td>
+          <td>1325</td><td>1417</td>
+          <td class="elo-up">+92</td>
+          <td>7</td><td>6</td><td>1440</td>
+          <td>8</td><td>4</td><td>4</td>
+          <td>2</td><td>0</td><td>2</td>
+          <td>1</td><td>0</td><td>3</td>
+          <td class="pts">3.0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>erandio84</strong></td>
+          <td>1067</td><td>1240</td>
+          <td class="elo-up">+173</td>
+          <td>8</td><td>6</td><td>1333</td>
+          <td>11</td><td>6</td><td>5</td>
+          <td>3</td><td>0</td><td>3</td>
+          <td>0</td><td>0</td><td>5</td>
+          <td class="pts">3.0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>Hector_2017</strong></td>
+          <td>1500</td><td>858</td>
+          <td class="elo-down">-642</td>
+          <td>9</td><td>0</td><td>1164</td>
+          <td>7</td><td>3</td><td>4</td>
+          <td>0</td><td>0</td><td>3</td>
+          <td>0</td><td>0</td><td>4</td>
+          <td class="pts">0.0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.8rem;color:var(--muted)">
+    ▸ V=Victorias · D=Tablas · T=Derrotas · -B=con Blancas · -N=con Negras<br>
+    ▸ Elo Inicial = elo en la primera partida del torneo (según cabecera PGN).<br>
+    ▸ Elo Final = elo en la última partida disputada (según cabecera PGN).<br>
+    ▸ Pts = Victoria×1 + Tablas×0.5 (sin bonificaciones Lichess).<br>
+    ▸ Score Lichess y Performance: según clasificación oficial del torneo (CSV).
+  </p>
+
+  <h2>2. Estadísticas Generales</h2>
+
+  <div class="section-grid">
+    <div class="stat-card">
+      <div class="big">50</div>
+      <div class="label">Partidas totales</div>
+    </div>
+    <div class="stat-card">
+      <div class="big">1573</div>
+      <div class="label">Elo medio del torneo</div>
+    </div>
+    <div class="stat-card">
+      <div class="big" style="color:var(--win)">26 (52%)</div>
+      <div class="label">Victorias de Blancas</div>
+      <div class="progress-bar-bg"><div class="progress-bar" style="width:52%;background:var(--win)"></div></div>
+    </div>
+    <div class="stat-card">
+      <div class="big" style="color:var(--lose)">23 (46%)</div>
+      <div class="label">Victorias de Negras</div>
+      <div class="progress-bar-bg"><div class="progress-bar" style="width:46%;background:var(--lose)"></div></div>
+    </div>
+    <div class="stat-card">
+      <div class="big" style="color:var(--draw)">1 (2%)</div>
+      <div class="label">Tablas</div>
+      <div class="progress-bar-bg"><div class="progress-bar" style="width:2%;background:var(--draw)"></div></div>
+    </div>
+  </div>
+
+  <h3>2.1 Cuando Ganan las Blancas (26 partidas)</h3>
+  <p style="font-size:0.82rem;color:var(--muted);margin-bottom:0.6rem">
+    24 partidas con índice de error disponible (g33 y g38 excluidas del promedio; g23 y g32 contabilizadas con error=0).
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Métrica</th><th>♟ Blancas</th><th>♛ Negras</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Índice de error promedio</td><td class="error-mid"><strong>0.69</strong></td><td class="error-high"><strong>1.26</strong></td></tr>
+        <tr><td>Elo medio</td><td><strong>1 719</strong></td><td><strong>1 373</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>2.2 Cuando Ganan las Negras (23 partidas)</h3>
+  <p style="font-size:0.82rem;color:var(--muted);margin-bottom:0.6rem">
+    Todas con índice de error (g23 y g32 con error=0 incluidas).
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Métrica</th><th>♟ Blancas</th><th>♛ Negras</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Índice de error promedio</td><td class="error-high"><strong>1.26</strong></td><td class="error-mid"><strong>0.56</strong></td></tr>
+        <tr><td>Elo medio</td><td><strong>1 411</strong></td><td><strong>1 850</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>2.3 Tablas (1 partida — g5: aitoruria vs txo1983)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Métrica</th><th>♟ Blancas (aitoruria)</th><th>♛ Negras (txo1983)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Índice de error</td><td class="error-low"><strong>0.54</strong></td><td class="error-mid"><strong>0.61</strong></td></tr>
+        <tr><td>Elo</td><td><strong>2 107</strong></td><td><strong>1 815</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>3. Tabla de Encuentros por Participante</h2>
+  <p style="font-size:0.82rem;color:var(--muted);margin-bottom:0.8rem">
+    Formato: <strong>Rival·Color-rival·Resultado</strong> &nbsp;|&nbsp;
+    <span class="ec-win">✅ Victoria</span> &nbsp;
+    <span class="ec-draw">🟡 Tablas</span> &nbsp;
+    <span class="ec-lose">❌ Derrota</span> &nbsp;|&nbsp;
+    W = rival jugó con Blancas · N = rival jugó con Negras &nbsp;|&nbsp;
+    Ordenado por Pts (sin bonificación Lichess).
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Jugador</th>
+          <th>g1</th><th>g2</th><th>g3</th><th>g4</th><th>g5</th><th>g6</th>
+          <th>g7</th><th>g8</th><th>g9</th><th>g10</th><th>g11</th><th>g12</th>
+          <th>g13</th><th>g14</th><th>g15</th><th>g16</th>
+          <th style="background:var(--accent);color:#fff">Pts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>aitoruria</strong></td>
+          <td class="encounter-cell ec-win">PabloE·N ✅</td>
+          <td class="encounter-cell ec-draw">txo·N 🟡</td>
+          <td class="encounter-cell ec-win">erandio84·N ✅</td>
+          <td class="encounter-cell ec-win">Cayajo·N ✅</td>
+          <td class="encounter-cell ec-win">txo·N ✅</td>
+          <td class="encounter-cell ec-win">Erlantzu·N ✅</td>
+          <td class="encounter-cell ec-win">txo·W ✅</td>
+          <td class="encounter-cell ec-win">PabloE·W ✅</td>
+          <td class="encounter-cell ec-lose">Erlantzu·W ❌</td>
+          <td class="encounter-cell ec-win">PabloE·W ✅</td>
+          <td class="encounter-cell ec-win">txo·W ✅</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="pts">9.5</td>
+        </tr>
+        <tr>
+          <td><strong>Erlantzu</strong></td>
+          <td class="encounter-cell ec-win">erandio84·N ✅</td>
+          <td class="encounter-cell ec-win">erandio38·W ✅</td>
+          <td class="encounter-cell ec-win">Hector·N ✅</td>
+          <td class="encounter-cell ec-win">erandio38·W ✅</td>
+          <td class="encounter-cell ec-win">Hector·N ✅</td>
+          <td class="encounter-cell ec-lose">aitoruria·W ❌</td>
+          <td class="encounter-cell ec-win">PabloE·N ✅</td>
+          <td class="encounter-cell ec-win">Erandio1·W ✅</td>
+          <td class="encounter-cell ec-win">erandio38·N ✅</td>
+          <td class="encounter-cell ec-win">aitoruria·W ✅</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="pts">9.0</td>
+        </tr>
+        <tr>
+          <td><strong>txo1983</strong></td>
+          <td class="encounter-cell ec-win">Erandio1·N ✅</td>
+          <td class="encounter-cell ec-draw">aitoruria·W 🟡</td>
+          <td class="encounter-cell ec-win">erandio84·W ✅</td>
+          <td class="encounter-cell ec-lose">PabloE·N ❌</td>
+          <td class="encounter-cell ec-win">erandio38·N ✅</td>
+          <td class="encounter-cell ec-lose">aitoruria·W ❌</td>
+          <td class="encounter-cell ec-win">Hector·W ✅</td>
+          <td class="encounter-cell ec-lose">aitoruria·N ❌</td>
+          <td class="encounter-cell ec-win">erandio38·W ✅</td>
+          <td class="encounter-cell ec-win">Cayajo·N ✅</td>
+          <td class="encounter-cell ec-win">erandio84·N ✅</td>
+          <td class="encounter-cell ec-win">erandio38·W ✅</td>
+          <td class="encounter-cell ec-lose">aitoruria·N ❌</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="pts">8.5</td>
+        </tr>
+        <tr>
+          <td><strong>PabloErandio</strong></td>
+          <td class="encounter-cell ec-lose">aitoruria·W ❌</td>
+          <td class="encounter-cell ec-win">Erandio1·W ✅</td>
+          <td class="encounter-cell ec-win">Cayajo·N ✅</td>
+          <td class="encounter-cell ec-win">txo1983·W ✅</td>
+          <td class="encounter-cell ec-win">erandio84·N ✅</td>
+          <td class="encounter-cell ec-win">Cayajo·N ✅</td>
+          <td class="encounter-cell ec-lose">Erlantzu·W ❌</td>
+          <td class="encounter-cell ec-lose">aitoruria·N ❌</td>
+          <td class="encounter-cell ec-win">erandio38·W ✅</td>
+          <td class="encounter-cell ec-lose">aitoruria·N ❌</td>
+          <td class="encounter-cell ec-win">erandio38·N ✅</td>
+          <td class="encounter-cell ec-lose">Erandio1·N ❌</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="pts">7.0</td>
+        </tr>
+        <tr>
+          <td><strong>Erandio1</strong></td>
+          <td class="encounter-cell ec-lose">txo1983·W ❌</td>
+          <td class="encounter-cell ec-lose">PabloE·N ❌</td>
+          <td class="encounter-cell ec-win">Hector·W ✅</td>
+          <td class="encounter-cell ec-lose">aitoruria·N ❌</td>
+          <td class="encounter-cell ec-win">Hector·W ✅</td>
+          <td class="encounter-cell ec-lose">erandio38·N ❌</td>
+          <td class="encounter-cell ec-lose">erandio84·W ❌</td>
+          <td class="encounter-cell ec-lose">Erlantzu·N ❌</td>
+          <td class="encounter-cell ec-lose">erandio84·W ❌</td>
+          <td class="encounter-cell ec-win">erandio38·N ✅</td>
+          <td class="encounter-cell ec-win">erandio84·W ✅</td>
+          <td class="encounter-cell ec-win">PabloE·W ✅</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="pts">5.0</td>
+        </tr>
+        <tr>
+          <td><strong>erandio38</strong></td>
+          <td class="encounter-cell ec-win">Hector·N ✅</td>
+          <td class="encounter-cell ec-lose">Cayajo·W ❌</td>
+          <td class="encounter-cell ec-lose">Erlantzu·N ❌</td>
+          <td class="encounter-cell ec-lose">erandio84·W ❌</td>
+          <td class="encounter-cell ec-lose">Erlantzu·N ❌</td>
+          <td class="encounter-cell ec-lose">txo1983·W ❌</td>
+          <td class="encounter-cell ec-win">Erandio1·W ✅</td>
+          <td class="encounter-cell ec-win">erandio84·N ✅</td>
+          <td class="encounter-cell ec-win">Cayajo·W ✅</td>
+          <td class="encounter-cell ec-win">Hector·N ✅</td>
+          <td class="encounter-cell ec-lose">txo1983·N ❌</td>
+          <td class="encounter-cell ec-lose">Erlantzu·W ❌</td>
+          <td class="encounter-cell ec-lose">PabloE·N ❌</td>
+          <td class="encounter-cell ec-lose">Erandio1·W ❌</td>
+          <td class="encounter-cell ec-lose">txo1983·N ❌</td>
+          <td class="encounter-cell ec-lose">PabloE·W ❌</td>
+          <td class="pts">5.0</td>
+        </tr>
+        <tr>
+          <td><strong>Cayajo</strong></td>
+          <td class="encounter-cell ec-win">erandio84·W ✅</td>
+          <td class="encounter-cell ec-win">erandio38·N ✅</td>
+          <td class="encounter-cell ec-lose">PabloE·W ❌</td>
+          <td class="encounter-cell ec-lose">aitoruria·N ❌</td>
+          <td class="encounter-cell ec-lose">PabloE·W ❌</td>
+          <td class="encounter-cell ec-lose">erandio38·N ❌</td>
+          <td class="encounter-cell ec-win">txo1983·W ✅</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="pts">3.0</td>
+        </tr>
+        <tr>
+          <td><strong>erandio84</strong></td>
+          <td class="encounter-cell ec-lose">Cayajo·N ❌</td>
+          <td class="encounter-cell ec-lose">Erlantzu·W ❌</td>
+          <td class="encounter-cell ec-lose">txo1983·N ❌</td>
+          <td class="encounter-cell ec-lose">aitoruria·W ❌</td>
+          <td class="encounter-cell ec-win">erandio38·W ✅</td>
+          <td class="encounter-cell ec-win">erandio38·N ✅</td>
+          <td class="encounter-cell ec-lose">PabloE·W ❌</td>
+          <td class="encounter-cell ec-lose">txo1983·W ❌</td>
+          <td class="encounter-cell ec-win">erandio38·W ✅</td>
+          <td class="encounter-cell ec-lose">Erandio1·N ❌</td>
+          <td class="encounter-cell ec-lose">Erandio1·N ❌</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="pts">3.0</td>
+        </tr>
+        <tr>
+          <td><strong>Hector_2017</strong></td>
+          <td class="encounter-cell ec-lose">erandio38·W ❌</td>
+          <td class="encounter-cell ec-lose">Erlantzu·W ❌</td>
+          <td class="encounter-cell ec-lose">Erandio1·N ❌</td>
+          <td class="encounter-cell ec-lose">Erlantzu·W ❌</td>
+          <td class="encounter-cell ec-lose">Erandio1·N ❌</td>
+          <td class="encounter-cell ec-lose">txo1983·N ❌</td>
+          <td class="encounter-cell ec-lose">erandio38·W ❌</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell ec-none">—</td>
+          <td class="pts">0.0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.78rem;color:var(--muted);margin-bottom:2rem">
+    † erandio38 participó en 16 partidas (más que cualquier otro jugador).<br>
+    Partidas g23 (Erandio1–erandio38) y g32 (Cayajo–erandio38): abandonadas sin jugadas — señaladas pero contabilizadas.<br>
+    El orden de las partidas de cada jugador es cronológico (de la primera a la última disputada en el torneo).
+  </p>
+
+  <h2>4. Análisis Individual por Participante</h2>
+
+  <!-- aitoruria -->
+  <div class="player-section">
+    <div class="player-header">
+      <div>
+        <div class="player-name">♟ aitoruria</div>
+        <div class="player-elo">Elo inicial: 2101 · Elo final: 2124 · <span class="elo-up">+23</span></div>
+      </div>
+    </div>
+    <div class="mini-grid">
+      <div class="mini-stat"><div class="val">11</div>Partidas</div>
+      <div class="mini-stat"><div class="val ec-win">9 (81.8%)</div>Victorias</div>
+      <div class="mini-stat"><div class="val ec-lose">1 (9.1%)</div>Derrotas</div>
+      <div class="mini-stat"><div class="val ec-draw">1 (9.1%)</div>Tablas</div>
+      <div class="mini-stat"><div class="val">1918</div>Elo med. rival (victorias)</div>
+      <div class="mini-stat"><div class="val">2176</div>Elo med. rival (derrotas)</div>
+      <div class="mini-stat"><div class="val">1815</div>Elo med. rival (tablas)</div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Concepto</th><th>Detalle</th></tr></thead>
+        <tbody>
+          <tr><td>Mejor victoria</td><td>✅ vs <strong>Erlantzu</strong> (2192) — g28: aitoruria·B vs Erlantzu·N</td></tr>
+          <tr><td>Peor derrota</td><td>❌ vs <strong>Erlantzu</strong> (2176) — g41: aitoruria·B vs Erlantzu·N</td></tr>
+          <tr><td>Mejores tablas</td><td>🟡 vs <strong>txo1983</strong> (1815) — g5: aitoruria·B</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Progreso cronológico</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Rival</th><th>Color</th><th>Resultado</th><th>Elo rival</th><th>Elo propio</th><th>Error B</th><th>Error N</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>PabloErandio</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1927</td><td>2101</td><td class="error-low">0.25</td><td class="error-low">0.48</td></tr>
+          <tr><td>2</td><td>txo1983</td><td class="pill pill-w">B</td><td class="ec-draw">🟡 Tablas</td><td>1815</td><td>2107</td><td class="error-low">0.54</td><td class="error-mid">0.61</td></tr>
+          <tr><td>3</td><td>erandio84</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1067</td><td>2107</td><td class="error-mid">1.99</td><td class="error-low">0.49</td></tr>
+          <tr><td>4</td><td>Cayajo</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1433</td><td>2099</td><td class="error-mid">0.64</td><td class="error-mid">0.65</td></tr>
+          <tr><td>5</td><td>txo1983</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1814</td><td>2099</td><td class="error-mid">0.90</td><td class="error-low">0.40</td></tr>
+          <tr><td>6</td><td>Erlantzu</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>2192</td><td>2104</td><td class="error-mid">0.57</td><td class="error-mid">1.21</td></tr>
+          <tr><td>7</td><td>txo1983</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1813</td><td>2100</td><td class="error-low">0.14</td><td class="error-mid">1.08</td></tr>
+          <tr><td>8</td><td>PabloErandio</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1930</td><td>2122</td><td class="error-mid">1.32</td><td class="error-mid">0.98</td></tr>
+          <tr><td>9</td><td>Erlantzu</td><td class="pill pill-b">N</td><td class="ec-lose">❌ Derrota</td><td>2176</td><td>2127</td><td class="error-mid">1.55</td><td class="error-mid">0.65</td></tr>
+          <tr><td>10</td><td>PabloErandio</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1926</td><td>2118</td><td class="error-mid">0.98</td><td class="error-mid">1.20</td></tr>
+          <tr><td>11</td><td>txo1983</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1815</td><td>2124</td><td class="error-mid">1.16</td><td class="error-mid">1.16</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Erlantzu -->
+  <div class="player-section">
+    <div class="player-header">
+      <div>
+        <div class="player-name">♟ Erlantzu</div>
+        <div class="player-elo">Elo inicial: 2191 · Elo final: 2176 · <span class="elo-down">-15</span></div>
+      </div>
+    </div>
+    <div class="mini-grid">
+      <div class="mini-stat"><div class="val">10</div>Partidas</div>
+      <div class="mini-stat"><div class="val ec-win">9 (90%)</div>Victorias</div>
+      <div class="mini-stat"><div class="val ec-lose">1 (10%)</div>Derrotas</div>
+      <div class="mini-stat"><div class="val ec-draw">0 (0%)</div>Tablas</div>
+      <div class="mini-stat"><div class="val">1304</div>Elo med. rival (victorias)</div>
+      <div class="mini-stat"><div class="val">2104</div>Elo med. rival (derrotas)</div>
+      <div class="mini-stat"><div class="val">—</div>Elo med. rival (tablas)</div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Concepto</th><th>Detalle</th></tr></thead>
+        <tbody>
+          <tr><td>Mejor victoria</td><td>✅ vs <strong>aitoruria</strong> (2127) — g41: Erlantzu·N vs aitoruria·B</td></tr>
+          <tr><td>Peor derrota</td><td>❌ vs <strong>aitoruria</strong> (2104) — g28: Erlantzu·N vs aitoruria·B</td></tr>
+          <tr><td>Mejores tablas</td><td>— (ninguna)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Progreso cronológico</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Rival</th><th>Color</th><th>Resultado</th><th>Elo rival</th><th>Elo propio</th><th>Error B</th><th>Error N</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>erandio84</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1028</td><td>2191</td><td class="error-low">0.32</td><td class="error-mid">1.45</td></tr>
+          <tr><td>2</td><td>erandio38</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1162</td><td>2192</td><td class="error-mid">1.17</td><td class="error-low">0.04</td></tr>
+          <tr><td>3</td><td>Hector_2017</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>879</td><td>2192</td><td class="error-low">0.57</td><td class="error-mid">1.11</td></tr>
+          <tr><td>4</td><td>erandio38</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1049</td><td>2192</td><td class="error-mid">1.81</td><td class="error-low">0.47</td></tr>
+          <tr><td>5</td><td>Hector_2017</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>859</td><td>2192</td><td class="error-low">0.13</td><td class="error-mid">1.32</td></tr>
+          <tr><td>6</td><td>aitoruria</td><td class="pill pill-b">N</td><td class="ec-lose">❌ Derrota</td><td>2104</td><td>2192</td><td class="error-mid">0.57</td><td class="error-mid">1.21</td></tr>
+          <tr><td>7</td><td>PabloErandio</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1933</td><td>2166</td><td class="error-low">0.17</td><td class="error-low">0.48</td></tr>
+          <tr><td>8</td><td>Erandio1</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1462</td><td>2175</td><td class="error-mid">1.37</td><td class="error-mid">0.61</td></tr>
+          <tr><td>9</td><td>erandio38</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1349</td><td>2175</td><td>—</td><td>—</td></tr>
+          <tr><td>10</td><td>aitoruria</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>2127</td><td>2176</td><td class="error-mid">1.55</td><td class="error-mid">0.65</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">
+      * g38 (Erlantzu vs erandio38, Elo 1349): sin índice de error disponible.
+    </p>
+  </div>
+
+  <!-- txo1983 -->
+  <div class="player-section">
+    <div class="player-header">
+      <div>
+        <div class="player-name">♟ txo1983</div>
+        <div class="player-elo">Elo inicial: 1813 · Elo final: 1815 · <span class="elo-up">+2</span></div>
+      </div>
+    </div>
+    <div class="mini-grid">
+      <div class="mini-stat"><div class="val">13</div>Partidas</div>
+      <div class="mini-stat"><div class="val ec-win">8 (61.5%)</div>Victorias</div>
+      <div class="mini-stat"><div class="val ec-lose">4 (30.8%)</div>Derrotas</div>
+      <div class="mini-stat"><div class="val ec-draw">1 (7.7%)</div>Tablas</div>
+      <div class="mini-stat"><div class="val">1378</div>Elo med. rival (victorias)</div>
+      <div class="mini-stat"><div class="val">2112</div>Elo med. rival (derrotas)</div>
+      <div class="mini-stat"><div class="val">2107</div>Elo med. rival (tablas)</div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Concepto</th><th>Detalle</th></tr></thead>
+        <tbody>
+          <tr><td>Mejor victoria</td><td>✅ vs <strong>Erandio1</strong> (1509) — g2: txo1983·B vs Erandio1·N</td></tr>
+          <tr><td>Peor derrota</td><td>❌ vs <strong>aitoruria</strong> (2100–2127) — varias; la más clara g49: txo1983·B 0.90/0.40</td></tr>
+          <tr><td>Mejores tablas</td><td>🟡 vs <strong>aitoruria</strong> (2107) — g5: txo1983·N</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Progreso cronológico</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Rival</th><th>Color</th><th>Resultado</th><th>Elo rival</th><th>Elo propio</th><th>Error B</th><th>Error N</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Erandio1</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1509</td><td>1813</td><td class="error-mid">1.28</td><td class="error-mid">1.04</td></tr>
+          <tr><td>2</td><td>aitoruria</td><td class="pill pill-b">N</td><td class="ec-draw">🟡 Tablas</td><td>2107</td><td>1815</td><td class="error-mid">0.54</td><td class="error-mid">0.61</td></tr>
+          <tr><td>3</td><td>erandio84</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1027</td><td>1815</td><td class="error-mid">1.15</td><td class="error-low">0.34</td></tr>
+          <tr><td>4</td><td>PabloErandio</td><td class="pill pill-b">N</td><td class="ec-lose">❌ Derrota</td><td>1819</td><td>1819</td><td class="error-mid">1.05</td><td class="error-low">0.43</td></tr>
+          <tr><td>5</td><td>erandio38</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1307</td><td>1814</td><td class="error-mid">1.03</td><td class="error-mid">0.69</td></tr>
+          <tr><td>6</td><td>aitoruria</td><td class="pill pill-w">B</td><td class="ec-lose">❌ Derrota</td><td>2100</td><td>1814</td><td class="error-low">0.14</td><td class="error-mid">1.08</td></tr>
+          <tr><td>7</td><td>Hector_2017</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>858</td><td>1813</td><td class="error-mid">1.08</td><td class="error-low">0.11</td></tr>
+          <tr><td>8</td><td>aitoruria</td><td class="pill pill-b">N</td><td class="ec-lose">❌ Derrota</td><td>2104</td><td>1813</td><td class="error-mid">0.57</td><td class="error-mid">1.21</td></tr>
+          <tr><td>9</td><td>erandio38</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1358</td><td>1812</td><td class="error-mid">1.74</td><td class="error-mid">0.55</td></tr>
+          <tr><td>10</td><td>Cayajo</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1354</td><td>1813</td><td class="error-mid">0.97</td><td class="error-mid">1.67</td></tr>
+          <tr><td>11</td><td>erandio84</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1244</td><td>1814</td><td class="error-low">0.33</td><td class="error-mid">0.97</td></tr>
+          <tr><td>12</td><td>erandio38</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1049</td><td>1815</td><td class="error-mid">1.43</td><td class="error-high">2.63</td></tr>
+          <tr><td>13</td><td>aitoruria</td><td class="pill pill-b">N</td><td class="ec-lose">❌ Derrota</td><td>2124</td><td>1815</td><td class="error-mid">1.16</td><td class="error-mid">1.16</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PabloErandio -->
+  <div class="player-section">
+    <div class="player-header">
+      <div>
+        <div class="player-name">♟ PabloErandio</div>
+        <div class="player-elo">Elo inicial: 1927 · Elo final: 1923 · <span class="elo-down">-4</span></div>
+      </div>
+    </div>
+    <div class="mini-grid">
+      <div class="mini-stat"><div class="val">12</div>Partidas</div>
+      <div class="mini-stat"><div class="val ec-win">7 (58.3%)</div>Victorias</div>
+      <div class="mini-stat"><div class="val ec-lose">5 (41.7%)</div>Derrotas</div>
+      <div class="mini-stat"><div class="val ec-draw">0 (0%)</div>Tablas</div>
+      <div class="mini-stat"><div class="val">1408</div>Elo med. rival (victorias)</div>
+      <div class="mini-stat"><div class="val">2083</div>Elo med. rival (derrotas)</div>
+      <div class="mini-stat"><div class="val">—</div>Elo med. rival (tablas)</div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Concepto</th><th>Detalle</th></tr></thead>
+        <tbody>
+          <tr><td>Mejor victoria</td><td>✅ vs <strong>txo1983</strong> (1819) — g16: PabloE·N vs txo1983·B</td></tr>
+          <tr><td>Peor derrota</td><td>❌ vs <strong>Erlantzu</strong> (2166) — g44: PabloE·N vs Erlantzu·B</td></tr>
+          <tr><td>Mejores tablas</td><td>— (ninguna)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Progreso cronológico</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Rival</th><th>Color</th><th>Resultado</th><th>Elo rival</th><th>Elo propio</th><th>Error B</th><th>Error N</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>aitoruria</td><td class="pill pill-b">N</td><td class="ec-lose">❌ Derrota</td><td>2101</td><td>1927</td><td class="error-low">0.25</td><td class="error-low">0.48</td></tr>
+          <tr><td>2</td><td>Erandio1</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1505</td><td>1923</td><td class="error-mid">0.89</td><td class="error-mid">0.84</td></tr>
+          <tr><td>3</td><td>Cayajo</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1446</td><td>1925</td><td class="error-mid">0.54</td><td class="error-mid">0.84</td></tr>
+          <tr><td>4</td><td>txo1983</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1819</td><td>1926</td><td class="error-mid">1.05</td><td class="error-low">0.43</td></tr>
+          <tr><td>5</td><td>erandio84</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1116</td><td>1931</td><td class="error-mid">0.58</td><td class="error-mid">1.80</td></tr>
+          <tr><td>6</td><td>Cayajo</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1428</td><td>1932</td><td class="error-mid">0.83</td><td class="error-mid">1.20</td></tr>
+          <tr><td>7</td><td>Erlantzu</td><td class="pill pill-b">N</td><td class="ec-lose">❌ Derrota</td><td>2166</td><td>1933</td><td class="error-low">0.17</td><td class="error-low">0.48</td></tr>
+          <tr><td>8</td><td>aitoruria</td><td class="pill pill-w">B</td><td class="ec-lose">❌ Derrota</td><td>2122</td><td>1930</td><td class="error-mid">1.32</td><td class="error-mid">0.98</td></tr>
+          <tr><td>9</td><td>erandio38</td><td class="pill pill-b">N</td><td class="ec-win">✅ Victoria</td><td>1307</td><td>1926</td><td class="error-mid">0.74</td><td class="error-mid">0.55</td></tr>
+          <tr><td>10</td><td>aitoruria</td><td class="pill pill-w">B</td><td class="ec-lose">❌ Derrota</td><td>2118</td><td>1926</td><td class="error-mid">0.98</td><td class="error-mid">1.20</td></tr>
+          <tr><td>11</td><td>erandio38</td><td class="pill pill-w">B</td><td class="ec-win">✅ Victoria</td><td>1049</td><td>1922</td><td class="error-mid">0.88</td><td class="error-mid">1.18</td></tr>
+          <tr><td>12</td><td>Erandio1</td><td class="pill pill-w">B</td><td class="ec-lose">❌ Derrota</td><td>1462</td><td>1923</td><td class="error-mid">0.89</td><td class="error-mid">0.84</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Generado el 05/04/2026 · Torneo Erandio Arena 03/04/2026 · Análisis Stockfish 17 (10s)
+</footer>
+
+</body>
+</html>
