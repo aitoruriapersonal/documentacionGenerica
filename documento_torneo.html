@@ -313,17 +313,6 @@
         margin: 5mm;
       }
 
-      /* — Sección de partidas PGN: vertical — */
-      @page partidas-page {
-        size: A4 portrait;
-        margin: 5mm;
-      }
-
-      /* — Alias landscape explícito para landscape-wrap — */
-      @page landscape-page {
-        size: A4 landscape;
-        margin: 5mm;
-      }
 
       /* — Tema claro para impresión — */
       :root {
@@ -389,7 +378,6 @@
 
       /* — Tablas anchas en landscape — */
       .landscape-wrap {
-        page: landscape-page;
         break-before: page;
         break-after: page;
         overflow: visible;
@@ -398,13 +386,10 @@
 
       /* — Saltos de página lógicos — */
       #sec-desglose      { break-before: page; }
-      #sec-partidas      { page: partidas-page; break-before: page; }
+      #sec-partidas      { break-before: page; }
 
-      /* — Sección 4: cada participante en página nueva — */
-      .player-section + .player-section { break-before: page; }
-
-      /* — Sección 7: todas las páginas en vertical (portrait) — */
-      #sec-partidas .pgn-game { page: partidas-page; }
+      /* — Sección 4: cada participante en su propia página — */
+      .player-section { break-before: page; }
 
       /* — Tablas de progreso cronológico (sección 4): reducir para A4 landscape — */
       .player-section table    { font-size: 0.70rem; }
@@ -417,7 +402,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 0.6rem;
       }
-      .pgn-game  { font-size: 0.68rem; padding: 0.45rem 0.6rem; }
+      .pgn-game  { font-size: 0.68rem; padding: 0.45rem 0.6rem; break-inside: avoid; }
       .pgn-header { font-size: 0.7rem; }
 
       /* — Reducir tablas landscape (secc. 1 y 3) para que entren en A4 horizontal sin cortes — */
