@@ -400,6 +400,12 @@
       #sec-desglose      { break-before: page; }
       #sec-partidas      { page: partidas-page; break-before: page; }
 
+      /* — Sección 4: cada participante en página nueva — */
+      .player-section + .player-section { break-before: page; }
+
+      /* — Sección 7: todas las páginas en vertical (portrait) — */
+      #sec-partidas .pgn-game { page: partidas-page; }
+
       /* — Tablas de progreso cronológico (sección 4): reducir para A4 landscape — */
       .player-section table    { font-size: 0.70rem; }
       .player-section thead th { padding: 0.3rem 0.4rem; white-space: normal; font-size: 0.70rem; }
