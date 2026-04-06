@@ -307,19 +307,19 @@
        ═══════════════════════════════════════════════════════════════ */
     @media print {
 
-      /* — Página A4 vertical por defecto — */
+      /* — Todas las páginas en A4 apaisado por defecto — */
       @page {
-        size: A4 portrait;
-        margin: 5mm;
-      }
-
-      /* — Portada en horizontal — */
-      @page portada-page {
         size: A4 landscape;
         margin: 5mm;
       }
 
-      /* — Página A4 apaisada para tablas anchas — */
+      /* — Sección de partidas PGN: vertical — */
+      @page partidas-page {
+        size: A4 portrait;
+        margin: 5mm;
+      }
+
+      /* — Alias landscape explícito para landscape-wrap — */
       @page landscape-page {
         size: A4 landscape;
         margin: 5mm;
@@ -384,7 +384,7 @@
       thead       { display: table-header-group; }
 
       /* — Secciones en páginas propias — */
-      #portada     { page: portada-page; break-after: page; min-height: unset; padding: 20mm 30mm; }
+      #portada     { break-after: page; min-height: unset; padding: 20mm 30mm; }
       #indice      { break-after: page; min-height: unset; }
 
       /* — Tablas anchas en landscape — */
@@ -398,7 +398,12 @@
 
       /* — Saltos de página lógicos — */
       #sec-desglose      { break-before: page; }
-      #sec-partidas      { break-before: page; }
+      #sec-partidas      { page: partidas-page; break-before: page; }
+
+      /* — Tablas de progreso cronológico (sección 4): reducir para A4 landscape — */
+      .player-section table    { font-size: 0.70rem; }
+      .player-section thead th { padding: 0.3rem 0.4rem; white-space: normal; font-size: 0.70rem; }
+      .player-section td       { padding: 0.3rem 0.4rem; white-space: normal; }
 
       /* — Grid de partidas: 2 columnas en print — */
       .pgn-grid  {
