@@ -405,17 +405,36 @@
       .pgn-game  { font-size: 0.68rem; padding: 0.45rem 0.6rem; break-inside: avoid; }
       .pgn-header { font-size: 0.7rem; }
 
-      /* — Reducir tablas landscape (secc. 1 y 3) para que entren en A4 horizontal sin cortes — */
-      .landscape-wrap table      { font-size: 0.58rem; }
-      .landscape-wrap thead th   { padding: 0.3rem 0.35rem; white-space: normal; font-size: 0.58rem; }
+      /* — Reducir tablas landscape (secc. 1) para que entren en A4 horizontal sin cortes — */
+      .landscape-wrap table      { font-size: 0.62rem; }
+      .landscape-wrap thead th   { padding: 0.3rem 0.35rem; white-space: normal; font-size: 0.62rem; }
       .landscape-wrap td         { padding: 0.28rem 0.35rem; white-space: normal; }
-      .landscape-wrap .encounter-cell {
-        font-size: 0.50rem;
-        padding: 0.15rem 0.2rem;
-        white-space: normal;
+
+      /* — Sección 3: columnas g con texto vertical para ahorrar espacio horizontal — */
+      .th-g {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: bottom;
+        padding: 0.4rem 0.1rem !important;
+        min-width: 1.4em;
+        font-size: 0.6rem !important;
       }
-      .landscape-wrap .enc-pts,
-      .landscape-wrap .enc-pts-berserk { font-size: 0.44rem; }
+      .td-g {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        white-space: nowrap;
+        text-align: left;
+        vertical-align: bottom;
+        padding: 0.15rem 0.1rem !important;
+        font-size: 0.56rem !important;
+      }
+      .td-g .enc-pts,
+      .td-g .enc-pts-berserk {
+        display: inline;
+        font-size: 0.50rem;
+      }
     }
   </style>
 </head>
@@ -780,9 +799,9 @@
       <thead>
         <tr>
           <th>Jugador</th>
-          <th>g1</th><th>g2</th><th>g3</th><th>g4</th><th>g5</th><th>g6</th>
-          <th>g7</th><th>g8</th><th>g9</th><th>g10</th><th>g11</th><th>g12</th>
-          <th>g13</th><th>g14</th><th>g15</th><th>g16</th>
+          <th class="th-g">g1</th><th class="th-g">g2</th><th class="th-g">g3</th><th class="th-g">g4</th><th class="th-g">g5</th><th class="th-g">g6</th>
+          <th class="th-g">g7</th><th class="th-g">g8</th><th class="th-g">g9</th><th class="th-g">g10</th><th class="th-g">g11</th><th class="th-g">g12</th>
+          <th class="th-g">g13</th><th class="th-g">g14</th><th class="th-g">g15</th><th class="th-g">g16</th>
           <th style="background:var(--accent);color:#fff">Pts</th>
           <th style="background:rgba(167,139,250,0.18);color:#a78bfa">⭐ Pts L.</th>
         </tr>
@@ -790,190 +809,190 @@
       <tbody>
         <tr>
           <td><strong>Erlantzu</strong></td>
-          <td class="encounter-cell ec-win">erandio84·N ✅<span class="enc-pts-berserk">+2⚡</span></td>
-          <td class="encounter-cell ec-win">erandio38·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
-          <td class="encounter-cell ec-win">Hector·N ✅<span class="enc-pts-berserk">+4⚡</span></td>
-          <td class="encounter-cell ec-win">erandio38·W ✅<span class="enc-pts-berserk">+4⚡</span></td>
-          <td class="encounter-cell ec-win">Hector·N ✅<span class="enc-pts-berserk">+4⚡</span></td>
-          <td class="encounter-cell ec-lose">aitoruria·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">PabloE·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">Erandio1·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
-          <td class="encounter-cell ec-win">erandio38·N ✅<span class="enc-pts">+4</span></td>
-          <td class="encounter-cell ec-win">aitoruria·W ✅<span class="enc-pts-berserk">+4⚡</span></td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell td-g ec-win">erandio84·N ✅<span class="enc-pts-berserk">+2⚡</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
+          <td class="encounter-cell td-g ec-win">Hector·N ✅<span class="enc-pts-berserk">+4⚡</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·W ✅<span class="enc-pts-berserk">+4⚡</span></td>
+          <td class="encounter-cell td-g ec-win">Hector·N ✅<span class="enc-pts-berserk">+4⚡</span></td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">PabloE·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">Erandio1·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·N ✅<span class="enc-pts">+4</span></td>
+          <td class="encounter-cell td-g ec-win">aitoruria·W ✅<span class="enc-pts-berserk">+4⚡</span></td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
           <td class="pts">9.0</td>
           <td style="background:rgba(167,139,250,0.18)"><strong class="lichess-pts">35</strong></td>
         </tr>
         <tr>
           <td><strong>aitoruria</strong></td>
-          <td class="encounter-cell ec-win">PabloE·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-draw">txo·N 🟡<span class="enc-pts">+1</span></td>
-          <td class="encounter-cell ec-win">erandio84·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">Cayajo·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">txo·N ✅<span class="enc-pts">+4</span></td>
-          <td class="encounter-cell ec-win">Erlantzu·N ✅<span class="enc-pts">+4</span></td>
-          <td class="encounter-cell ec-win">txo·W ✅<span class="enc-pts">+4</span></td>
-          <td class="encounter-cell ec-win">PabloE·W ✅<span class="enc-pts">+4</span></td>
-          <td class="encounter-cell ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">PabloE·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">txo·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell td-g ec-win">PabloE·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-draw">txo·N 🟡<span class="enc-pts">+1</span></td>
+          <td class="encounter-cell td-g ec-win">erandio84·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">Cayajo·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">txo·N ✅<span class="enc-pts">+4</span></td>
+          <td class="encounter-cell td-g ec-win">Erlantzu·N ✅<span class="enc-pts">+4</span></td>
+          <td class="encounter-cell td-g ec-win">txo·W ✅<span class="enc-pts">+4</span></td>
+          <td class="encounter-cell td-g ec-win">PabloE·W ✅<span class="enc-pts">+4</span></td>
+          <td class="encounter-cell td-g ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">PabloE·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">txo·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
           <td class="pts">9.5</td>
           <td style="background:rgba(167,139,250,0.18)"><strong class="lichess-pts">27</strong></td>
         </tr>
         <tr>
           <td><strong>txo1983</strong></td>
-          <td class="encounter-cell ec-win">Erandio1·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-draw">aitoruria·W 🟡<span class="enc-pts">+1</span></td>
-          <td class="encounter-cell ec-win">erandio84·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-lose">PabloE·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">erandio38·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-lose">aitoruria·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">Hector·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">erandio38·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">Cayajo·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">erandio84·N ✅<span class="enc-pts-berserk">+4⚡</span></td>
-          <td class="encounter-cell ec-win">erandio38·W ✅<span class="enc-pts-berserk">+4⚡</span></td>
-          <td class="encounter-cell ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell td-g ec-win">Erandio1·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-draw">aitoruria·W 🟡<span class="enc-pts">+1</span></td>
+          <td class="encounter-cell td-g ec-win">erandio84·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-lose">PabloE·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">Hector·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">Cayajo·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">erandio84·N ✅<span class="enc-pts-berserk">+4⚡</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·W ✅<span class="enc-pts-berserk">+4⚡</span></td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
           <td class="pts">8.5</td>
           <td style="background:rgba(167,139,250,0.18)"><strong class="lichess-pts">23</strong></td>
         </tr>
         <tr>
           <td><strong>PabloErandio</strong></td>
-          <td class="encounter-cell ec-lose">aitoruria·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">Erandio1·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">Cayajo·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">txo·N ✅<span class="enc-pts">+4</span></td>
-          <td class="encounter-cell ec-win">erandio84·N ✅<span class="enc-pts-berserk">+4⚡</span></td>
-          <td class="encounter-cell ec-win">Cayajo·N ✅<span class="enc-pts">+4</span></td>
-          <td class="encounter-cell ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">erandio38·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">erandio38·N ✅<span class="enc-pts-berserk">+2⚡</span></td>
-          <td class="encounter-cell ec-lose">Erandio1·W ❌<span class="enc-pts-berserk">+0⚡</span></td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">Erandio1·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">Cayajo·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">txo·N ✅<span class="enc-pts">+4</span></td>
+          <td class="encounter-cell td-g ec-win">erandio84·N ✅<span class="enc-pts-berserk">+4⚡</span></td>
+          <td class="encounter-cell td-g ec-win">Cayajo·N ✅<span class="enc-pts">+4</span></td>
+          <td class="encounter-cell td-g ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·N ✅<span class="enc-pts-berserk">+2⚡</span></td>
+          <td class="encounter-cell td-g ec-lose">Erandio1·W ❌<span class="enc-pts-berserk">+0⚡</span></td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
           <td class="pts">7.0</td>
           <td style="background:rgba(167,139,250,0.18)"><strong class="lichess-pts">22</strong></td>
         </tr>
         <tr>
           <td><strong>Erandio1</strong></td>
-          <td class="encounter-cell ec-lose">txo1983·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">PabloE·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">Hector·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
-          <td class="encounter-cell ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">Hector·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
-          <td class="encounter-cell ec-lose">erandio38·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">erandio84·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erlantzu·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">erandio84·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">erandio38·N ✅<span class="enc-pts-berserk">+2⚡</span></td>
-          <td class="encounter-cell ec-win">erandio84·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
-          <td class="encounter-cell ec-win">PabloE·W ✅<span class="enc-pts-berserk">+4⚡</span></td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell td-g ec-lose">txo1983·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">PabloE·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">Hector·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">Hector·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
+          <td class="encounter-cell td-g ec-lose">erandio38·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">erandio84·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erlantzu·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">erandio84·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·N ✅<span class="enc-pts-berserk">+2⚡</span></td>
+          <td class="encounter-cell td-g ec-win">erandio84·W ✅<span class="enc-pts-berserk">+2⚡</span></td>
+          <td class="encounter-cell td-g ec-win">PabloE·W ✅<span class="enc-pts-berserk">+4⚡</span></td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
           <td class="pts">5.0</td>
           <td style="background:rgba(167,139,250,0.18)"><strong class="lichess-pts">17</strong></td>
         </tr>
         <tr>
           <td><strong>erandio38</strong></td>
-          <td class="encounter-cell ec-win">Hector·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-lose">Cayajo·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erlantzu·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">erandio84·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erlantzu·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">txo1983·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">Erandio1·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">erandio84·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">Cayajo·W ✅<span class="enc-pts">+4</span></td>
-          <td class="encounter-cell ec-win">Hector·N ✅<span class="enc-pts">+4</span></td>
-          <td class="encounter-cell ec-lose">txo1983·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">PabloE·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erandio1·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">txo1983·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">PabloE·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">Hector·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-lose">Cayajo·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erlantzu·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">erandio84·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erlantzu·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">txo1983·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">Erandio1·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">erandio84·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">Cayajo·W ✅<span class="enc-pts">+4</span></td>
+          <td class="encounter-cell td-g ec-win">Hector·N ✅<span class="enc-pts">+4</span></td>
+          <td class="encounter-cell td-g ec-lose">txo1983·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">PabloE·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erandio1·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">txo1983·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">PabloE·W ❌<span class="enc-pts">+0</span></td>
           <td class="pts">5.0</td>
           <td style="background:rgba(167,139,250,0.18)"><strong class="lichess-pts">14</strong></td>
         </tr>
         <tr>
           <td><strong>Cayajo</strong></td>
-          <td class="encounter-cell ec-win">erandio84·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">erandio38·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-lose">PabloE·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">PabloE·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">erandio38·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">txo1983·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell td-g ec-win">erandio84·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-lose">PabloE·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">PabloE·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">erandio38·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">txo1983·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
           <td class="pts">3.0</td>
           <td style="background:rgba(167,139,250,0.18)"><strong class="lichess-pts">6</strong></td>
         </tr>
         <tr>
           <td><strong>erandio84</strong></td>
-          <td class="encounter-cell ec-lose">Cayajo·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">txo1983·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">aitoruria·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">erandio38·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-win">erandio38·N ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-lose">PabloE·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">txo1983·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-win">erandio38·W ✅<span class="enc-pts">+2</span></td>
-          <td class="encounter-cell ec-lose">Erandio1·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erandio1·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell td-g ec-lose">Cayajo·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">txo1983·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">aitoruria·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·N ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-lose">PabloE·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">txo1983·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-win">erandio38·W ✅<span class="enc-pts">+2</span></td>
+          <td class="encounter-cell td-g ec-lose">Erandio1·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erandio1·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
           <td class="pts">3.0</td>
           <td style="background:rgba(167,139,250,0.18)"><strong class="lichess-pts">6</strong></td>
         </tr>
         <tr>
           <td><strong>Hector_2017</strong></td>
-          <td class="encounter-cell ec-lose">erandio38·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erandio1·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">Erandio1·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">txo1983·N ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-lose">erandio38·W ❌<span class="enc-pts">+0</span></td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
-          <td class="encounter-cell ec-none">—</td>
+          <td class="encounter-cell td-g ec-lose">erandio38·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erandio1·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erlantzu·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">Erandio1·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">txo1983·N ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-lose">erandio38·W ❌<span class="enc-pts">+0</span></td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
+          <td class="encounter-cell td-g ec-none">—</td>
           <td class="pts">0.0</td>
           <td style="background:rgba(167,139,250,0.18)"><strong class="lichess-pts">0</strong></td>
         </tr>
