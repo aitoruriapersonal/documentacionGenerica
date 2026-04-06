@@ -310,13 +310,19 @@
       /* — Página A4 vertical por defecto — */
       @page {
         size: A4 portrait;
-        margin: 15mm 18mm 15mm 18mm;
+        margin: 5mm;
+      }
+
+      /* — Portada en horizontal — */
+      @page portada-page {
+        size: A4 landscape;
+        margin: 5mm;
       }
 
       /* — Página A4 apaisada para tablas anchas — */
       @page landscape-page {
         size: A4 landscape;
-        margin: 12mm 15mm 12mm 15mm;
+        margin: 5mm;
       }
 
       /* — Tema claro para impresión — */
@@ -378,7 +384,7 @@
       thead       { display: table-header-group; }
 
       /* — Secciones en páginas propias — */
-      #portada     { break-after: page; min-height: unset; padding: 50mm 20mm; }
+      #portada     { page: portada-page; break-after: page; min-height: unset; padding: 20mm 30mm; }
       #indice      { break-after: page; min-height: unset; }
 
       /* — Tablas anchas en landscape — */
@@ -402,6 +408,18 @@
       }
       .pgn-game  { font-size: 0.68rem; padding: 0.45rem 0.6rem; }
       .pgn-header { font-size: 0.7rem; }
+
+      /* — Reducir tablas landscape (secc. 1 y 3) para que entren en A4 horizontal sin cortes — */
+      .landscape-wrap table      { font-size: 0.58rem; }
+      .landscape-wrap thead th   { padding: 0.3rem 0.35rem; white-space: normal; font-size: 0.58rem; }
+      .landscape-wrap td         { padding: 0.28rem 0.35rem; white-space: normal; }
+      .landscape-wrap .encounter-cell {
+        font-size: 0.50rem;
+        padding: 0.15rem 0.2rem;
+        white-space: normal;
+      }
+      .landscape-wrap .enc-pts,
+      .landscape-wrap .enc-pts-berserk { font-size: 0.44rem; }
     }
   </style>
 </head>
