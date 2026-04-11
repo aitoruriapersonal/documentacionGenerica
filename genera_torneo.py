@@ -4,6 +4,7 @@ genera_torneo.py — Generate documentation for Lichess Arena chess tournaments.
 
 Usage:
     python3 genera_torneo.py --pgn FILE [--url URL] [--out DIR] [--name NAME] [--no-pdf]
+    python3 genera_torneo.py        (launches an interactive dialog window)
 """
 
 import argparse
@@ -13,6 +14,8 @@ import os
 import re
 import subprocess
 import sys
+import tkinter as tk
+from tkinter import filedialog, messagebox, ttk
 import urllib.request
 import urllib.error
 from collections import defaultdict
@@ -2163,19 +2166,128 @@ def generate_markdown(games, players_sorted, global_stats, tournament_info,
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
-def main():
-    parser = argparse.ArgumentParser(
-        description='Generate chess tournament documentation from a PGN file.'
+def show_input_dialog():
+    """Show a GUI dialog to collect input parameters. Returns an argparse.Namespace."""
+
+    result = {}
+
+    root = tk.Tk()
+    root.title('Genera Torneo — Parámetros de entrada')
+    root.resizable(False, False)
+
+    pad = {'padx': 8, 'pady': 4}
+
+    # ── PGN file ──────────────────────────────────────────────────────────────
+    tk.Label(root, text='Archivo PGN *:', anchor='w').grid(
+        row=0, column=0, sticky='w', **pad)
+    pgn_var = tk.StringVar()
+    pgn_entry = tk.Entry(root, textvariable=pgn_var, width=50)
+    pgn_entry.grid(row=0, column=1, **pad)
+
+    def browse_pgn():
+        path = filedialog.askopenfilename(
+            title='Seleccionar archivo PGN',
+            filetypes=[('PGN files', '*.pgn'), ('All files', '*.*')]
+        )
+        if path:
+            pgn_var.set(path)
+
+    tk.Button(root, text='Examinar…', command=browse_pgn).grid(
+        row=0, column=2, **pad)
+
+    # ── Lichess URL ───────────────────────────────────────────────────────────
+    tk.Label(root, text='URL Lichess:', anchor='w').grid(
+        row=1, column=0, sticky='w', **pad)
+    url_var = tk.StringVar()
+    tk.Entry(root, textvariable=url_var, width=50).grid(row=1, column=1, **pad)
+
+    # ── Output directory ──────────────────────────────────────────────────────
+    tk.Label(root, text='Directorio de salida:', anchor='w').grid(
+        row=2, column=0, sticky='w', **pad)
+    out_var = tk.StringVar()
+    tk.Entry(root, textvariable=out_var, width=50).grid(row=2, column=1, **pad)
+
+    def browse_out():
+        path = filedialog.askdirectory(title='Seleccionar directorio de salida')
+        if path:
+            out_var.set(path)
+
+    tk.Button(root, text='Examinar…', command=browse_out).grid(
+        row=2, column=2, **pad)
+
+    # ── Base name ─────────────────────────────────────────────────────────────
+    tk.Label(root, text='Nombre base:', anchor='w').grid(
+        row=3, column=0, sticky='w', **pad)
+    name_var = tk.StringVar()
+    tk.Entry(root, textvariable=name_var, width=50).grid(row=3, column=1, **pad)
+
+    # ── No PDF checkbox ───────────────────────────────────────────────────────
+    no_pdf_var = tk.BooleanVar(value=False)
+    tk.Checkbutton(root, text='No generar PDF (--no-pdf)', variable=no_pdf_var).grid(
+        row=4, column=1, sticky='w', **pad)
+
+    # ── Separator & buttons ───────────────────────────────────────────────────
+    ttk.Separator(root, orient='horizontal').grid(
+        row=5, column=0, columnspan=3, sticky='ew', pady=6)
+
+    def on_ok():
+        pgn = pgn_var.get().strip()
+        if not pgn:
+            messagebox.showerror('Error', 'El archivo PGN es obligatorio.')
+            return
+        if not os.path.exists(pgn):
+            messagebox.showerror('Error', f'Archivo PGN no encontrado:\n{pgn}')
+            return
+        result['pgn'] = pgn
+        result['url'] = url_var.get().strip() or None
+        result['out'] = out_var.get().strip() or None
+        result['name'] = name_var.get().strip() or None
+        result['no_pdf'] = no_pdf_var.get()
+        root.destroy()
+
+    def on_cancel():
+        root.destroy()
+
+    btn_frame = tk.Frame(root)
+    btn_frame.grid(row=6, column=0, columnspan=3, pady=6)
+    tk.Button(btn_frame, text='Aceptar', width=12, command=on_ok).pack(
+        side='left', padx=6)
+    tk.Button(btn_frame, text='Cancelar', width=12, command=on_cancel).pack(
+        side='left', padx=6)
+
+    root.mainloop()
+
+    if not result:
+        print('Operación cancelada por el usuario.', file=sys.stderr)
+        sys.exit(0)
+
+    import argparse as _ap
+    return _ap.Namespace(
+        pgn=result['pgn'],
+        url=result['url'],
+        out=result['out'],
+        name=result['name'],
+        no_pdf=result['no_pdf'],
     )
-    parser.add_argument('--pgn', required=True, help='Path to annotated PGN file')
-    parser.add_argument('--url', default=None,
-                        help='Lichess tournament URL (e.g. https://lichess.org/tournament/2wCiE6DW)')
-    parser.add_argument('--out', default=None,
-                        help='Output directory (default: same as PGN directory)')
-    parser.add_argument('--name', default=None,
-                        help='Base name for output files (default: PGN filename without extension)')
-    parser.add_argument('--no-pdf', action='store_true', help='Skip PDF generation')
-    args = parser.parse_args()
+
+
+def main():
+    # If the user provides CLI arguments, use argparse; otherwise show the GUI dialog.
+    if len(sys.argv) > 1:
+        parser = argparse.ArgumentParser(
+            description='Generate chess tournament documentation from a PGN file.'
+        )
+        parser.add_argument('--pgn', required=True, help='Path to annotated PGN file')
+        parser.add_argument('--url', default=None,
+                            help='Lichess tournament URL (e.g. https://lichess.org/tournament/2wCiE6DW)')
+        parser.add_argument('--out', default=None,
+                            help='Output directory (default: same as PGN directory)')
+        parser.add_argument('--name', default=None,
+                            help='Base name for output files (default: PGN filename without extension)')
+        parser.add_argument('--no-pdf', action='store_true', help='Skip PDF generation')
+        args = parser.parse_args()
+    else:
+        args = show_input_dialog()
 
     pgn_path = os.path.abspath(args.pgn)
     if not os.path.exists(pgn_path):
