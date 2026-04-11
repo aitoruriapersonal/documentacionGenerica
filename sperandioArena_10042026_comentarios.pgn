@@ -1,0 +1,2295 @@
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "aitoruria"]
+[Black "erandio38"]
+[Result "1-0"]
+[ECO "C42"]
+[WhiteElo "2070"]
+[BlackElo "1181"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "93"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,92,11,368,357,552,552,713,679,677,669,791,794,1027,1025,1206,1201,
+1266,916,1192,1182,1197,1182,1239,1225,1360,1279,29992,29993,29993,29993,29993,
+29993,29993,29993,29993,29994,29994,29994,29994,29993,29994,29994,29996,29997,
+29997,29996,29999,29997,29997,29997,29997,29998,29998,29998,29998,29998,29999,
+29999,29999,29998,29998,29998,29999,29998,29998,29997,29997,29997,29997,29997,
+29998,29998,29998,29997,29998,29999,29999,29998,29999,29998,29998,29998,29998,
+29999,29999]} 1. e4 e5 2. Nf3 {[%cal Bg1f3,Bf3e5,Be5f7][%mdl 32]} Nf6 3. Bc4 d5
+4. exd5 e4 5. Ne5 Nxd5 $2 {[%eval 368,17] [%wdl 1000,0,0][%mdl 8192] [#]} (5...
+Qe7 $11 {[%eval 11,24] [%wdl 54,919,27]} 6. d4 (6. Bb5+ Kd8 $17) 6... exd3) 6.
+Nxf7 $18 {C42: Defensa Petroff.} (6. Qh5 Be6 $11) 6... Qe7 $146 {[%eval 552,20]
+[%wdl 1000,0,0]} (6... Kxf7 $142 {[%eval 357,22] [%wdl 1000,0,0]} 7. Qh5+ g6 8.
+Bxd5+ (8. Qe5 Bg7 $18) 8... Kg7 9. Qe5+ Qf6 10. Qxf6+ (10. Qxe4 Nc6 $16) (10.
+Qxc7+ Nd7 $16) 10... Kxf6) ({Predecesor:} 6... Kxf7 7. Qh5+ g6 8. Bxd5+ Be6 9.
+Bxe6+ Kxe6 10. Qg4+ Kf7 11. Qxe4 Nc6 12. c3 Bd6 {1-0 (63) Hustinx,G (1841)
+-Theelen,P (1181) freechess.de 2019}) 7. Bxd5 Be6 8. Bxe6 {Las blancas están
+ganado claramente.} Qxe6 9. Nxh8 Qg8 10. Qh5+ Kd8 11. Nf7+ Ke8 12. Nh6+ Ke7 13.
+Qe5+ Kd8 14. Nxg8 Nd7 15. Qxe4 Nc5 16. Qd5+ Kc8 17. O-O Na6 18. Qf5+ {Las
+blancas dan mate.} Kd8 19. Qxf8+ Kd7 20. Qxa8 Nc5 21. Qxa7 Ne6 22. Nc3 Nd8 23.
+Qa4+ Nc6 24. Nf6+ Kd6 25. d4 Nxd4 26. Nce4+ Ke5 27. Qd7 {[%csl Gc1][%cal Rf2f4]
+} Nf5 28. Bf4+ Kxf4 29. Qxc7+ Nd6 30. Qxd6+ Kf5 31. g4+ Kg6 {[%tqu "En","","",
+"","d6e6","",10]} 32. Qe6 $1 {[%cal Rf6g8]} Kh6 (32... h5 33. Qe8+) {[%tqu
+"En","","","","e6f7","",10]} 33. Qf7 $1 {[%cal Rf6g8]} gxf6 (33... b5 34. Qh5#)
+34. Nxf6 Kg5 35. h4+ Kxh4 36. f3 Kg3 37. Qxh7 {[%csl Gg1][%cal Rh7h2]} Kf4 38.
+Qh6+ Ke5 39. Rae1+ Kd4 40. Re4+ Kc5 41. Rd1 Kb5 42. Nd7 {[%csl Gd7][%cal Rh6b6]
+} Ka5 43. Qg5+ Ka6 44. Rd6+ b6 45. Qc5 {[%csl Gd6,Gd7][%cal Rc5b6]} Ka7 46.
+Qxb6+ Ka8 47. Qb8# {Las blancas tomaron el control tras la apertura.  Gravedad
+del error: Blancas=0.27 (Preciso) /Negras=2.58} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "PabloErandio"]
+[Black "Resken"]
+[Result "0-1"]
+[ECO "C44"]
+[WhiteElo "1945"]
+[BlackElo "1641"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "62"]
+[EventDate "2026.??.??"]
+
+{[%evp 20,61,40,46,307,306,294,41,45,42,41,41,38,27,29,-27,-27,-29,0,-1,0,-17,
+7,-332,-326,-464,-445,-575,-569,-567,-567,-566,-563,-562,-555,-546,-495,-613,
+-603,-615,-608,-604,-588,-29999]} 1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 d6 5.
+Nxd4 Nxd4 6. Qxd4 Be6 7. O-O Bxc4 8. Qxc4 Nf6 9. Nc3 Be7 10. Bg5 O-O 11. Rad1 {
+[%cal Oe4e5]} Nd7 $2 {[%eval 307,20] [%wdl 1000,0,0][%mdl 8192] C45: Partida
+Escocesa.} (11... Qc8 $14 {[%eval 46,26] [%wdl 82,916,2]}) 12. Bxe7 $18 Qxe7
+13. Nd5 $146 {[%eval 41,25] [%wdl 52,947,1]} (13. Qxc7 $18 {[%eval 294,21] 
+[%wdl 1000,0,0]} Rac8 14. Qxd6 Qxd6 15. Rxd6) ({Predecesor:} 13. Qxc7 Rfc8 14.
+Qxd6 Qxd6 15. Rxd6 Nb6 16. Rd3 Nc4 17. Nd5 Kf8 18. b3 Ne5 19. Rd2 {1-0 (39)
+Tsopelas,M-Pazionis,P Athens 2022}) 13... Qd8 $14 {Las blancas están
+ligeramente mejor.} 14. Qxc7 Qxc7 15. Nxc7 Rac8 16. Nd5 Rxc2 17. Nc3 {[%eval
+-27,35] [%wdl 1,985,14]} ({Mejor es} 17. Rb1 {[%eval 29,30] [%wdl 16,983,1]})
+17... Rxb2 $11 18. Rxd6 Nf6 19. f3 Rc8 20. Rfd1 {[#] Esperando por Td8+.} h6
+21. Nd5 {[%eval -332,24] [%wdl 0,0,1000][%mdl 8192]} (21. Rd8+ $11 {[%eval 7,
+26] [%wdl 4,994,2]} Rxd8 22. Rxd8+ Kh7 23. a4) 21... Nxd5 $19 22. R6xd5 {
+[%eval -464,23] [%wdl 0,0,1000][%mdl 4096] Final RTT-RTT} (22. exd5 $142 {
+[%eval -326,24] [%wdl 0,0,1000]} Kf8 23. Re1 (23. Rd7 $2 Ke8 $19)) {[%tqu "En",
+"","","","c8c2","",10]} 22... Rcc2 $1 23. f4 ({Pero no} 23. Rd8+ Kh7 24. h4
+Rxg2+ 25. Kh1 Rh2+ 26. Kg1 Rbg2+ 27. Kf1 Rf2+ 28. Kg1 Rfg2+ 29. Kf1 Rxa2 $19)
+23... Rxg2+ 24. Kh1 Rxh2+ 25. Kg1 Rbg2+ 26. Kf1 Rxa2 {[%cal Rh2h1] [#]} 27. Kg1
+{para evitar Th1+} Rhe2 28. f5 Rxe4 29. Rd8+ Kh7 30. Rb8 Rb2 31. Rdd8 {[%csl
+Gb8][%cal Rd8h8]} Re1# {Gravedad del error: Blancas=1.18/Negras=0.29 (Preciso)}
+0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Erandio1"]
+[Black "txo1983"]
+[Result "1-0"]
+[ECO "C57"]
+[WhiteElo "1590"]
+[BlackElo "1777"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "57"]
+[EventDate "2026.??.??"]
+
+{[%evp 14,57,49,78,208,-145,-140,-170,-131,-396,-391,-513,-323,-443,-351,-353,
+-306,-523,-498,-611,-607,-636,-641,-646,-658,-657,-664,-668,-649,-648,-586,
+-591,-480,-558,-531,-563,-443,-498,-445,-538,-534,-662,-646,-963,827,820]} 1.
+e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8.
+Nc3 {[%cal Rc4d5][%mdl 1024] Las blancas tienen compensación.} Nce7 {[%eval
+208,27] [%wdl 981,19,0] C57: Defensa de los dos caballos (Variante Fritz,
+Wilkes-Barre, Traxler).} (8... Ncb4 $16 {[%eval 78,26] [%wdl 307,692,1]}) 9. d3
+$2 {[%eval -145,23] [%wdl 0,161,839] [#]} ({Las blancas deberían jugar} 9. d4
+$18 {[%eval 208,27] [%wdl 981,19,0]}) {[%tqu "En","","","","c7c6","",10]} 9...
+c6 $1 $17 {[%cal Bc7c6,Bc6c5][%mdl 32]} 10. O-O {[%cal Od3d4]} {[%tqu "En","",
+"","","e6d7","",10]} Kd6 {[%eval -131,26] [%wdl 0,242,758]} (10... Kd7 $1 $19 {
+[%eval -170,22] [%wdl 0,72,928] Amenazando con fuerza ...Cxc3.} 11. Bxd5 (11.
+Nxd5 cxd5 12. Bxd5 Kc7 $17) 11... Nxd5 12. Nxd5 cxd5 13. Qxd5+ Bd6) 11. b3 $146
+{[%eval -396,22] [%wdl 0,0,1000][%mdl 8192]} (11. Re1 $17 {[%eval -131,26] 
+[%wdl 0,242,758]} Nxc3 12. bxc3) ({Predecesor:} 11. Ne4+ Kc7 12. Ng5 Qe8 13.
+Nf7 Rg8 14. Nxe5 Be6 15. a3 Rd8 16. Bd2 Ng6 17. Qg3 Bd6 18. d4 Nxe5 19. dxe5
+Bc5 20. b4 Bb6 {0-1 (20) Ebbin,L (1555)-Warren,J (1578) Hamilton 2018}) 11...
+Nxc3 $19 12. Ba3+ c5 {Las blancas deben ahora evitar ...Rc7.} 13. Rfe1 Ng6 {
+apuntando a ...Rc7.} 14. Bb2 Qa5 15. Bxc3 $2 {[%eval -523,21] [%wdl 0,0,1000]}
+(15. Qe3 {[%eval -306,22] [%wdl 0,0,1000] sigue luchando.} Nb5 16. Bxe5+ Kc6
+17. Bd5+ Kb6 18. b4 Qxb4 19. Rab1) 15... Qxc3 16. Qd5+ Kc7 17. Qf7+ Bd7 18. Be6
+Be7 19. Bxd7 Kxd7 20. Qxg7 Rhg8 21. Qxh7 Nf4 22. g3 Ne2+ 23. Kh1 {[%tqu "En",
+"","","","c3d4","",10]} Qd4 $1 24. Qf5+ (24. Qe4 Qxe4+) 24... Kd8 {[#] ...Tf8
+es la amenaza fuerte.} 25. Rad1 Qd5+ 26. f3 {[%tqu "En","","","","g8f8","",10]}
+Rf8 $1 27. Qg4 (27. Qe4 Nc3) {[%tqu "En","","","","f8f3","",10]} 27... Rxf3 $1
+{[%cal Rf3f1]} 28. Qg8+ (28. Qe4 Qxe4) 28... Rf8+ $4 {[%eval 827,21] [%wdl
+1000,0,0][%mdl 8192]} (28... Qxg8 $19 {[%eval -963,28] [%wdl 0,0,1000]} 29.
+Rxe2 Qd5) 29. Qxd5+ {Gravedad del error: Blancas=1.18/Negras=0.46} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio33"]
+[Black "erandio84"]
+[Result "1-0"]
+[ECO "C41"]
+[WhiteElo "1292"]
+[BlackElo "1182"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "45"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,44,45,45,-35,768,763,784,662,671,628,707,681,786,621,633,626,646,533,
+617,608,867,856,835,488,583,432,576,570,591,521,568,565,743,641,653,626,29999]
+} 1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Bc4 Bg4 5. h3 Bxf3 6. gxf3 $146 {[%eval -35,
+23] [%wdl 6,916,78] C41: Defensa Philidor.} ({Mejor es} 6. Qxf3 $14 {[%eval 45,
+26] [%wdl 126,868,6]} Qd7 7. O-O) ({Predecesor:} 6. Qxf3 Qf6 7. Qb3 b6 8. O-O
+Nh6 9. Nd2 Be7 10. Nf3 Nd7 11. Bg5 Qg6 12. Bxe7 Kxe7 13. Nxd4 {1-0 (58) Mendis,
+S-Bitarinsa,A (1617) Tornelo INT 2021}) 6... Qg5 $2 {[%eval 768,23] [%wdl 1000,
+0,0][%mdl 8192]} 7. Bxg5 $18 f6 8. Rg1 {Las blancas están ganado claramente.}
+fxg5 9. Rxg5 c6 10. Ke2 d5 11. Bxd5 cxd5 12. exd5 Be7 13. Qg1 Bxg5 14. Qxg5 Nf6
+15. Qxg7 Rf8 16. Qg5 Na6 {[%cal Bb8a6,Ba6b4,Bb4c2][%mdl 32]} 17. Qd2 Rd8 18.
+Qxd4 Nxd5 {[#] Amenazando con fuerza ...Cf4+.} 19. Qe5+ Ne7 20. Nc3 Rg8 21. Re1
+Nb4 22. Kf1 {[%csl Ge1][%cal Re5e7] [#]} Nxc2 23. Qxe7# {Las negras se
+quedaron fuera de juego tras la apertura.  Gravedad del error: Blancas=1.15/
+Negras=0.69} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio38"]
+[Black "Resken"]
+[Result "0-1"]
+[ECO "C46"]
+[WhiteElo "1186"]
+[BlackElo "1640"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "48"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,47,-383,-329,-426,-441,-493,-491,-531,-520,-530,-472,-516,-524,-526,
+-522,-523,-521,-527,-511,-503,-504,-549,-547,-552,-551,-572,-560,-591,-582,
+-630,-582,-664,-661,-720,-721,-766,-522,-29998,-29999,-29999]} 1. e4 e5 2. Nf3
+Nc6 3. Nc3 Bc5 4. d4 exd4 5. Nxd4 Nxd4 6. Nd5 $146 {C46: Apertura de los
+cuatro caballos (Jugadas inusuales).} ({Predecesor:} 6. Be3 Ne6 7. Be2 Nf6 8.
+O-O O-O 9. g3 b6 10. Na4 Bxe3 11. fxe3 Bb7 12. e5 {0-1 (33) Petes,C-Guo,D
+Chess.com INT 2021}) 6... c6 7. c3 cxd5 8. cxd4 {Las negras están ganado
+claramente.} Bb4+ 9. Bd2 Qa5 10. Bxb4 Qxb4+ 11. Qd2 Qxd2+ 12. Kxd2 dxe4 13. f3
+exf3 14. gxf3 Nf6 15. Bb5 O-O 16. Rhe1 a6 17. Ba4 b5 18. Bb3 Bb7 19. Rac1 Rfe8
+20. Rh1 Bxf3 21. Rhf1 Re2+ 22. Kd1 Rxh2+ 23. Ke1 Re8+ 24. Be6 Rxe6# {El bando
+de las piezas negras tomó el control tras la apertura.  Gravedad del error:
+Blancas=0.35/Negras=0.09 (¡Impecable!)} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "txo1983"]
+[Black "PabloErandio"]
+[Result "0-1"]
+[ECO "C47"]
+[WhiteElo "1780"]
+[BlackElo "1941"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "54"]
+[EventDate "2026.??.??"]
+
+{[%evp 12,54,19,8,34,34,29,30,142,95,106,17,23,-106,-15,-16,-24,-58,-16,-147,
+-129,-253,-56,-327,-24,-33,27,-100,-16,-134,-40,-316,-322,-316,-304,-406,-400,
+-804,-349,-792,-578,-29995,-29996,-29996,-29997]} 1. e4 e5 2. Nf3 Nc6 3. Nc3
+Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Nxc6 bxc6 7. Bg5 Be7 {[%cal Of6e4] C47: Apertura
+de los cuatro caballos.} 8. e5 {[%tqu "En","","","","f6d5","",10]} Nd5 9. Bxe7
+(9. Nxd5 Bxg5 10. h4 Bh6 $15) 9... Nxe7 {[%eval 142,20] [%wdl 867,133,0]} (9...
+Qxe7 $11 {[%eval 30,24] [%wdl 51,944,5]} 10. Qd4 (10. Nxd5 cxd5 11. Qd4 Bb7 $11
+) 10... f6) 10. f4 $146 {[%eval 95,25] [%wdl 439,561,0]} (10. Qd4 $142 {
+[%eval 142,20] [%wdl 867,133,0]}) ({Predecesor:} 10. g3 O-O 11. Bg2 Ba6 12. Qd2
+Rb8 13. O-O-O Bc8 14. h4 c5 15. Be4 c6 16. h5 {1-0 (23) Jaskunas,A-Vilkys,B 
+(1356) Vilkaviskis 2016}) 10... O-O 11. Bc4 {[%eval 17,28] [%wdl 25,969,6]} (
+11. Qf3 $16 {[%eval 106,25] [%wdl 567,433,0]}) 11... d5 $11 {[%tqu "En","","",
+"","c4d3","",10]} 12. exd6 {[%eval -106,29] [%wdl 0,432,568]} (12. Bd3 $1 $11 {
+[%eval 23,27] [%wdl 33,963,4]}) {[%tqu "En","","","","e7f5","",10]} 12... cxd6
+{[%eval -15,31] [%wdl 5,976,19]} ({Mejor es} 12... Nf5 $1 $17 {[%eval -106,29]
+[%wdl 0,432,568]} 13. Qd2 Re8+ 14. Kf2 Ne3) 13. Qf3 d5 14. Bd3 {[%eval -58,20]
+[%wdl 1,873,126]} (14. O-O-O $11 {[%eval -24,28] [%wdl 3,968,29] pudiera ser
+más fuerte.}) 14... Ng6 {[%eval -16,29] [%wdl 5,974,21]} (14... d4 $15 {
+[%eval -58,20] [%wdl 1,873,126]} 15. Ne4 Rb8) 15. g3 {[%eval -147,19] [%wdl 0,
+102,898]} (15. O-O-O $11 {[%eval -16,29] [%wdl 5,974,21] permanece igual.})
+15... Re8+ $17 16. Kd2 {[%eval -253,24] [%wdl 0,1,999]} (16. Be2 $17 {[%eval
+-129,24] [%wdl 0,209,791]}) 16... Qb6 $2 {[%eval -56,27] [%wdl 1,881,118] [#]}
+(16... Be6 $19 {[%eval -253,24] [%wdl 0,1,999]} 17. Qh5 c5) 17. b3 $2 {[%eval
+-327,22] [%wdl 0,0,1000][%mdl 8192]} (17. Rae1 $15 {[%eval -56,27] [%wdl 1,881,
+118]} Bb7 18. Nd1) {[%tqu "En","","","","b6a5","",10]} 17... Qb4 $2 {[%eval
+-24,29] [%wdl 3,967,30]} (17... Qa5 $1 $19 {[%eval -327,22] [%wdl 0,0,1000]}
+18. Qh5 {[%tqu "En","","","","c8g4","",10]} Bg4 $1 {[%mdl 512]} 19. Qxg4 d4) {
+[%tqu "En","","","","a2a3","",10]} 18. a3 $1 $11 {[%tqu "En","","","","b4d6",
+"",10]} Qd4 {[%eval 27,25] [%wdl 34,963,3]} (18... Qd6 $1 $15 {[%eval -33,28] 
+[%wdl 2,954,44]}) 19. Ne2 {[%eval -100,22] [%wdl 0,502,498]} (19. Rae1 $11 {
+[%eval 27,25] [%wdl 34,963,3]} Bd7 20. Na4) {[%tqu "En","","","","d4f6","",10]}
+19... Qc5 {[%eval -16,26] [%wdl 5,974,21] &Nero es más activo.} ({Las negras
+deberían intentar} 19... Qf6 $1 $17 {[%eval -100,22] [%wdl 0,502,498][%cal
+Og6e5] ...Ce5! es la amenaza fuerte.} 20. Raf1 Bh3) {[%tqu "En","","","",
+"h1e1","",10]} 20. c3 {[%eval -134,23] [%wdl 0,173,827]} (20. Rhe1 $1 $11 {
+[%eval -16,26] [%wdl 5,974,21] mantiene el equilibrio.}) {[%tqu "En","","","",
+"c5b6","",10]} 20... a5 {[%eval -40,28] [%wdl 2,937,61]} ({Las negras
+deberían jugar} 20... Qb6 $1 $17 {[%eval -134,23] [%wdl 0,173,827] Las
+blancas deben ahora evitar ...Ab7.} 21. b4 (21. Nd4 $2 c5 $19) 21... c5) 21.
+Bxg6 $2 {[%eval -316,20] [%wdl 0,0,1000][%mdl 8192]} (21. Nd4 $15 {[%eval -40,
+28] [%wdl 2,937,61]}) 21... hxg6 $19 ({Más débil es} 21... fxg6 22. Nd4 $17)
+22. Nd4 Bf5 {[#] Esperando por ...Ae4.} 23. Nxf5 gxf5 24. Qd3 {[%eval -804,22]
+[%wdl 0,0,1000]} (24. Rhe1 $142 {[%eval -400,25] [%wdl 0,0,1000]} Rxe1 25. Rxe1
+) 24... Re6 {[%eval -349,25] [%wdl 0,0,1000]} (24... Qf2+ $142 {[%eval -804,22]
+[%wdl 0,0,1000]} 25. Kc1 a4) 25. a4 $2 {[%eval -792,22] [%wdl 0,0,1000]} (25.
+Rhe1 {[%eval -349,25] [%wdl 0,0,1000]} Rxe1 26. Rxe1) 25... Rae8 {apuntando a .
+..Df2+.} 26. Rhe1 Qf2+ 27. Re2 Rxe2+ {Gravedad del error: Blancas=1.32/
+Negras=0.98} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "aitoruria"]
+[Black "Hector_2017"]
+[Result "1-0"]
+[ECO "B01"]
+[WhiteElo "2070"]
+[BlackElo "1207"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "71"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,71,29,133,125,119,17,154,141,435,300,414,418,500,477,733,653,798,787,
+871,859,859,833,1039,940,996,973,1089,1080,1165,1166,29988,29989,29989,29990,
+29989,29989,29991,29984,29981,29982,3922,1428,1159,1003,29991,29980,29973,1222,
+29991,29991,29992,29992,29992,29992,29993,29994,29994,29995,29995,29996,29996,
+29997,29997,29998]} 1. e4 d5 2. Nc3 d4 3. Nce2 Be6 $146 ({Predecesor:} 3... c5
+4. Ng3 Nc6 5. Bc4 Na5 6. Bb5+ Bd7 7. a4 a6 8. Bxd7+ Qxd7 9. d3 g6 10. f4 h5 11.
+Nf3 h4 12. Ne2 Nc6 13. Neg1 {1-0 (42) Rapport,R (2714)-Le,Q (2729) London 2025}
+) 4. d3 Bg4 5. f3 Bh5 {[%eval 133,25] [%wdl 735,264,1]} (5... Bc8 $11 {[%eval
+29,28] [%wdl 97,886,17]}) 6. g4 {A00: Aperturas Irregulares.} Bg6 7. h3 {
+[%eval 17,25] [%wdl 69,906,25]} (7. f4 $16 {[%eval 119,21] [%wdl 647,352,1]})
+7... Nf6 {[%eval 154,23] [%wdl 845,155,0]} (7... e5 $11 {[%eval 17,25] [%wdl
+69,906,25]}) {[%tqu "En","","","","f3f4","",10]} 8. f4 $1 $16 {[#] f5 es la
+amenaza fuerte. Las blancas están claramente mejor.} Nd5 $2 {[%eval 435,23] 
+[%wdl 1000,0,0][%mdl 8192] Las negras cometen un error y pierden} (8... h6 $16
+{[%eval 141,23] [%wdl 784,215,1]}) 9. f5 Ne3 10. Bxe3 Bxf5 11. Bxd4 g6 {
+[%eval 733,24] [%wdl 1000,0,0]} (11... e5 $142 {[%eval 477,26] [%wdl 1000,0,0]}
+12. Bxe5 Nc6) 12. exf5 gxf5 13. Bxh8 fxg4 14. hxg4 Nc6 15. Rxh7 Ne5 16. Bg2
+Nxg4 17. Qd2 Nf6 18. Bxf6 exf6 19. Bxb7 Rb8 20. Bc6+ Ke7 21. Qe3+ Kd6 22. Nd4
+Kc5 23. Ne6+ Kxc6 24. Nxd8+ Rxd8 25. Rxf7 Bc5 26. Qe6+ Rd6 27. Qe8+ Kb7 28. Ne2
+{[%eval 1222,27] [%wdl 1000,0,0]} (28. Qe4+ $142 {[%eval 32714,30] [%wdl 1000,
+0,0]} Kb6 {[%tqu "En","","","","a2a4","",10]} 29. a4 $1 a5 {[%tqu "En","","",
+"","e4c4","",10]} 30. Qc4 $1 c6 31. Ne2 Rd5 32. c3 Rh5 33. Qb3+ Bb4 34. cxb4)
+28... Bb6 29. d4 {Las blancas dan mate.} Rc6 30. d5 Rc5 31. Rf8 {[%csl Gf8]
+[%cal Re8c8]} Rxd5 32. Qa8+ Ka6 33. Qxd5 Ba5+ 34. c3 c6 35. Qxc6+ Bb6 36. a4 {
+Gravedad del error: Blancas=0.37/Negras=1.30} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Resken"]
+[Black "erandio33"]
+[Result "1-0"]
+[ECO "C50"]
+[WhiteElo "1639"]
+[BlackElo "1319"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "39"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,38,60,143,150,137,68,105,-53,186,188,257,254,474,467,712,712,764,762,
+811,800,29987,1276,29981,1243,29993,29990,29990,29992,29994,29995,29999]} 1. e4
+e5 2. Nf3 Nc6 3. Bc4 d5 4. Bxd5 Nf6 5. Bb3 Bg4 $146 {[%eval 143,21] [%wdl 799,
+201,0]} (5... Nxe4 $14 {[%eval 60,24] [%wdl 216,778,6]} 6. Qe2 Bf5) ({
+Predecesor:} 5... Nxe4 6. d3 Nc5 7. Qe2 Nxb3 8. axb3 Bb4+ 9. c3 Bc5 10. Nxe5 f6
+11. Nxc6+ Kf7 12. Nxd8+ Rxd8 {1-0 (30) Ahmed,N (1353)-Maatoug,M Bouhjar 2021})
+6. d3 $16 {C50: Giuoco Pianissimo y Defensa Húngara.} Nd4 7. h3 {[%eval 68,23]
+[%wdl 263,733,4]} ({Las blancas deberían jugar} 7. Nbd2 $16 {[%eval 137,21] 
+[%wdl 768,232,0]}) 7... Bb4+ {[%eval 105,24] [%wdl 543,456,1]} (7... Bxf3 $14 {
+[%eval 68,23] [%wdl 263,733,4] merece consideración.} 8. gxf3 Bc5) 8. Bd2 $2 {
+[%eval -53,27] [%wdl 7,814,179] [#]} (8. c3 $16 {[%eval 105,24] [%wdl 543,456,
+1]} Bxf3 9. gxf3 Nxb3 10. axb3 (10. Qxb3 Be7 $16)) 8... Bxd2+ $2 {[%eval 186,
+26] [%wdl 952,48,0] Las negras cometen un error y pierden} (8... Bxf3 $15 {
+[%eval -53,27] [%wdl 7,814,179] mantiene la ventaja.} 9. gxf3 Bxd2+ 10. Nxd2
+Nh5) 9. Nbxd2 $18 Bh5 {[%eval 257,21] [%wdl 997,3,0]} (9... Nxf3+ $142 {
+[%eval 188,25] [%wdl 965,35,0]} 10. Nxf3 Bxf3 11. Qxf3 O-O) 10. g4 Bxg4 {
+[%eval 474,21] [%wdl 1000,0,0]} (10... Bg6 {[%eval 254,24] [%wdl 997,3,0]} 11.
+Nxe5 Nd7) 11. hxg4 Nxg4 {[%eval 712,21] [%wdl 1000,0,0]} (11... Nxb3 $142 {
+[%eval 467,24] [%wdl 1000,0,0]} 12. axb3 Nxg4) 12. Nxd4 Qxd4 13. Qxg4 Qd6 14.
+Qxg7 Qc6 15. Qxh8+ {[%eval 1276,27] [%wdl 1000,0,0]} (15. Bxf7+ $142 {[%eval
+32742,22] [%wdl 1000,0,0]} Kd8 16. Qxh8+ Kd7 17. Qxa8 h5 18. Qe8+ Kd6 19. Qf8+
+Kd7 20. Be8+ Ke6 21. Bxh5 Qxe4+ 22. dxe4 Kd7 23. Be8+ Ke6 24. Rh6#) 15... Ke7
+16. Qxa8 {[%eval 1243,26] [%wdl 1000,0,0]} (16. Qxe5+ $142 {[%eval 32730,27] 
+[%wdl 1000,0,0]} Kd7 17. Qf5+ Kd8 18. Rxh7 Qg6 19. Qd5+ Ke7 20. Rxf7+ Qxf7 21.
+Qxf7+ Kd6 22. Nc4+ Kc5 23. Qh5+ Kd4 24. Qe5#) 16... Qb6 17. Nc4 {Las blancas
+dan mate.} Qc6 18. Rxh7 Qd7 19. Nxe5 Qd6 20. Rxf7# {Gravedad del error:
+Blancas=0.46/Negras=1.71} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "PabloErandio"]
+[Black "aitoruria"]
+[Result "1-0"]
+[ECO "C41"]
+[WhiteElo "1932"]
+[BlackElo "2082"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "109"]
+[EventDate "2026.??.??"]
+
+{[%evp 12,109,0,0,29,29,50,9,39,-57,2,-38,40,40,41,47,100,102,102,102,115,97,
+415,127,141,25,51,-36,0,-102,503,362,346,22,25,22,56,53,279,140,183,0,34,0,238,
+233,224,183,168,-5,-6,-16,-12,-21,-10,-388,-384,-489,-442,-508,-474,-512,-471,
+-491,-467,-479,-462,-491,-416,-374,-368,-471,-457,-449,-439,-432,-344,-437,
+-313,-433,-414,-413,-419,-409,-362,-29990,-29986,-29991,-318,-464,-456,-447,
+-390,-440,-13,-336,-10,-509,-22,-29988]} 1. e4 d6 2. d4 Nf6 3. Nc3 Nbd7 4. Nf3
+e5 5. dxe5 dxe5 6. Bc4 Bb4 {actualmente está obteniendo mejores resultados
+que 6...Be7.} 7. O-O Bxc3 {C41: Defensa Philidor.} 8. bxc3 c6 9. Bg5 {[%eval 9,
+28] [%wdl 29,957,14]} (9. Qe2 $14 {[%eval 50,26] [%wdl 127,870,3]}) 9... Qc7
+$146 ({Predecesor:} 9... O-O 10. Qe2 h6 11. Bh4 Qa5 12. Rad1 Qxc3 13. Rd6 b5
+14. Bb3 a5 15. a3 a4 {0-1 (32) Pavlov,M (1847)-Litvinov,M (2322) St Petersburg
+2018}) 10. Qd3 {[%eval -57,23] [%wdl 2,837,161]} (10. Bh4 $14 {[%eval 39,29] 
+[%wdl 85,910,5]}) 10... h6 {[%eval 2,29] [%wdl 22,959,19]} (10... b5 $15 {
+[%eval -57,23] [%wdl 2,837,161]} 11. Bb3 Nc5) 11. Bh4 {[%eval -38,29] [%wdl 5,
+912,83]} (11. Be3 $11 {[%eval 2,29] [%wdl 22,959,19] pudiera ser más fuerte.})
+{[%tqu "En","","","","b7b5","",10]} 11... g5 {[%eval 40,23] [%wdl 91,905,4]} (
+11... b5 $1 $15 {[%eval -38,29] [%wdl 5,912,83]} 12. Bb3 Nc5) 12. Bg3 $14 Nh5
+13. Rad1 {[%cal Of3e5]} Nxg3 {[%eval 100,21] [%wdl 505,495,0]} (13... O-O $14 {
+[%eval 47,27] [%wdl 113,884,3]}) 14. fxg3 $16 {[%cal Oc4f7]} (14. hxg3 $6 O-O
+$11) 14... f6 15. Nd2 {NOTEXT-110336. NOTEXT-110329.} Nc5 16. Qf3 Rf8 {[%eval
+415,23] [%wdl 1000,0,0][%mdl 8192]} (16... Qe7 $16 {[%eval 97,27] [%wdl 472,
+528,0] es una opción mejor.}) 17. Nb3 $2 {[%eval 127,25] [%wdl 766,234,0]} (
+17. Qh5+ $18 {[%eval 415,23] [%wdl 1000,0,0] es la jugada precisa para ganar.}
+Ke7 18. Qxh6) 17... Be6 18. Nxc5 {[%eval 25,26] [%wdl 29,968,3]} ({Las blancas
+deberían jugar} 18. Bxe6 $16 {[%eval 141,28] [%wdl 860,140,0]} Nxe6 19. Qh5+
+Ke7 20. h3 (20. Qxh6 Qb6+ 21. Kh1 Rad8 $14)) 18... Bxc4 $11 {[%tqu "En","","",
+"","f3f5","",10]} 19. Nd7 {[%eval -36,22] [%wdl 1,958,41] para evitar Db6+} (
+19. Qh5+ Qf7 20. Qxh6 Bxf1 $11) (19. Qf5 $1 $14 {[%eval 51,27] [%wdl 84,915,1]}
+Qe7 {[%tqu "En","","","","f1f2","",10]} 20. Rf2 $1 (20. Qg6+ $2 Bf7 $17)) {
+[%tqu "En","","","","f8f7","",10]} 19... Bxf1 {[%eval 0,29] [%wdl 5,990,5]} (
+19... Rf7 $1 $15 {[%eval -36,22] [%wdl 1,958,41]} 20. Qf5 (20. Nxf6+ Ke7 $15)
+20... Ke7) 20. Nxf8 {[%eval -102,27] [%wdl 0,469,531]} (20. Qxf1 $11 {[%eval 0,
+29] [%wdl 5,990,5]} Rf7 21. Qc4) {[%tqu "En","","","","f1c4","",10]} 20... Bxg2
+$2 {[%eval 503,26] [%wdl 1000,0,0][%mdl 8192]} 21. Qxf6 {[#] Cg6 sería
+matador ahora.} Qf7 22. Qxf7+ {[%eval 22,25] [%wdl 10,989,1]} (22. Qxe5+ $18 {
+[%eval 346,22] [%wdl 1000,0,0]} Kxf8 23. Qh8+ (23. Kxg2 Kg8 $16) 23... Qg8 24.
+Qf6+ (24. Qxh6+ Qg7 $18) 24... Qf7 25. Qxh6+ Qg7 26. Qd6+ Kg8 27. Kxg2) 22...
+Kxf7 23. Kxg2 (23. Rd7+ {da la sensación de ser más ardiente.} Kf6 24. Rd6+
+Ke7 25. Re6+) 23... Kxf8 $18 {[%eval 56,28] [%wdl 65,935,0][%mdl 4096] Final
+RT-RT} (23... Rxf8 $11 {[%eval 22,28] [%wdl 9,990,1]} 24. Rd7+ Ke6 25. Rxb7 Rd8
+) 24. Rd7 $14 {Las negras deben ahora evitar Rh3.} {[%tqu "En","","","","a8e8",
+"",10]} Rb8 $2 {[%eval 279,22] [%wdl 1000,0,0]} (24... Re8 $1 $14 {[%eval 53,
+28] [%wdl 54,946,0]}) {[%tqu "En","","","","g2h3","",10]} 25. Rh7 {[%eval 140,
+26] [%wdl 919,81,0]} (25. Kh3 $1 $18 {[%eval 279,22] [%wdl 1000,0,0]}) 25...
+Kg8 {[%eval 183,27] [%wdl 994,6,0]} (25... Rd8 $16 {[%eval 140,26] [%wdl 919,
+81,0]}) 26. Rd7 $2 {[%eval 0,28] [%wdl 2,996,2]} ({Única jugada:} 26. Rxh6 $18
+{[%eval 183,27] [%wdl 994,6,0] Amenazando con fuerza Tg6+.} Rd8 27. Kf3 (27.
+Rg6+ Kf7 $14)) 26... h5 {[%eval 34,34] [%wdl 18,982,0]} (26... g4 $11 {[%eval
+0,28] [%wdl 2,996,2] es superior.}) 27. Rd6 {[%eval 0,39] [%wdl 2,996,2]} (27.
+g4 $14 {[%eval 34,34] [%wdl 18,982,0]}) 27... h4 $2 {[%eval 238,27] [%wdl 1000,
+0,0]} (27... g4 $11 {[%eval 0,39] [%wdl 2,996,2]}) 28. Rg6+ $18 Kf7 {[%cal
+Bg8f7,Bf7f6,Bf6g5,Bg5f4,Bf4e4,Be4d5,Bd5e6][%mdl 32]} 29. Rxg5 hxg3 30. Rh5 {
+[%eval -5,36] [%wdl 2,995,3]} ({No haga} 30. Rxg3 $6 Rd8 $14) ({Pero no} 30.
+Rxe5 $6 gxh2 31. Rh5 (31. Kxh2 Rh8+ 32. Kg2 Kf6 $11) 31... Kg6 32. Rxh2 Rf8 $11
+) (30. hxg3 Rd8 $11) ({Las blancas deberían intentar} 30. h4 $18 {[%eval 168,
+30] [%wdl 985,15,0]}) 30... gxh2 $11 31. Kxh2 (31. Kf3 {es más complejo.} Rf8
+32. Ke3 Kg6 33. Rxh2 Rf1 34. Rg2+) 31... Kf6 32. Rh7 Kg5 {Y ahora ...Rf4
+ganaría.} 33. Rg7+ $2 {[%eval -388,26] [%wdl 0,0,1000][%mdl 8192] Las negras
+convierten la ventaja en una victoria de manera convincente.} (33. Kg3 $11 {
+[%eval -10,33] [%wdl 1,995,4] y Las blancas siguen a salvo.}) 33... Kf4 $19 34.
+Rg2 Kxe4 35. Re2+ Kd5 36. Rg2 Ke6 37. Rg3 Rh8+ 38. Kg2 Rh7 {inhibe Tg7.} 39.
+Kf2 Rf7+ 40. Ke2 Rf4 41. Re3 Kd5 42. Rg3 Re4+ 43. Kd2 Rf4 44. Kc1 Kc5 45. Kb2
+b5 {[%cal Bb7b5,Bb5b4][%mdl 32]} 46. Rd3 a5 47. Rd8 b4 48. Rf8 $2 {[%eval
+-32747,70] [%wdl 0,0,1000] [#]} (48. Re8 $19 {[%eval -362,23] [%wdl 0,0,1000]}
+e4 49. cxb4+ Kxb4 50. Ra8) 48... bxc3+ 49. Kb3 Rc4 $2 {[%eval -318,25] [%wdl 0,
+0,1000]} (49... Rxf8 {[%eval -32749,68] [%wdl 0,0,1000] da mate} 50. Kxc3 Rd8
+51. a4 e4 52. Kb2 e3 53. Kc3 e2 54. Kb2 e1=Q 55. Ka2 Rb8 56. c4 Qf2+ 57. Ka3
+Qb2#) 50. a4 {[%eval -464,29] [%wdl 0,0,1000]} (50. Rc8 $142 {[%eval -318,25] 
+[%wdl 0,0,1000]} Rf4 51. Ra8) 50... Rb4+ 51. Kxc3 e4 52. Kd2 e3+ $2 {[%eval
+-13,32] [%wdl 1,995,4]} (52... Rxa4 $19 {[%eval -440,23] [%wdl 0,0,1000]} 53.
+Re8 Rd4+ 54. Kc1 Kd5) 53. Ke2 $2 {[%eval -336,23] [%wdl 0,0,1000][%mdl 8192]} (
+53. Kxe3 $11 {[%eval -13,32] [%wdl 1,995,4] y Las blancas están bien.} Rxa4
+54. Kd3) {[%tqu "En","","","","c5d4","",10]} 53... Rxa4 $2 {[%eval -10,40] 
+[%wdl 1,995,4]} (53... Kd4 $1 $19 {[%eval -336,23] [%wdl 0,0,1000]} 54. Rf4+
+Kc3) 54. Rf5+ {[%eval -509,31] [%wdl 0,0,1000][%mdl 8192]} (54. Kxe3 $11 {
+[%eval -10,40] [%wdl 1,995,4]} Kc4 55. Rf4+ Kb5 56. Rf8) 54... Kb6 $2 {[%eval
+-22,29] [%wdl 0,992,8]} (54... Kc4 $19 {[%eval -509,31] [%wdl 0,0,1000]} 55.
+Kxe3 c5) 55. Rf4 $2 {[%eval -32743,60] [%wdl 0,0,1000][%mdl 40960] Gravedad
+del error: Blancas=1.14/Negras=1.01. ¿!Derrota por tiempo!?} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Resken"]
+[Black "PabloErandio"]
+[Result "0-1"]
+[ECO "C50"]
+[WhiteElo "1641"]
+[BlackElo "1930"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "30"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,29,-77,0,0,0,0,0,-90,-95,-352,-330,-430,-315,-380,-272,-263,-256,
+-1066,-1031,-29994,-29995,-29999]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 f5 4. exf5 Nf6 5.
+O-O {[%tqu "En","","","","e5e4","",10]} d5 {[%eval 0,30] [%wdl 22,955,23]} ({
+Las negras deberían intentar} 5... e4 $1 $17 {[%eval -77,28] [%wdl 3,673,324]
+[%cal Re4f3]} 6. Nh4 d5) 6. Bb5 $11 {[#] Y ahora Cxe5 ganaría. C50: Giuoco
+Pianissimo y Defensa Húngara.} Bd6 {Esperando por ...0-0.} 7. Bxc6+ $146 ({
+Predecesor:} 7. d4 e4 8. Ne5 Bd7 9. Nxd7 Qxd7 10. Nc3 O-O 11. Be3 Qxf5 12. h3
+Nh5 13. Be2 {1-0 (30) Rakovec,A (1500)-Drofenik,T (1504) Postojna 2008}) 7...
+bxc6 {[%tqu "En","","","","f3e5","",10]} 8. d4 {[%eval -90,23] [%wdl 1,595,404]
+} (8. Nxe5 $1 $11 {[%eval 0,30] [%wdl 22,955,23] permanece igual.} Bxe5 9. Re1)
+8... e4 $17 9. Nfd2 {[%eval -352,22] [%wdl 0,0,1000][%mdl 8192]} (9. Ne5 $17 {
+[%eval -95,24] [%wdl 1,542,457]}) 9... O-O $19 ({Y no} 9... Bxf5 10. h3 $17)
+10. f3 Bxf5 11. fxe4 Nxe4 12. Nxe4 Bxe4 $40 {[%mdl 128] Las negras atacan con
+fuerza. Muy bien, lo de la pareja de alfiles..} 13. Nd2 $2 {[%eval -1066,19] 
+[%wdl 0,0,1000]} (13. Rxf8+ {[%eval -256,25] [%wdl 0,1,999]} Qxf8 14. Nc3)
+13... Qh4 {[%csl Gd6][%cal Rh4h2] [#]} 14. g3 {[%tqu "En","","","","d6g3","",
+10]} Bxg3 $1 {[%csl Gh4][%cal Rg3h2][%mdl 512]} 15. Nxe4 (15. Nf3 Bxh2+) 15...
+Qxh2# {Las blancas tienen una posición inferior tras la apertura.  Gravedad
+del error: Blancas=1.79/Negras=0.37} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio38"]
+[Black "erandio84"]
+[Result "1-0"]
+[ECO "C48"]
+[WhiteElo "1148"]
+[BlackElo "1221"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "63"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,63,-445,-341,-331,-147,-421,336,-780,-379,-652,-102,-66,322,-131,282,
+-303,282,270,307,298,373,374,371,-251,-251,-309,-232,-395,-388,-379,-358,-838,
+-827,-923,-678,-665,0,-627,-582,-613,-587,-691,-468,-29992,-29992,-29994,
+-29995,-29995,65,-990,412,409,349,194,146,50]} 1. e4 e5 2. Nf3 Nf6 3. Nc3 Nc6
+4. Bb5 a6 5. Nxe5 Nxe5 $146 ({Predecesor:} 5... Nxe4 6. Nxe4 Bd6 7. Ng3 O-O 8.
+f4 f5 9. c3 Qe7 10. Ne4 axb5 11. Nxd6 b4 12. a4 {0-1 (12) Alaguzov,M (2194)
+-Jumabayev,R (2421) Astana 2007}) 6. Ba4 {C48: Apertura de los cuatro caballos
+(Defensa Rubinstein).} Neg4 {[%eval -147,25] [%wdl 0,162,838]} (6... c5 $19 {
+[%eval -331,24] [%wdl 0,0,1000] Amenazan ganar con ...b5.} 7. d4 cxd4 8. Qxd4
+Nc6 9. Bxc6 dxc6 10. Qxd8+ Kxd8) 7. e5 $2 {[%eval -421,26] [%wdl 0,0,1000]
+[%mdl 8192]} (7. h3 $17 {[%eval -147,25] [%wdl 0,162,838]} b5 8. Bb3) 7... Nh5
+$4 {[%eval 336,25] [%wdl 1000,0,0][%mdl 8192]} (7... Nxe5 $19 {[%eval -421,26]
+[%wdl 0,0,1000]} 8. Qe2 Qe7) 8. f3 $4 {[%eval -780,19] [%wdl 0,0,1000][%mdl
+8192]} (8. Qxg4 $18 {[%eval 336,25] [%wdl 1000,0,0]} g6 9. d4) 8... Nxe5 {
+[%eval -379,22] [%wdl 0,0,1000]} (8... Qh4+ $142 {[%eval -780,19] [%wdl 0,0,
+1000]} 9. g3 {[%tqu "En","","","","h5g3","",10]} Nxg3 $1 {[%mdl 512]}) 9. g4 $2
+{[%eval -652,20] [%wdl 0,0,1000]} (9. O-O {[%eval -379,22] [%wdl 0,0,1000]} Nc6
+10. d4) 9... Nxf3+ $2 {[%eval -102,23] [%wdl 1,479,520]} 10. Qxf3 $17 {[#] 0-0
+es la amenaza fuerte.} {[%tqu "En","","","","d8h4","",10]} Qe7+ $4 {[%eval 322,
+25] [%wdl 1000,0,0][%mdl 8192]} (10... Qh4+ $1 $15 {[%eval -66,25] [%wdl 1,794,
+205] mantiene la ventaja.} 11. Kd1 Nf6) 11. Kf1 $2 {[%eval -131,25] [%wdl 0,
+225,775] ¡Un contraataque activo!} (11. Kd1 $18 {[%eval 322,25] [%wdl 1000,0,
+0]} Qf6 12. Qe2+ Qe7 13. gxh5) {[%tqu "En","","","","e7f6","",10]} 11... Nf6 $2
+{[%eval 282,24] [%wdl 999,1,0][%mdl 8192]} (11... Qf6 $1 $17 {[%eval -131,25] 
+[%wdl 0,225,775][%cal Rf6f3] y la vida brilla.} 12. Ke2 Qxf3+ 13. Kxf3 {
+[%tqu "En","","","","b7b5","",10]} b5 $1 14. Re1+ Kd8 15. gxh5 bxa4) 12. Qe2 {
+[%eval -303,24] [%wdl 0,0,1000][%mdl 8192]} (12. g5 $18 {[%eval 282,24] [%wdl
+999,1,0] y la vida sonríe a Las blancas.}) 12... Ne4 $4 {[%eval 282,25] [%wdl
+999,1,0][%mdl 8192]} 13. Qxe4 $18 Qxe4 14. Nxe4 Bb4 15. c3 Be7 16. Bxd7+ $4 {
+[%eval -251,19] [%wdl 0,0,1000][%mdl 8192]} Bxd7 $19 ({Y no} 16... Kxd7 17. Rg1
+$15) 17. Rg1 O-O {[%cal Bh8f8,Bf8f5,Bf5f4,Bf4g4,Bg4g6][%mdl 32]} 18. d4 $2 {
+[%eval -395,23] [%wdl 0,0,1000]} (18. Ke2 {[%eval -232,26] [%wdl 0,1,999]})
+18... f5 19. gxf5 Rxf5+ 20. Bf4 $2 {[%eval -838,25] [%wdl 0,0,1000]} (20. Ke2 {
+[%eval -358,23] [%wdl 0,0,1000]} Bb5+ 21. Kd1) 20... Rxf4+ 21. Kg2 Rg4+ 22. Kf3
+Bf5 {[%eval 0,27] [%wdl 3,994,3]} 23. Nf2 $2 {[%eval -627,22] [%wdl 0,0,1000]
+[%mdl 8192]} (23. Rxg4 $11 {[%eval 0,27] [%wdl 3,994,3]} Bxg4+ 24. Kxg4) 23...
+Rg6 24. Rae1 {[%tqu "En","","","","a8f8","",10]} Rf8 $1 25. Rxe7 (25. Rxg6
+Bxg6+) 25... Bg4+ 26. Kg3 {[%eval -32751,83] [%wdl 0,0,1000] [#]} (26. Ke3 $19
+{[%eval -468,22] [%wdl 0,0,1000]} Rf3+ 27. Ke2 Rf7+ 28. Rxg4 Rxe7+ 29. Kd3)
+26... Be2+ 27. Ng4 Rxg4+ 28. Kh3 Rf6 $2 {[%eval 65,30] [%wdl 114,886,0]} 29.
+Rxe2 $2 {[%eval -990,30] [%wdl 0,0,1000][%mdl 8192]} Rh6+ $4 {[%eval 412,12] 
+[%wdl 1000,0,0][%mdl 8192]} (29... Rxg1 $19 {[%eval -990,30] [%wdl 0,0,1000]
+[%cal Rf6h6] evita el desastre.} 30. Rg2 Rh6+ 31. Kg3 Rg6+ 32. Kf4 R6xg2) 30.
+Kxg4 $18 Rg6+ 31. Kh3 {[%eval 194,24] [%wdl 996,4,0]} (31. Kf5 $142 {[%eval
+349,21] [%wdl 1000,0,0]} Rxg1 32. Re8+ Kf7 33. Rc8) 31... Rxg1 32. Re8+ {
+[%eval 50,21] [%wdl 43,957,0] Gravedad del error: Blancas=2.29/Negras=2.32} ({
+Las blancas deben jugar} 32. Re7 $16 {[%eval 146,24] [%wdl 943,57,0]}) 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Hector_2017"]
+[Black "txo1983"]
+[Result "0-1"]
+[ECO "C00"]
+[WhiteElo "1217"]
+[BlackElo "1780"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "76"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,76,-51,29,29,32,-115,-74,-204,-198,-391,-385,-390,-299,-377,-380,-402,
+-398,-459,-437,-516,-515,-541,-516,-508,-501,-516,-231,-213,797,786,869,869,
+950,912,958,940,937,933,1117,1090,1078,1055,1760,29987,29987,29990,29992,29993,
+29993,29994,29995,29996,29996,29993,29993,29992,29984,525,29988,29989,29988,
+1103,998,986,29997,281,257,0,0]} 1. e4 e6 2. Nf3 d5 3. e5 c5 4. Bb5+ Bd7 5. a4
+Bxb5 {[%eval 29,25] [%wdl 82,906,12]} (5... a6 $15 {[%eval -51,24] [%wdl 9,813,
+178]} 6. Bxd7+ Nxd7) 6. axb5 $11 {C00: Defensa Francesa (Segundas jugadas
+blancas inusuales).} Ne7 $146 ({Predecesor:} 6... Qb6 7. Qe2 a6 8. c4 Ne7 9.
+Nc3 dxc4 10. Qxc4 axb5 11. Rxa8 bxc4 12. Rxb8+ Kd7 {0-1 (44) Escudero,
+J-Raigosa,A (1872) Cartago 2010}) 7. Ng5 {[%eval -115,23] [%wdl 0,364,636]} (7.
+d3 $14 {[%eval 32,27] [%wdl 74,918,8]}) 7... h6 {[%eval -74,27] [%wdl 2,720,
+278]} ({Las negras deberían intentar} 7... Ng6 {[%eval -115,23] [%wdl 0,364,
+636]} 8. d3 Nxe5) 8. Qh5 {[%eval -204,20] [%wdl 0,21,979]} (8. Nf3 $17 {
+[%eval -74,27] [%wdl 2,720,278]}) 8... g6 $19 9. Nxf7 $2 {[%eval -391,19] 
+[%wdl 0,0,1000] [#]} (9. Qh3 {[%eval -198,24] [%wdl 0,27,973]}) 9... Kxf7 10.
+Qf3+ Kg7 11. d3 Nd7 {inhibe Df6+.} 12. Qh3 Nf5 13. Nc3 {[%cal Bb1c3,Bc3a4,
+Ba4c5][%mdl 32]} Nxe5 14. d4 cxd4 15. Na4 Bb4+ 16. c3 dxc3 17. bxc3 Bc5 {
+[%eval -231,21] [%wdl 0,3,997]} 18. Nxc5 Qc7 $4 {[%eval 797,22] [%wdl 1000,0,0]
+[%mdl 8192]} (18... Qc8 $19 {[%eval -213,23] [%wdl 0,5,995]} 19. Bf4 Nf7) 19.
+Nxe6+ $18 Kf6 20. Nxc7 Rhc8 21. Nxa8 Rxa8 22. g4 Nd6 23. Qxh6 Re8 24. Bg5+ Ke6
+25. Rxa7 {[%cal Ba1a7,Ba7b7,Bb7c7][%mdl 32]} Kd7 26. Qg7+ Ndf7 27. Rxb7+ Kd6
+28. Qf6+ Kc5 29. Rc7+ Kxb5 30. Rb7+ Kc4 31. Rc7+ Kb3 32. Rb7+ Kc2 33. Qc6 {
+[%eval 525,23] [%wdl 1000,0,0]} Nd3+ 34. Kf1 Nxg5 35. Qxd5 {[%eval 1103,24] 
+[%wdl 1000,0,0]} (35. Qxe8 $142 {[%eval 32744,48] [%wdl 1000,0,0]} Ne4 36. Qa4+
+Kd2 37. Qa2+ Kxc3 38. Rb3+ Kd4 {[%tqu "En","","","","b3d3","",10]} 39. Rxd3+ $1
+{[%mdl 512]} Kxd3 40. Qxd5+ Kc2 41. Qxe4+ Kc3 42. Ke2) 35... Re1+ 36. Kg2 {
+[#] Amenazando mate con Db3+.} Re5 37. Kg3 $2 {[%eval 281,24] [%wdl 1000,0,0]}
+(37. Qb3+ {[%eval 32762,81] [%wdl 1000,0,0] da mate} Kd2 38. Rd1+ Ke2 39. Qc2#)
+37... Rxd5 38. Kh4 $2 {[%eval 0,44] [%wdl 2,995,3]} (38. Re7 $18 {[%eval 257,
+26] [%wdl 1000,0,0]} Nc5 39. Rhe1 Rd3+ 40. Kg2) 38... Ne4 {[%mdl 32768]
+Gravedad del error: Blancas=0.63/Negras=0.45. ¿!Derrota por tiempo!?} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "aitoruria"]
+[Black "Erandio1"]
+[Result "1-0"]
+[ECO "C70"]
+[WhiteElo "2081"]
+[BlackElo "1591"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "85"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,85,34,73,-16,19,3,76,78,75,78,86,47,120,13,120,118,364,375,369,367,
+415,417,421,306,482,467,483,488,462,333,499,505,620,413,396,407,621,472,505,
+-547,-540,-534,-522,-562,-465,-473,-462,-555,-505,-483,-453,-562,-561,-553,
+-544,-569,-540,-554,-553,-531,-11,-801,-17,-14,29999,-489,-25,-999,-964,-29977,
+-965,-8244,-1197,-29975,-1356,-29991,-29988,-5200]} 1. e4 e5 2. Nf3 Nc6 3. Bb5
+{[%cal Bf1b5,Bb5a4,Ba4b3][%mdl 32]} a6 4. Ba4 b5 5. Bb3 Bc5 {[%eval 73,19] 
+[%wdl 298,698,4]} (5... Nf6 $14 {[%eval 34,24] [%wdl 113,872,15]}) {[%tqu "En",
+"","","","c2c3","",10]} 6. d4 {[%eval -16,24] [%wdl 26,906,68] C70: Ruy López
+(Desviaciones en la jugada 4, Variante Noruega y Schliemann diferida).} (6. c3
+$1 $16 {[%eval 73,19] [%wdl 298,698,4]}) 6... exd4 {[%eval 19,19] [%wdl 68,911,
+21]} (6... Bxd4 $142 {[%eval -16,24] [%wdl 26,906,68]} 7. a4 Bb7) 7. c3 {
+[%cal Rc3d4]} dxc3 $146 {[%eval 76,23] [%wdl 312,685,3]} (7... d5 $11 {[%eval
+3,24] [%wdl 42,923,35]}) ({Predecesor:} 7... Qf6 8. O-O a5 9. a4 b4 10. Bg5 Qd6
+11. Nbd2 dxc3 12. Nc4 Qxd1 13. Raxd1 d6 {1-0 (69) Bonow,V (1844)-Teske,H (2022)
+Remote email 2006}) {[%tqu "En","","","","b3f7","",10]} 8. Bxf7+ $1 $16 {
+[%mdl 64] [#] Señuelo. Las blancas están mejor.} Kxf7 9. Qd5+ Ke8 {...De7 es
+la amenaza fuerte.} 10. Qxc5 {[%eval 47,25] [%wdl 108,889,3]} ({Las blancas
+deberían jugar} 10. Qh5+ $16 {[%eval 86,22] [%wdl 371,628,1]} Kf8 11. Qxc5+
+Qe7 12. Qxe7+ (12. Qxc3 Qxe4+ 13. Be3 d6 $15) 12... Ncxe7 13. Nxc3) 10... Nf6 {
+[%eval 120,23] [%wdl 687,313,0]} ({Mejor es} 10... Qe7 $14 {[%eval 47,25] 
+[%wdl 108,889,3]} 11. Qxe7+ Ncxe7) 11. e5 {[%eval 13,25] [%wdl 31,958,11]} ({
+Mucho menos fuerte es} 11. Qxc3 $6 Nxe4 12. Qxg7 Qf6 13. Qxf6 Nxf6 $14) (11.
+Nxc3 $16 {[%eval 120,23] [%wdl 687,313,0] apuntando a e5.} Qe7 12. Qe3) {
+[%tqu "En","","","","c3b2","",10]} 11... Ne4 {[%eval 120,22] [%wdl 687,313,0]}
+(11... cxb2 $1 $11 {[%eval 13,25] [%wdl 31,958,11] mantiene el equilibrio.} 12.
+Bxb2 Nh5) 12. Qe3 cxb2 $2 {[%eval 364,23] [%wdl 1000,0,0]} 13. Bxb2 $18 Qe7 14.
+Qxe4 Bb7 15. O-O Na5 16. Qf4 Kd8 {[%eval 482,20] [%wdl 1000,0,0]} (16... Rf8 {
+[%eval 306,26] [%wdl 1000,0,0] es una defensa mejor.} 17. Qg4 Nc4) 17. Ba3 Qe6
+18. Ng5 Qg6 19. Qg3 h5 {[%eval 499,24] [%wdl 1000,0,0]} (19... h6 {[%eval 333,
+23] [%wdl 1000,0,0] valía la pena intentarlo.} 20. Nf3 Qxg3 21. fxg3 Nc4) 20.
+e6 h4 21. e7+ Ke8 22. Qg4 Bc8 {[%eval 621,19] [%wdl 1000,0,0]} (22... Nc4 $142
+{[%eval 407,21] [%wdl 1000,0,0]} 23. Re1 h3) 23. Qf4 {Df8+ sería matador
+ahora.} d6 24. Qf8+ {[%eval -547,23] [%wdl 0,0,1000][%mdl 8192]} Rxf8 $19 25.
+exf8=Q+ Kxf8 26. f4 Bf5 27. Nd2 Re8 28. Rfe1 Rxe1+ 29. Rxe1 Nc4 30. Bb4 Nxd2
+31. Bxd2 h3 32. Bc3 hxg2 33. Kxg2 Qh5 34. h3 g6 $2 {[%eval -11,28] [%wdl 1,994,
+5]} (34... Qh4 $19 {[%eval -531,22] [%wdl 0,0,1000]} 35. Bd2 Bd7) 35. Ne6+ $2 {
+[%eval -801,23] [%wdl 0,0,1000][%mdl 8192]} (35. Bf6 $11 {[%eval -11,28] [%wdl
+1,994,5]}) 35... Kf7 $2 {[%eval -17,26] [%wdl 1,992,7]} (35... Bxe6 $19 {
+[%eval -801,23] [%wdl 0,0,1000]} 36. Re3 {[%tqu "En","","","","h5c5","",10]}
+Qc5 $1) 36. Ng5+ $11 Kg8 $2 {[%eval 32766,28] [%wdl 1000,0,0][%mdl 8192] [#]} (
+36... Kf8 $11 {[%eval -14,25] [%wdl 1,993,6]} 37. Bf6 {[%tqu "En","","","",
+"f5h3","",10]} Bxh3+ $1 {[%mdl 512]} 38. Nxh3 Qd5+ 39. Kg3 Qd3+ 40. Kh4 Qc4)
+37. Bd4 $4 {[%eval -489,22] [%wdl 0,0,1000][%mdl 8192]} (37. Re8# {[%eval
+32766,28] [%wdl 1000,0,0]}) {[%tqu "En","","","","f5h3","",10]} 37... Kf8 $2 {
+[%eval -25,28] [%wdl 1,987,12]} (37... Bxh3+ $1 $19 {[%eval -489,22] [%wdl 0,0,
+1000]} 38. Nxh3 Qd5+ 39. Kg3 Qxd4) 38. Re8+ $2 {[%eval -999,19] [%wdl 0,0,1000]
+[%mdl 8192]} Kxe8 $19 39. Bg7 c5 {[%eval -965,21] [%wdl 0,0,1000]} (39... Qe2+
+$142 {[%eval -32721,26] [%wdl 0,0,1000]} 40. Kg3 Qe3+ 41. Kg2 Qxf4 42. Bf6 Bd3
+43. Bc3 Bf1+ 44. Kg1 Bc4 45. Be1 Qxg5+ 46. Kf2 Qf4+ 47. Kg1 Bd5 48. Bf2 Qg5+
+49. Kf1 Bc4+ 50. Ke1 Qc1#) 40. Bf6 Kd7 {Y ahora ...De2+ ganaría.} 41. Be7 Kc6
+{[%eval -1356,24] [%wdl 0,0,1000]} (41... Qe2+ $142 {[%eval -32717,27] [%wdl 0,
+0,1000]} 42. Kg3 Kxe7 43. a3 c4 44. a4 c3 45. Nf3 c2 46. Ng1 Qe3+ 47. Kg2 Be4+
+48. Nf3 Qxf3+ 49. Kh2 Qg2#) 42. Kf1 Kd5 43. Ke1 {[%mdl 32768] Una partida
+salvaje.  Gravedad del error: Blancas=0.71/Negras=0.62. Error del sensor del
+tablero (Re4/e5)?} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio84"]
+[Black "PabloErandio"]
+[Result "0-1"]
+[ECO "C50"]
+[WhiteElo "1222"]
+[BlackElo "1929"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "42"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,42,62,195,110,105,-8,0,-269,-190,-409,-415,-397,-265,-282,-211,-199,
+-195,-409,-407,-817,-399,-450,-35,-37,-39,-741,-721,-911,-904,-884,-862,-1255,
+-1134,-1366,-1170]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 f5 4. exf5 d5 5. Bb5 {[%tqu
+"En","","","","f8d6","",10]} Nf6 {[%eval 195,22] [%wdl 955,45,0]} ({Mejor es} 
+5... Bd6 $1 $14 {[%eval 62,23] [%wdl 225,770,5]}) {[%tqu "En","","","","f3e5",
+"",10]} 6. Bxc6+ $146 {[%eval 110,25] [%wdl 587,412,1] C50: Giuoco Pianissimo
+y Defensa Húngara.} (6. Nxe5 $1 $18 {[%eval 195,22] [%wdl 955,45,0]} Bd7 7.
+Bxc6 bxc6 8. Qe2) ({Predecesor:} 6. Nxe5 Qe7 7. Qe2 Bd7 8. Nxd7 Qxe2+ 9. Bxe2
+Nxd7 10. Bb5 O-O-O 11. O-O Nde5 {0-1 (11) Plocek,J (1620)-Anderson,G Winnipeg
+2002}) 6... bxc6 $16 7. O-O {[%eval -8,26] [%wdl 16,954,30]} (7. Nxe5 $16 {
+[%eval 105,24] [%wdl 543,457,0]} Bd6 8. Nxc6) 7... Bd6 {...0-0 es la amenaza
+fuerte.} ({Resista} 7... Bxf5 8. Nxe5 Bd6 9. Nxc6 $14) {[%tqu "En","","","",
+"f3e5","",10]} 8. Ng5 $2 {[%eval -269,24] [%wdl 0,2,998][%mdl 8192] [#]} (8.
+Nxe5 $1 $11 {[%eval 0,22] [%wdl 22,955,23] y Las blancas no tienen de que
+preocuparse.} Bxe5 9. Re1) 8... O-O 9. c3 $2 {[%eval -409,18] [%wdl 0,0,1000]}
+(9. Ne6 {[%eval -190,22] [%wdl 0,32,968] era lo que pedía.} Bxe6 10. fxe6)
+9... Bxf5 $19 10. d4 exd4 11. cxd4 h6 12. Nf3 Bg4 {Muy bien, lo de la pareja
+de alfiles..} 13. Re1 {[%eval -409,22] [%wdl 0,0,1000] [#]} (13. Qd3 {[%eval
+-195,22] [%wdl 0,21,979] es una defensa mejor.}) 13... Ne4 14. h3 {[%eval -817,
+23] [%wdl 0,0,1000]} (14. Nbd2 $142 {[%eval -407,23] [%wdl 0,0,1000]} Nxd2 15.
+Bxd2) 14... Bh5 {[%eval -399,24] [%wdl 0,0,1000]} (14... Bxf3 $142 {[%eval
+-817,23] [%wdl 0,0,1000]} 15. gxf3 {[%tqu "En","","","","e4f2","",10]} Nxf2 $1
+{[%mdl 512]} 16. Kxf2 Qh4+ 17. Kf1 Qxh3+ 18. Ke2 Rxf3) 15. Nbd2 Qf6 $2 {
+[%eval -35,23] [%wdl 4,930,66]} (15... Nxd2 $19 {[%eval -450,23] [%wdl 0,0,
+1000]} 16. Qxd2 (16. Bxd2 $2 Bxf3 17. gxf3 Qh4 $19) 16... Bxf3 17. gxf3 Qh4)
+16. Nxe4 $15 dxe4 {[%cal Bd5e4,Be4f3][%mdl 32]} 17. Qa4 $2 {[%eval -741,23] 
+[%wdl 0,0,1000][%mdl 8192] Las blancas cometen un error y pierden.} exf3 $19 {
+Las negras están ganado claramente.} 18. Qxc6 {[%tqu "En","","","","d6h2","",
+10]} Bh2+ $1 {[%mdl 512]} 19. Kxh2 Qxc6 20. Re7 Qd6+ 21. Bf4 Qxe7 {Gravedad
+del error: Blancas=2.06/Negras=1.22} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "txo1983"]
+[Black "Resken"]
+[Result "1-0"]
+[ECO "C50"]
+[WhiteElo "1776"]
+[BlackElo "1644"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "79"]
+[EventDate "2026.??.??"]
+
+{[%evp 11,79,12,12,-10,0,0,15,-381,-32,-33,-31,-99,-89,-89,-88,-121,-77,-302,
+-294,-291,-106,-127,-83,-93,30,0,151,143,117,-15,-11,-110,-22,-97,-107,-584,
+-561,-698,-690,-798,-148,-132,12,14,88,88,688,608,749,724,1035,1090,29967,1064,
+29971,29972,29990,29991,29993,29990,29990,29991,29991,29992,29992,29993,29993,
+29994,29994,29994]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d3 Nf6 5. Nc3 Bc5 6. h3 d6
+7. Nd5 {7.Na4 está ganando popularidad. C50: Giuoco Pianissimo y Defensa
+Húngara.} Nxd5 (7... Na5 {es interesante.} 8. b4 Nxd5 9. bxc5 Nf4) 8. Bxd5 Ne7
+9. c4 $146 {[%eval -381,26] [%wdl 0,0,1000][%mdl 8192] [#]} (9. Bb3 $11 {
+[%eval 15,28] [%wdl 42,944,14] y Las blancas siguen a salvo.}) ({Predecesor:} 
+9. Bb3 Be6 10. c3 Bb6 11. d4 Bxb3 12. Qxb3 Nc6 13. Qa4 O-O 14. O-O a6 15. Be3 {
+1-0 (71) Ainul Fikri,A (1686)-Salihin,F (1566) Ampang 2025}) 9... Nxd5 $2 {
+[%eval -32,29] [%wdl 5,932,63]} (9... O-O $19 {[%eval -381,26] [%wdl 0,0,1000]
+apuntando a ...c6.} 10. Rb1 a5) 10. cxd5 $15 f5 11. a3 {[%eval -99,30] [%wdl 0,
+515,485]} (11. Be3 $15 {[%eval -31,30] [%wdl 4,945,51]}) 11... O-O 12. b4 Bb6
+13. a4 {[%eval -121,23] [%wdl 0,294,706]} (13. O-O $142 {[%eval -88,24] [%wdl
+0,627,373]}) {[%tqu "En","","","","a7a5","",10]} 13... a6 {[%eval -77,24] 
+[%wdl 1,725,274]} (13... a5 $142 $1 {[%eval -121,23] [%wdl 0,294,706][%cal
+Ra5b4]} 14. b5 Qe8) 14. Bb2 $2 {[%eval -302,24] [%wdl 0,0,1000] [#]} (14. a5
+$17 {[%eval -77,24] [%wdl 1,725,274]} Ba7 15. Ra3) 14... fxe4 $19 15. dxe4 Rf4
+$2 {[%eval -106,27] [%wdl 0,436,564]} (15... Qf6 $19 {[%eval -291,24] [%wdl 0,
+0,1000] y Las negras mantienen claramente la delantera.} 16. Qc2 Qg6) 16. Qd3
+a5 {[%eval -83,28] [%wdl 0,675,325]} (16... Rf6 $142 {[%eval -127,27] [%wdl 0,
+232,768] Y ahora ...De8 ganaría.} 17. Bc1 Bd7) 17. b5 $17 {[%tqu "En","","",
+"","f4f6","",10]} Bc5 {[%eval 30,25] [%wdl 44,953,3]} (17... Rf6 $1 $17 {
+[%eval -93,28] [%wdl 0,581,419]}) 18. Ba3 {Amenazando con fuerza Axc5.} Bxa3 {
+[%eval 151,27] [%wdl 915,85,0]} (18... Bb6 $11 {[%eval 0,30] [%wdl 12,976,12]})
+19. Rxa3 $16 Bd7 20. g3 {[%eval -15,24] [%wdl 3,982,15]} ({Mejor es} 20. Rc3
+$16 {[%eval 117,23] [%wdl 696,304,0]}) 20... Rf7 $11 21. Ke2 {[%eval -110,20] 
+[%wdl 0,385,615]} (21. Rc3 $11 {[%eval -11,27] [%wdl 4,984,12] permanece igual.
+}) 21... Qc8 {[%eval -22,24] [%wdl 2,977,21]} (21... Qe7 $17 {[%eval -110,20] 
+[%wdl 0,385,615]} 22. Nd2 Qg5) 22. Rc1 {[%eval -97,22] [%wdl 0,539,461]} (22.
+g4 $11 {[%eval -22,24] [%wdl 2,977,21] mantiene el equilibrio.}) 22... Bxh3 $17
+23. Rac3 $2 {[%eval -584,23] [%wdl 0,0,1000][%mdl 8192]} (23. Nh2 $17 {[%eval
+-107,25] [%wdl 0,419,581] es una opción mejor.}) 23... Bg4 $19 24. Qc4 Bxf3+
+25. Rxf3 Rxf3 {[%eval -148,27] [%wdl 0,64,936]} (25... Qg4 $19 {[%eval -798,22]
+[%wdl 0,0,1000]} 26. Rcc3 Raf8) 26. Kxf3 {[%mdl 4096] Final RDT-RDT} {[%tqu
+"En","","","","c8h3","",10]} Qf8+ {[%eval 12,26] [%wdl 6,992,2]} (26... Qh3 $1
+$17 {[%eval -132,24] [%wdl 0,135,865] ...Tf8+ es la amenaza fuerte.} 27. Ke3 (
+27. Qxc7 Rf8+ 28. Ke2 Qh5+ 29. g4 Qxg4+ 30. Kf1 Qh3+ 31. Kg1 Qf3 $19) 27... Qh5
+) 27. Kg2 $11 {¡Un contraataque activo!} Rc8 {[%eval 88,21] [%wdl 340,660,0]}
+(27... Qf6 $11 {[%eval 14,28] [%wdl 7,992,1]}) {[%tqu "En","","","","b5b6","",
+10]} 28. b6 $1 $36 {[%mdl 2048] Las blancas tienen fuerte iniciativa.} c6 $2 {
+[%eval 688,22] [%wdl 1000,0,0][%mdl 8192]} (28... Qe8 $16 {[%eval 88,30] [%wdl
+336,664,0]}) 29. dxc6+ $18 Kh8 30. c7 Qe7 31. Qd5 {[%csl LRa5,LRb7]} Qg5 {
+[%tqu "En","","","","d5b7","",10]} 32. Rc2 {[%eval 1064,22] [%wdl 1000,0,0]} (
+32. Qxb7 $142 $1 {[%eval 32702,21] [%wdl 1000,0,0]} Qg4 33. Qc6 Rf8 34. c8=Q
+Qf3+ 35. Kh2 Kh7 36. b7 Qxf2+ 37. Kh3) 32... h5 33. Qxb7 {Las blancas dan mate.
+} Rg8 34. c8=Q h4 35. Qxg8+ Kxg8 36. Qc8+ Kh7 37. b7 hxg3 38. Qf5+ Qxf5 39.
+exf5 gxf2 40. Kxf2 {Gravedad del error: Blancas=0.98/Negras=1.29} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio33"]
+[Black "erandio84"]
+[Result "1-0"]
+[ECO "C44"]
+[WhiteElo "1186"]
+[BlackElo "1258"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "15"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,14,-16,-22,-305,-315,-307,29999]} 1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. Bc4
+Bg4 5. Bg5 f6 {[%tqu "En","","","","g5e3","",10]} 6. h3 $146 {[%eval -305,24] 
+[%wdl 0,2,998][%mdl 8192] C50: Giuoco Pianissimo y Defensa Húngara.} (6. Be3
+$1 $11 {[%eval -22,27] [%wdl 21,898,81]}) ({Predecesor:} 6. a3 Bxf3 7. Qxf3 Qd7
+8. Qh5+ g6 9. Qh4 O-O-O 10. Bxf6 Nxf6 11. Qxf6 Be7 12. Be6 Bxf6 13. Bxd7+ Rxd7
+{0-1 (29) Kaaf,H (1076)-Kiekhaefer,A (1301) freechess.de 2023}) 6... Bxf3 $19
+7. Qxf3 fxg5 $4 {[%eval 32766,27] [%wdl 1000,0,0][%mdl 8192] [#]} (7... Nxd4
+$19 {[%eval -307,26] [%wdl 0,0,1000]} 8. Qd1 fxg5) 8. Qf7# {Gravedad del error:
+Blancas=2.70/Negras=1.20} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio38"]
+[Black "Hector_2017"]
+[Result "0-1"]
+[ECO "A06"]
+[WhiteElo "1187"]
+[BlackElo "1058"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "58"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,58,-427,-426,-435,-433,-474,-456,-462,-410,-466,-398,-387,-387,-444,
+15,-52,-34,-152,-64,-263,-266,-312,-190,-556,-543,-911,-912,-910,-912,-908,
+-908,-1102,-1098,-1117,-1117,-1138,-1102,-29994,-1036,-29998,-1166,-29998,
+-29999,-29999,-954,-29998,-29997,-29997,-29998,-29998,-29996]} 1. e4 d5 2. Nf3
+Bg4 3. Nc3 d4 4. Nd5 $146 ({Predecesor:} 4. Ne2 Bxf3 5. gxf3 Nc6 6. c3 e6 7.
+Qa4 Bc5 8. Nxd4 Bxd4 9. Ba6 Nge7 10. Bxb7 {1-0 (25) Labollita,M (2452)-Vera
+Gonzalez Quevedo,R (2444) Santa Clara 2004}) 4... e6 5. Nxc7+ Qxc7 6. Bb5+ {
+B01: Defensa Escandinava.} Nc6 7. g3 Bb4 8. h3 {Las negras están ganado
+claramente.} Bh5 9. Qe2 Bd6 10. g4 Bg6 11. h4 Bg3 $2 {[%eval 15,29] [%wdl 49,
+934,17] [#]} {[%tqu "En","","","","h4h5","",10]} 12. fxg3 {[%eval -52,23] 
+[%wdl 3,857,140]} (12. h5 $1 $11 {[%eval 15,29] [%wdl 49,934,17]} Bxe4 13. Qxe4
+) 12... Qxg3+ $15 {[%tqu "En","","","","e1f1","",10]} 13. Qf2 {[%eval -152,24]
+[%wdl 0,117,883]} (13. Kf1 $1 $15 {[%eval -34,28] [%wdl 6,922,72]} h5 14. Bxc6+
+bxc6 15. g5) 13... Qxg4 {[%eval -64,26] [%wdl 1,805,194]} (13... Qxf2+ $17 {
+[%eval -152,24] [%wdl 0,117,883]} 14. Kxf2 Bxe4) 14. Rg1 $2 {[%eval -263,25] 
+[%wdl 0,2,998] Pierde la partida.} (14. d3 $15 {[%eval -64,26] [%wdl 1,805,194]
+} Bh5 15. Ke2) 14... Qxe4+ $19 15. Qe2 Qf4 {...Ah5 es la amenaza fuerte.} ({No
+} 15... Qxc2 $2 16. b3 $19) 16. Nxd4 $2 {[%eval -556,26] [%wdl 0,0,1000]} ({
+Mucho más débil es} 16. d3 Qd6 17. Nd2 Qd5) (16. Bxc6+ {[%eval -190,28] 
+[%wdl 0,25,975] es una opción mejor.} bxc6 17. d3) 16... Qxd4 17. c3 Qxg1+ 18.
+Qf1 Qg3+ 19. Qf2 Qe5+ 20. Kf1 Qxb5+ 21. Kg2 Ne5 {[#] Y ahora ...Dd5+ ganaría.}
+22. d4 Ng4 23. Qg3 Be4+ {[%eval -1036,27] [%wdl 0,0,1000]} (23... Qe2+ $142 {
+[%eval -32755,33] [%wdl 0,0,1000]} 24. Kh3 Bf5 25. h5 N4f6+ 26. Qg4 Qxg4+ 27.
+Kh2 Be4 28. Be3 Qg2#) 24. Kh3 Ne5 {[%eval -1166,29] [%wdl 0,0,1000]} 25. dxe5
+Qf1+ 26. Kh2 Qe2+ {[%eval -954,27] [%wdl 0,0,1000]} (26... Qh1# $142 {[%eval
+-32765,26] [%wdl 0,0,1000]}) 27. Kh3 Bf5+ {Las negras dan mate.} 28. Qg4 Qxg4+
+29. Kh2 Qe2+ {Gravedad del error: Blancas=1.54/Negras=1.19} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "PabloErandio"]
+[Black "aitoruria"]
+[Result "1-0"]
+[ECO "C41"]
+[WhiteElo "1920"]
+[BlackElo "2094"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "91"]
+[EventDate "2026.??.??"]
+
+{[%evp 11,91,-3,15,-15,-5,-39,-31,-168,-130,-171,2,-73,-33,-41,-36,-40,-11,-10,
+-2,-38,-33,-44,-16,-29,17,13,28,0,66,64,180,186,171,-49,-50,-77,95,99,94,0,5,
+-218,-202,-288,-272,-494,-480,-517,-516,-510,-494,-527,-517,-506,-492,-467,
+-426,-595,-568,-659,-634,-596,-525,-705,-662,-29979,-29981,-29981,-29981,
+-29981,-29978,-29982,-29983,-29982,-29983,-29982,-29982,-29986,-29987,-29990,
+-29990,-29987]} 1. e4 d6 2. Nf3 Nf6 3. Nc3 e5 4. d4 Nbd7 5. dxe5 dxe5 6. Bc4
+Be7 {6...Bb4 se merece ser estudiado.} 7. Bg5 {C41: Defensa Philidor.} c6 8.
+Qd2 {[%eval -39,29] [%wdl 10,874,116]} (8. a4 $11 {[%eval -5,28] [%wdl 30,928,
+42]}) 8... Qc7 9. O-O-O {[%eval -168,23] [%wdl 0,95,905]} (9. a4 $15 {[%eval
+-31,29] [%wdl 13,894,93]}) 9... h6 {[%eval -130,25] [%wdl 0,268,732]} (9... b5
+$19 {[%eval -168,23] [%wdl 0,95,905]} 10. Bd3 h6) 10. Be3 {[%eval -171,23] 
+[%wdl 0,86,914]} (10. Bxf6 $17 {[%eval -130,25] [%wdl 0,268,732]} Nxf6 11. a4)
+10... Nf8 $146 {[%eval 2,26] [%wdl 38,929,33]} (10... b5 $19 {[%eval -171,23] 
+[%wdl 0,86,914]} 11. Bd3 Nc5) ({Predecesor:} 10... g5 11. h3 g4 12. hxg4 Nxg4
+13. Kb1 Nxe3 14. Qxe3 Nf6 15. Rxh6 Rxh6 16. Qxh6 Be6 {1-0 (55) Lavillat,
+R-Benlatreche,F (1416) Europe Echecs INT 2020}) {[%tqu "En","","","","f3h4","",
+10]} 11. h3 {[%eval -73,25] [%wdl 3,709,288]} (11. Nh4 $1 $11 {[%eval 2,26] 
+[%wdl 38,929,33]}) 11... Be6 {[%eval -33,26] [%wdl 12,891,97]} (11... b5 $17 {
+[%eval -73,25] [%wdl 3,709,288]} 12. Bd3 Ng6) 12. Bxe6 Nxe6 13. g4 Rd8 14. Qe2
+b5 15. g5 {[%eval -38,30] [%wdl 5,911,84]} (15. Rxd8+ $11 {[%eval -2,27] [%wdl
+19,959,22]} Bxd8 16. Rd1) 15... hxg5 $15 16. Nxg5 Nxg5 17. Bxg5 b4 {[%eval 17,
+26] [%wdl 22,974,4]} (17... Rxd1+ $142 {[%eval -29,25] [%wdl 3,961,36]} 18.
+Nxd1 Qd7) 18. Rxd8+ $11 Bxd8 19. Nd1 {[%cal Bc3d1,Bd1e3,Be3f5][%mdl 32]} Qa5 {
+[%eval 66,25] [%wdl 139,861,0]} ({Las negras deberían intentar} 19... g6 $11 {
+[%eval 0,27] [%wdl 5,990,5]}) 20. Kb1 $14 a6 {[%eval 180,24] [%wdl 986,14,0]} (
+20... Qb5 $14 {[%eval 64,24] [%wdl 126,874,0]} 21. Qd2 Qc5) 21. Ne3 $18 {
+Td1 es la amenaza fuerte.} Qb5 ({Más débil es} 21... Nxe4 22. Bxd8 Qxd8 23.
+Nf5 Nd2+ 24. Ka1 $16) 22. Qxb5 {[%eval -49,29] [%wdl 0,949,51]} (22. Nc4 $18 {
+[%eval 171,29] [%wdl 977,23,0]} O-O 23. Rg1) 22... axb5 $15 23. Nf5 {[#]
+Amenazando con fuerza Td1.} Rh7 $2 {[%eval 95,33] [%wdl 434,566,0]} (23... g6
+$17 {[%eval -77,26] [%wdl 0,795,205] y la vida brilla.} 24. Ng3 Be7) 24. Rd1
+$16 Be7 {[%tqu "En","","","","h3h4","",10]} 25. f3 {[%eval 0,33] [%wdl 3,994,3]
+&Bianco es más activo.} ({Pero no} 25. Nxe7 $6 Kxe7 26. f4 Ke8 $11) (25. h4 $1
+$16 {[%eval 94,26] [%wdl 408,592,0]}) 25... Rxh3 {apuntando a ...g6.} 26. b3 $2
+{[%eval -218,23] [%wdl 0,1,999]} (26. Nxg7+ $11 {[%eval 5,44] [%wdl 4,994,2] y
+Las blancas están bien.} Kf8 27. Nf5) {[%tqu "En","","","","g7g6","",10]}
+26... g6 $1 $19 ({Y no} 26... Rxf3 27. Nxg7+ Kf8 28. Nf5 $11) 27. Nxe7 {
+[%eval -288,25] [%wdl 0,0,1000]} (27. Nd6+ {[%eval -202,24] [%wdl 0,2,998]
+valía la pena intentarlo.} Kf8 28. Rd3) 27... Kxe7 28. Bxf6+ $2 {[%eval -494,
+21] [%wdl 0,0,1000]} (28. Rf1 {[%eval -272,25] [%wdl 0,0,1000]}) 28... Kxf6 {
+[%mdl 4096] Final RT-RT} 29. Rd6+ Kg5 30. Rxc6 Rxf3 31. Rc5 Re3 32. Rxe5+ Kf4
+33. Rxb5 Rxe4 34. Kb2 g5 35. a3 bxa3+ 36. Kxa3 g4 37. c4 g3 {[#] Las blancas
+deben ahora evitar ...g2.} 38. Rb8 g2 {Las negras dan mate.} 39. Rg8 Kf3 40.
+Rg7 f5 {[%cal Bf7f5,Bf5f4,Bf4f3][%mdl 32]} 41. Kb4 f4 42. Kb5 Re3 43. b4 Kf2
+44. c5 g1=Q 45. Rf7 f3 46. Rf4 {[%mdl 32768] ¡Nunca hay que darse por vencido
+de manera precipitada!  Gravedad del error: Blancas=0.61/Negras=0.24 (Preciso)
+. ¿!Derrota por tiempo!?} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Erandio1"]
+[Black "txo1983"]
+[Result "1-0"]
+[ECO "C02"]
+[WhiteElo "1575"]
+[BlackElo "1785"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "47"]
+[EventDate "2026.??.??"]
+
+{[%evp 10,47,30,-32,-25,-28,-27,-31,20,6,53,35,55,-15,0,0,2,-10,8,-10,10,12,10,
+-86,-7,-14,-11,-58,-57,-62,-65,-370,197,213,802,795,1111,904,29981,1173]} 1. e4
+e6 2. d4 d5 3. e5 c5 4. c3 Bd7 5. Nf3 Nc6 6. Nbd2 {[%eval -32,27] [%wdl 16,877,
+107]} ({Mejor es} 6. Be2 $11 {[%eval 30,26] [%wdl 100,883,17]}) 6... cxd4 $15 {
+C02: Defensa Francesa (Variante del avance).} 7. cxd4 {[%tqu "En","","","",
+"d8b6","",10]} Qb6 $1 8. Nb3 Rc8 {[%eval 20,26] [%wdl 66,916,18]} (8... Bb4+
+$15 {[%eval -31,29] [%wdl 13,894,93]} 9. Bd2 a5) 9. Be2 Nge7 {[%eval 53,23] 
+[%wdl 175,819,6]} (9... a5 $11 {[%eval 6,27] [%wdl 43,928,29]}) 10. O-O Nf5 11.
+Be3 {[%eval -15,28] [%wdl 22,922,56]} ({Las blancas deberían intentar} 11. a4
+$14 {[%eval 55,24] [%wdl 184,810,6]}) 11... Nxe3 $146 ({Predecesor:} 11... Be7
+12. Rc1 O-O 13. Nc5 Be8 14. Qd2 Ncxd4 15. Nxd4 Nxe3 16. Qxe3 Bxc5 17. Qc3 Bd7 {
+0-1 (17) Griesfeller,S (1534)-Kempe,C (2001) Heusenstamm 2022}) 12. fxe3 a5 13.
+a4 Nb4 {[#] apuntando a ...Cc2.} 14. Rc1 {para Cc2.} Be7 {Esperando por ...0-0.
+} 15. Rxc8+ Bxc8 16. Qc1 {[%eval -86,24] [%wdl 0,657,343]} (16. Bb5+ $11 {
+[%eval 10,24] [%wdl 13,982,5]} Nc6 17. Qc2) {[%tqu "En","","","","c8d7","",10]}
+16... O-O {[%eval -7,27] [%wdl 6,982,12]} (16... Bd7 $1 $17 {[%eval -86,24] 
+[%wdl 0,657,343]}) 17. Bb5 $11 Rd8 18. Qc3 {[%eval -58,28] [%wdl 1,878,121]} (
+18. Nc5 $11 {[%eval -11,27] [%wdl 5,981,14] merece consideración.}) {[%tqu
+"En","","","","c8d7","",10]} 18... Bd7 $1 $15 19. Bxd7 Rxd7 {[%tqu "En","","",
+"","c3c8","",10]} 20. Rc1 $2 {[%eval -370,25] [%wdl 0,0,1000][%mdl 8192] [#]} (
+{Las blancas deberían jugar} 20. Qc8+ $1 $15 {[%eval -65,27] [%wdl 0,860,140]}
+Rd8 21. Qc3) {[%tqu "En","","","","b4a2","",10]} 20... Rd8 $4 {[%eval 197,23] 
+[%wdl 994,6,0][%mdl 8192]} (20... Na2 $1 $19 {[%eval -370,25] [%wdl 0,0,1000]
+[%cal Ra2c3] y la vida sonríe a Las negras.} 21. Qc8+ Rd8) 21. Qc7 $18 Bf8 $2
+{[%eval 802,25] [%wdl 1000,0,0]} (21... Qxc7 {[%eval 213,25] [%wdl 997,3,0]}
+22. Rxc7 Nc6) 22. Qxb6 Nd3 23. Rf1 f6 24. Qxd8 {Gravedad del error: Blancas=0.
+63/Negras=1.02} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio84"]
+[Black "Resken"]
+[Result "0-1"]
+[ECO "C50"]
+[WhiteElo "1267"]
+[BlackElo "1643"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "44"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,43,-403,-397,-608,-617,-637,-547,-759,-762,-794,-737,-736,-725,-753,
+-728,-728,-719,-721,-708,-729,-720,-781,-766,-781,-780,-782,-753,-774,-763,
+-750,-728,-754,-757,-1045,-1013,-29999]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. O-O
+Be6 5. d4 $146 ({Predecesor:} 5. Bxe6 fxe6 6. c3 Nf6 7. Re1 Be7 8. d4 O-O 9.
+dxe5 Nxe5 10. Nxe5 dxe5 11. Nd2 Bc5 12. Nf3 Qxd1 13. Rxd1 Nxe4 {0-1 (32)
+Gukesh,D (2752)-Carlsen,M (2839) Saint Louis 2025}) 5... Bxc4 6. Ng5 {[%eval
+-608,23] [%wdl 0,0,1000] C50: Giuoco Pianissimo y Defensa Húngara.} (6. Re1
+$142 {[%eval -397,23] [%wdl 0,0,1000]}) 6... Bxf1 $19 7. Qxf1 h6 8. Ne6 {
+Las negras están ganado claramente.} fxe6 9. dxe5 Nxe5 10. Qb5+ Qd7 11. Qxb7
+Qc8 12. Qb5+ c6 13. Qe2 Nf6 14. Nc3 Be7 15. Bf4 O-O 16. Bxe5 dxe5 17. Rd1 Bb4
+18. Rd3 Bxc3 19. Rxc3 a5 20. Qf3 Qb7 21. Qg3 Qxb2 {[%cal Rb2b1] [#]} 22. Rxc6
+Qc1# {El bando de las piezas negras tomó el control tras la apertura. 
+Gravedad del error: Blancas=0.64/Negras=0.25 (Preciso)} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "aitoruria"]
+[Black "erandio38"]
+[Result "1-0"]
+[ECO "C42"]
+[WhiteElo "2094"]
+[BlackElo "1188"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "59"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,58,453,532,527,529,535,669,650,743,669,669,661,852,851,906,877,907,
+909,922,892,949,946,966,965,1004,992,29993,1102,29985,1015,1019,1013,1047,1031,
+29989,29990,29985,1068,1055,1046,1038,1028,29993,29994,29994,29995,29995,29996,
+29997,29997,29999]} 1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5 4. d4 Nxe4 $146 ({
+Predecesor:} 4... exd4 5. e5 Ne4 6. Qe2 Bb4+ 7. Kf1 d5 8. exd6 O-O 9. Qxe4 Re8
+10. dxc7 Qd7 11. Qxe8+ Qxe8 12. cxb8=Q Rxb8 {1-0 (30) Lenhart,M (1621)-Jehsert,
+D (1457) freechess.de 2024}) 5. dxc5 d5 6. Qxd5 {C42: Defensa Petroff.} Qxd5 7.
+Bxd5 c6 8. Bxe4 {Las blancas están ganado claramente.} Na6 9. c3 Nxc5 10. Bc2
+Bf5 11. Bxf5 f6 12. b4 Na6 13. O-O g6 14. Bd3 e4 15. Bxe4 f5 16. Bd3 Rd8 17.
+Re1+ Kf8 18. Bxa6 {[%eval 1102,27] [%wdl 1000,0,0]} (18. Bh6+ $142 {[%eval
+32754,30] [%wdl 1000,0,0]} Kg8 19. Bc4+ Rd5 20. Ng5 Nc7 21. Re7 b5 22. Bxd5+
+cxd5 23. Rxc7 f4 24. Rc8#) 18... bxa6 19. Nbd2 {[%eval 1015,29] [%wdl 1000,0,0]
+} (19. Bh6+ $142 {[%eval 32738,25] [%wdl 1000,0,0]} Kg8 20. Nbd2 a5 21. bxa5
+Rxd2 22. Re8+ Kf7 23. Rxh8 Kf6 24. Bxd2) 19... Kg7 20. Nc4 Rde8 21. Nce5 Kf6
+22. Bg5+ Kg7 23. Bh6+ {[%eval 1068,32] [%wdl 1000,0,0]} Kxh6 $18 24. Nf7+ Kg7
+25. Nxh8 Kxh8 26. Rxe8+ {Las blancas dan mate.} Kg7 27. Re7+ Kf8 28. Rxa7 c5
+29. Rd1 {[%cal Rd1d8]} cxb4 30. Rd8# {Las blancas tomaron el control tras la
+apertura.  Gravedad del error: Blancas=0.18 (Muy preciso.) /Negras=0.80} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Hector_2017"]
+[Black "PabloErandio"]
+[Result "0-1"]
+[ECO "C50"]
+[WhiteElo "1061"]
+[BlackElo "1920"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "28"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,27,-191,-175,-515,-518,-799,-646,-940,-936,-985,-983,-986,-986,-1093,
+-1069,-29993,-29991,-29998,-29999,-29999]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 f5 4.
+exf5 Nf6 5. Ng5 d5 {[%mdl 64] [#] Ataque a la descubierta} 6. Bxd5 $146 {
+[%eval -515,23] [%wdl 0,0,1000] C50: Giuoco Pianissimo y Defensa Húngara.} (6.
+Bb5 {[%eval -175,25] [%wdl 0,82,918] es más resistente.}) ({Predecesor:} 6.
+Bb3 Bd6 7. Ne6 Bxe6 8. fxe6 Qe7 9. d3 Qxe6 10. Nc3 Nd4 11. Ba4+ c6 12. Be3 {
+0-1 (31) Gouveia,V-Diamant,A Xangri-La 1998}) 6... Qxd5 $19 7. Qe2 {[%eval
+-799,22] [%wdl 0,0,1000]} (7. O-O $142 {[%eval -518,22] [%wdl 0,0,1000]} Bxf5
+8. Nc3) 7... Bxf5 8. c4 {Las negras están ganado claramente.} Qxg2 9. Rf1 Qxg5
+10. Nc3 O-O-O {[%cal Ba8d8,Bd8e8,Be8e2][%mdl 32] Y ahora ...Cd4 ganaría.} 11.
+Nb5 Nd4 12. Qxe5 {[%tqu "En","","","","d8e8","",10]} Re8 $1 {Las negras dan
+mate.} 13. Qe2 (13. Qe3 Nc2+) 13... Rxe2+ 14. Kd1 Bc2# {El bando de las piezas
+negras tomó el control tras la apertura.  Gravedad del error: Blancas=1.82/
+Negras=0.33} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Resken"]
+[Black "aitoruria"]
+[Result "0-1"]
+[ECO "B00"]
+[WhiteElo "1644"]
+[BlackElo "2092"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "54"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,53,-9,4,-13,-17,-15,0,0,117,123,169,170,173,171,197,172,181,39,45,-99,
+5,-96,-97,-411,-393,-425,-414,-495,-480,-537,-535,-521,-511,-748,-730,-29995,
+-29996,-29996,-29993,-29993,-29994,-29997,-29998,-29998,-29999,-29999]} 1. e4
+d6 2. d4 Nf6 3. Nc3 Nbd7 4. Bd3 e5 5. d5 Be7 6. f4 {B07: Defensa Pirc.} exf4 7.
+Bxf4 h6 $146 ({Predecesor:} 7... O-O 8. Nf3 Re8 9. O-O Ng4 10. h3 Nge5 11. Nxe5
+Nxe5 12. Qh5 Bf6 13. Rae1 g6 {0-1 (44) Musat,A (2378)-Koellner,R (2436) Chess.
+com INT 2021}) 8. Nf3 {La posición está igualada.} g5 {[%eval 117,20] [%wdl
+638,361,1]} (8... Ng4 $11 {[%eval 0,35] [%wdl 36,929,35]}) 9. Bd2 $16 Nf8 {
+[%eval 169,23] [%wdl 907,93,0]} (9... Nh5 $16 {[%eval 123,24] [%wdl 678,321,1]
+podría funcionar mejor.}) 10. O-O {Y ahora e5 ganaría.} Ng6 {[%cal Bf8g6,
+Bg6e5,Be5d3][%mdl 32] inhibe e5.} 11. Nd4 c5 12. Nf5 ({Mucho menos fuerte es} 
+12. Bb5+ $6 Kf8 13. Nf5 Bxf5 14. Rxf5 a6 $14) 12... Bxf5 13. exf5 {[%eval 39,
+25] [%wdl 87,908,5]} ({Las blancas deben jugar} 13. Rxf5 $18 {[%eval 181,20] 
+[%wdl 948,52,0] Las negras deben ahora evitar De2.} a6 14. a4) 13... Ne5 $14
+14. Ne4 {[%eval -99,25] [%wdl 0,506,494]} (14. Be2 $14 {[%eval 45,26] [%wdl
+107,889,4] mantiene la ventaja.}) 14... a6 {[%eval 5,22] [%wdl 25,958,17]} (
+14... Nxe4 $17 {[%eval -99,25] [%wdl 0,506,494]} 15. Bxe4 Bf6) {[%tqu "En","",
+"","","e4f2","",10]} 15. Nxf6+ {[%eval -96,24] [%wdl 0,543,457]} (15. Nf2 $1
+$11 {[%eval 5,22] [%wdl 25,958,17] permanece igual.}) 15... Bxf6 $17 16. c4 $2
+{[%eval -411,22] [%wdl 0,0,1000][%mdl 8192] [#] Esto le cuesta la partida al
+jugador de las piezas blancas.} Nxd3 $19 17. Qb3 Ne5 18. Qxb7 O-O 19. h4 Rb8
+20. Qxa6 Rxb2 21. hxg5 Bxg5 22. Bxg5 Qxg5 {[%csl Gb2][%cal Rg5g2] Las negras
+dan mate.} 23. Rf2 Qe3 24. Raf1 Rxf2 25. Rxf2 Ng4 26. Qxd6 Qxf2+ 27. Kh1 Qf1# {
+Gravedad del error: Blancas=1.06/Negras=0.29 (Preciso)} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio38"]
+[Black "Hector_2017"]
+[Result "0-1"]
+[ECO "A06"]
+[WhiteElo "1245"]
+[BlackElo "757"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "68"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,67,-402,-354,-654,-651,-647,-442,-613,-576,-739,-532,-622,-483,-614,
+-610,-738,-613,-1117,-923,-29994,-1352,-1496,-1412,-29993,-963,-953,-924,-994,
+-890,-1171,-1159,-29993,-1027,-29987,-29988,-29988,-1027,-29991,-29991,-29991,
+-29992,-29992,-29992,-29992,-29993,-29994,-29994,-29996,-29996,-29996,-29996,
+-29998,-29998,-29998,-29998,-29998,-29998,-29998,-29999,-29999]} 1. e4 d5 2.
+Nf3 dxe4 3. Ne5 f6 4. Bb5+ c6 5. Nxc6 bxc6 6. Bxc6+ $146 {[%eval -654,23] 
+[%wdl 0,0,1000] [#] B01: Defensa Escandinava.} (6. Ba4 {[%eval -354,27] [%wdl
+0,0,1000]}) ({Predecesor:} 6. Bc4 Nh6 7. O-O Ba6 8. Qe2 {1-0 (8) Morgan,J 
+(1194)-Singh,A ICCF email 2019}) 6... Nxc6 $19 7. Nc3 Nb4 8. Nxe4 {Las negras
+están ganado claramente.} Bf5 9. c3 Nd5 10. Ng3 e6 11. c4 Nf4 12. d3 Nxd3+ 13.
+Kd2 Nxf2+ 14. Ke1 Nxd1 {[%eval -1352,25] [%wdl 0,0,1000]} (14... Qxd1+ $142 {
+[%eval -32755,25] [%wdl 0,0,1000]} 15. Kxf2 Bc5+ 16. Be3 Qd2+ 17. Ne2 Qxe3+ 18.
+Ke1 Rd8 19. h4 Qf2#) 15. Nxf5 exf5 16. Rf1 Ne3 {[%eval -963,25] [%wdl 0,0,1000]
+} 17. Bxe3 Bb4+ 18. Kf2 Nh6 19. a3 Ng4+ 20. Kf3 {[%tqu "En","","","","d8d3","",
+10]} Nxh2+ {[%eval -1027,25] [%wdl 0,0,1000]} (20... Qd3 $142 $1 {[%eval
+-32753,56] [%wdl 0,0,1000]} 21. Rfe1 Qe4+ 22. Ke2 Qxe3+ 23. Kd1 O-O-O+ 24. Kc2
+Qd3+ 25. Kc1 Bd2+ 26. Kd1 Bh6#) 21. Kg3 Nxf1+ 22. Rxf1 {[%tqu "En","","","",
+"d8d3","",10]} Qd6+ {[%eval -1027,32] [%wdl 0,0,1000]} (22... Qd3 $142 $1 {
+[%eval -32743,60] [%wdl 0,0,1000]} 23. Rf3 Bd6+ 24. Kf2 Qc2+ 25. Kf1 Qb1+ 26.
+Ke2 Qxb2+ 27. Kf1 Qb1+ 28. Kf2 Qc2+ 29. Kg1 Qe2 30. Bf4 Qe1+ 31. Kh2 Qh4+ 32.
+Kg1 Bxf4 33. g3 Bxg3 34. Re3+ Kf7 35. Re2 Rhe8 36. Kg2 Rxe2+ 37. Kg1 Qh2+ 38.
+Kf1 Qg2#) 23. Kf2 Bd2 {Las negras dan mate.} 24. Bxd2 Qxd2+ 25. Kg1 Qxb2 26.
+Re1+ Kf7 27. Kf1 Rae8 28. g4 fxg4 29. c5 Qc3 30. c6 Rxe1+ 31. Kf2 Rd1 {[%csl
+Gg4][%cal Rc3f3]} 32. Kg2 Rd4 33. Kh2 Rd2+ 34. Kg1 Qc1# {Las blancas ya no
+estaban a gusto en esta posición.  Gravedad del error: Blancas=2.29/Negras=1.
+85} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "aitoruria"]
+[Black "PabloErandio"]
+[Result "1-0"]
+[ECO "A28"]
+[WhiteElo "2087"]
+[BlackElo "1923"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "49"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,48,-4,52,60,130,128,124,115,162,157,178,153,175,176,205,181,287,259,
+312,303,336,334,329,305,359,249,456,333,430,309,459,454,455,398,376,299,637,
+644,642,631,29999]} 1. Nf3 Nf6 2. c4 Nc6 3. Nc3 e5 {[%cal Be7e5,Be5e4][%mdl 32]
+} 4. d4 e4 5. Ng1 d5 $146 {[%eval 52,22] [%wdl 181,810,9]} ({Las negras
+deberían jugar} 5... Bb4 $11 {[%eval -4,26] [%wdl 37,916,47]}) ({Predecesor:} 
+5... Bb4 6. e3 O-O 7. Nge2 d5 8. a3 Bxc3+ 9. Nxc3 Ne7 10. cxd5 Nexd5 11. Qc2
+Re8 12. Bd2 Bf5 {1-0 (48) Rey Martinez,J (2286)-Marsal Calvet,J (1863)
+Salobrena 2024}) {[%tqu "En","","","","c1g5","",10]} 6. Bg5 $1 $14 {A28:
+Apertura Inglesa (Variante de los cuatro caballos).} ({Mucho más débil es} 6.
+cxd5 Nb4 $11) 6... Be7 {[%eval 130,26] [%wdl 717,282,1]} (6... dxc4 $14 {
+[%eval 60,26] [%wdl 222,771,7]} 7. e3 (7. d5 Ne5 $15) 7... h6 8. Bxf6 Qxf6) 7.
+Bxf6 Bxf6 {[%tqu "En","","","","e2e3","",10]} 8. e3 $1 {Las blancas están
+mejor.} dxc4 {[%eval 162,21] [%wdl 911,89,0]} (8... Be6 $16 {[%eval 115,24] 
+[%wdl 638,362,0] era necesario.}) 9. Bxc4 $18 O-O 10. Nge2 Bf5 11. Rc1 Qd7 12.
+a3 {para Cb4.} Bg4 {[%eval 287,21] [%wdl 999,1,0]} (12... Bh4 $142 {[%eval 181,
+23] [%wdl 958,42,0]} 13. O-O Ne7) 13. Qc2 Bh5 14. Nxe4 Bg6 15. Nxf6+ gxf6 16.
+Bd3 Qg4 17. Bxg6 fxg6 {[%eval 456,22] [%wdl 1000,0,0] [#]} (17... hxg6 {
+[%eval 249,24] [%wdl 999,1,0]} 18. O-O Rac8) 18. O-O Rae8 19. Ng3 h5 {[%eval
+459,20] [%wdl 1000,0,0]} (19... Rf7 {[%eval 309,25] [%wdl 1000,0,0] es una
+defensa mejor.} 20. Qb3 Qc8) 20. h3 Qg5 21. h4 Qg4 22. Ne2 Qxh4 $2 {[%eval 637,
+23] [%wdl 1000,0,0] [#]} (22... Kh7 {[%eval 299,25] [%wdl 1000,0,0]} 23. Nf4
+Rf7) 23. Qxg6+ Kh8 24. Nf4 Rg8 25. Qh6# {Las piezas negras ya no estaban a
+gusto en la posición que surgió tras la apertura.  Gravedad del error:
+Blancas=0.36/Negras=1.14} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "txo1983"]
+[Black "CipriErandio"]
+[Result "1-0"]
+[ECO "B00"]
+[WhiteElo "1782"]
+[BlackElo "1592"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "83"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,83,41,364,355,338,267,272,191,193,163,165,78,476,454,614,462,631,552,
+548,549,663,604,641,596,630,628,832,806,843,778,754,747,733,679,983,1101,943,
+677,669,595,29985,29987,29995,614,883,755,874,689,29989,29991,29991,1016,29987,
+996,29992,29993,29993,29994,29998,29994,29994,29993,29989,7792,6112,5943,29993,
+29976,29971,29975,29977,29981,29980,29981,29991,29989]} 1. e4 d6 2. Nf3 Nf6 3.
+Nc3 Nbd7 4. d4 c5 5. e5 {[%tqu "En","","","","c5d4","",10]} dxe5 $2 {[%eval
+364,22] [%wdl 1000,0,0][%mdl 8192] [#]} (5... cxd4 $1 $14 {[%eval 41,27] [%wdl
+136,852,12]} 6. Qxd4 dxe5 7. Nxe5 e6) 6. dxe5 $18 {B07: Defensa Pirc.} Ng4 7.
+Bf4 $146 (7. Bb5 a6 $16) ({Predecesor:} 7. Bb5 a6 8. Bxd7+ Bxd7 9. h3 Nh6 10.
+O-O g6 11. Qd5 Bc6 12. Qxd8+ Rxd8 13. Ng5 {0-1 (48) Nakanyike,M (1461)
+-Namaganda,C (1608) Kampala 2018}) 7... e6 8. Bb5 {Las blancas tienen ventaja
+decisiva.} a6 9. Bxd7+ ({Más fuerte que} 9. Bg5 Be7 10. Bxd7+ (10. Bxe7 Qxe7
+11. Bxd7+ Bxd7 $11) 10... Bxd7 11. Bxe7 Qxe7 $11) 9... Bxd7 10. h3 {[%eval 78,
+24] [%wdl 296,703,1]} (10. Qe2 $18 {[%eval 165,25] [%wdl 924,76,0]}) 10... Be7
+$2 {[%eval 476,23] [%wdl 1000,0,0][%mdl 8192] Esto le cuesta la partida al
+jugador de las negras.} 11. hxg4 O-O 12. g5 Qc8 13. Qe2 Bc6 14. Ne4 Bb5 15. Qe3
+Qc6 16. Nd6 Bxd6 17. exd6 Rad8 18. O-O-O c4 19. Nd4 Qxg2 20. Nxb5 axb5 21. g6
+h6 22. gxf7+ Rxf7 23. Qxe6 {[#] Y ahora Tdg1 ganaría.} Qf3 24. Be3 {[%cal
+Oh1h6] Amenazan ganar con Txh6!} Qc6 25. Rhg1 Re8 {[%tqu "En","","","","g1g7",
+"",10]} 26. Qh3 {[%eval 614,26] [%wdl 1000,0,0]} (26. Rxg7+ $142 $3 {[%eval
+32758,23] [%wdl 1000,0,0][%mdl 512]} Kxg7 27. Rg1+ Kh8 28. Qxh6+ Rh7 29. Qf6+
+Rg7 30. Qxg7#) 26... Qe4 27. Qxh6 Re6 28. Qh1 Qf5 29. d7 Rf8 30. Rg5 {[%eval
+1016,32] [%wdl 1000,0,0]} (30. d8=Q $142 {[%eval 32750,27] [%wdl 1000,0,0]} Qf6
+31. Qxb7 Rxd8 32. Rxd8+ Kh7 33. Qh1+ Qh6 34. Bxh6 Re1+ 35. Rxe1 c3 {[%tqu "En",
+"","","","b2c3","",10]} 36. bxc3 $1 g5 37. Re6 g4 38. Qe4#) 30... Qf6 31. Rh5 {
+[%eval 996,29] [%wdl 1000,0,0]} (31. Qd5 $142 {[%eval 32742,51] [%wdl 1000,0,0]
+} Rd8 32. Rdg1 Kf8 33. Rxg7 b6 34. Rg8+ Kf7 35. R1g7+ Qxg7 36. Rxg7+ Kxg7 37.
+Qxe6) 31... b4 32. Rh8+ Kf7 33. Qh5+ Ke7 34. Rxf8 Qxf8 35. d8=Q+ Qxd8 36. Rxd8
+{[%eval 7792,21] [%wdl 1000,0,0]} (36. Qg5+ $142 {[%eval 32746,21] [%wdl 1000,
+0,0]} Rf6 37. Qxg7+ Ke8 38. Qg8+ Rf8 39. Qg6+ Rf7 40. Qe6+ Qe7 41. Qc8+ Qd8 42.
+Qxd8#) 36... Kxd8 37. Qf7 {[%csl LRb7,LRe6,LRg7]} Re7 38. Qf8+ {Las blancas
+dan mate.} Kd7 39. Bg5 Re2 40. Qxg7+ Kc6 41. Qd4 Kb5 42. Qd5+ {Gravedad del
+error: Blancas=0.60/Negras=1.21} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Erandio1"]
+[Black "Resken"]
+[Result "0-1"]
+[ECO "C50"]
+[WhiteElo "1585"]
+[BlackElo "1639"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "38"]
+[EventDate "2026.??.??"]
+
+{[%evp 13,38,-16,17,13,23,26,21,13,41,12,16,-47,27,24,23,25,28,17,420,-104,-21,
+-425,-414,-592,-479,-498,-425]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 h6 5. d3
+Nf6 6. O-O Be7 7. Be3 O-O {[%eval 17,21] [%wdl 69,906,25]} (7... Na5 {[%eval
+-16,28] [%wdl 26,907,67] debería considerarse.}) 8. a3 $11 {C55: Defensa de
+los dos caballos.} a6 9. b4 b5 10. Bb3 {La posición está igualada.} Be6 $146
+({Predecesor:} 10... Bb7 11. Nh4 Nxe4 12. Nxe4 Bxh4 13. Qg4 Bf6 14. Bxh6 Kh8
+15. Nxf6 Qxf6 16. c3 Qxh6 {0-1 (36) Krickl,E-Bankert,J freechess.de 2021}) 11.
+Bxe6 fxe6 12. Nh4 {[%eval -47,24] [%wdl 4,872,124]} (12. Ne2 $11 {[%eval 16,25]
+[%wdl 43,943,14]}) 12... Nxe4 {[%eval 27,25] [%wdl 59,933,8]} 13. Nxe4 {
+[#] Esperando por Cg6.} Bxh4 14. Qg4 {[%csl LRe6,LRh6]} Kh7 15. g3 Bf6 {
+[%eval 420,21] [%wdl 1000,0,0][%mdl 8192]} (15... Be7 $11 {[%eval 17,26] [%wdl
+27,967,6] y Las negras siguen a salvo.}) 16. Qh5 $2 {[%eval -104,24] [%wdl 0,
+452,548]} ({Las blancas deben jugar} 16. Nxf6+ $18 {[%eval 420,21] [%wdl 1000,
+0,0]} Rxf6 17. Qe4+ Kh8 18. Qxc6) 16... Nd4 {[%eval -21,26] [%wdl 5,964,31]} ({
+Las negras deberían intentar} 16... Be7 $17 {[%eval -104,24] [%wdl 0,452,548]
+a continuación ...Tf5 es bueno para Las negras.} 17. Qg4 Rf5) 17. Bxh6 $2 {
+[%eval -425,20] [%wdl 0,0,1000][%mdl 8192] [#]} gxh6 $19 18. g4 {[%eval -592,
+21] [%wdl 0,0,1000]} (18. f4 $142 {[%eval -414,24] [%wdl 0,0,1000]} Nf5 19. c3)
+18... Nf3+ 19. Kg2 Ng5 {Gravedad del error: Blancas=1.37/Negras=1.04} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "PabloErandio"]
+[Black "erandio38"]
+[Result "1-0"]
+[ECO "C43"]
+[WhiteElo "1923"]
+[BlackElo "1247"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "51"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,50,-49,445,392,399,401,603,442,442,421,518,522,520,522,585,592,615,
+606,596,583,649,631,1020,1017,1008,990,29999,993,956,911,898,871,1019,1012,
+1060,1051,29987,29988,29994,29995,29995,29994,29999]} 1. e4 e5 2. Nf3 Nf6 3. d4
+Nc6 4. dxe5 Nxe4 5. Nc3 {[%tqu "En","","","","f8b4","",10]} Nxe5 $146 {[%eval
+445,24] [%wdl 1000,0,0][%mdl 8192] [#]} ({Predecesor:} 5... Nxc3 6. bxc3 Bc5 7.
+Bc4 O-O 8. O-O d6 9. Qd5 Qe7 10. Re1 dxe5 11. Bb5 e4 12. Bc4 {1-0 (25) Lakica,
+E-Nina,E Kampala 2024}) 6. Nxe5 {C44: Gambito Escocés y Apertura Ponziani.}
+Nxc3 7. bxc3 f6 {[%eval 603,21] [%wdl 1000,0,0]} (7... Qe7 $142 {[%eval 401,26]
+[%wdl 1000,0,0]} 8. Qe2 b6) 8. Nf3 {Las blancas están ganado claramente.} Bc5
+9. Bd3 g5 10. O-O {[%cal Of3g5] [#] Las negras deben ahora evitar Cxg5!} O-O
+11. Nd4 {[%cal Od3h7] Y ahora Axh7+! ganaría.} Bxd4 12. cxd4 d5 13. Qh5 {
+[%csl Gd3][%cal Rh5h7]} Qe7 {[%tqu "En","","","","c1a3","",10]} 14. Ba3 $1 {
+[%mdl 512]} Bg4 (14... Qf7 15. Qxh7+) 15. Qxg4 h5 16. Qf5 Qf7 17. Bxf8 Qxf8 18.
+Qg6+ {[%eval 993,26] [%wdl 1000,0,0]} (18. Qh7# $142 {[%eval 32766,22] [%wdl
+1000,0,0]}) 18... Qg7 $18 19. Qxg7+ Kxg7 20. Rfe1 f5 21. Re7+ Kf8 22. Rae1 Kg8
+23. Rxc7 {Las blancas dan mate.} b5 24. Ree7 Kf8 25. Rh7 {[%cal Rh7h8]} Re8 26.
+Rh8# {Las negras se quedaron fuera de juego tras la apertura.  Gravedad del
+error: Blancas=0.26 (Preciso) /Negras=0.93} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Hector_2017"]
+[Black "CipriErandio"]
+[Result "0-1"]
+[ECO "B00"]
+[WhiteElo "760"]
+[BlackElo "1592"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "44"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,44,43,40,-16,-13,-26,-13,-460,-444,-465,-406,-577,-501,-606,-521,-570,
+-558,-573,-562,-578,-605,-942,-939,-935,-919,-994,-998,-999,-987,-1011,-1007,
+-1050,-975,-1028,-1015,-1024,-1005]} 1. e4 d6 2. Nf3 Nf6 3. e5 dxe5 4. Nxe5 g6
+5. Bc4 {[%tqu "En","","","","e7e6","",10]} e6 $1 ({Menos fuerte es} 5... Qd4 6.
+Bxf7+ (6. Qe2 e6 $14) 6... Kd8 7. Qe2 $16) 6. Bb5+ {[%eval -16,32] [%wdl 21,
+921,58] B07: Defensa Pirc.} (6. d4 $14 {[%eval 40,32] [%wdl 122,869,9]}) 6...
+c6 $11 7. Bc4 $146 ({Predecesor:} 7. Nxc6 bxc6 8. Qf3 Bb7 9. b3 Qd4 10. c3 Qe5+
+11. Kd1 Bg7 12. a4 O-O 13. d4 {0-1 (39) Bucko,P-Kaminski,L (1830) Sokolka 2009}
+) 7... Qd4 8. Nf3 {[%eval -460,26] [%wdl 0,0,1000][%mdl 8192] [#]} (8. Qe2 $11
+{[%eval -13,23] [%wdl 23,924,53] y Las blancas no tienen de que preocuparse.})
+8... Qxc4 $19 9. d3 Qd5 10. Nfd2 {[%eval -577,22] [%wdl 0,0,1000]} (10. Nc3
+$142 {[%eval -406,26] [%wdl 0,0,1000]} Qf5 11. O-O) 10... Bg7 {Las negras
+están ganado claramente.} 11. c4 Qd8 12. Qa4 O-O 13. Nc3 Bd7 14. Nce4 c5 {
+[%cal Bc6c5,Bc5b4][%mdl 32]} 15. Qa5 Qxa5 16. Nxf6+ Bxf6 17. b4 cxb4 18. Rb1
+Nc6 19. Ne4 Bg7 20. Bd2 Qd8 21. Nc5 b6 22. Nxd7 Qxd7 {Las blancas tienen una
+posición inferior tras la apertura.  Gravedad del error: Blancas=1.07/
+Negras=0.20 (Preciso)} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "aitoruria"]
+[Black "txo1983"]
+[Result "1-0"]
+[ECO "C03"]
+[WhiteElo "2085"]
+[BlackElo "1783"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "55"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,54,48,53,38,42,40,39,29,43,-5,63,-52,101,36,130,99,135,104,205,192,
+206,113,100,17,94,-137,-150,-225,-217,-246,-193,-197,-81,-330,-326,-321,-319,
+-308,0,-116,-111,-123,185,166,29994,29995,29999]} 1. e4 e6 2. d4 d5 3. Nd2 {
+[%cal Bb1d2,Bd2e4,Be4g3][%mdl 32]} dxe4 4. Nxe4 Bd7 5. Bd3 Bc6 6. Ne2 {C10:
+Defensa Francesa (Variante Rubinstein).} Nd7 7. O-O Ngf6 8. N4g3 {Las blancas
+están ligeramente mejor.} Bd6 $146 ({Predecesor:} 8... Be7 9. Bf4 O-O 10. c4
+b6 11. Qc2 g6 12. Rad1 Re8 13. h3 Bf8 14. Nc3 Bb7 {1-0 (33) Leiva Rodriguez,J 
+(2391)-Ovsiannikov,M (2409) Chess.com INT 2020}) 9. c3 {[%eval -5,28] [%wdl 30,
+929,41]} (9. c4 $14 {[%eval 43,20] [%wdl 132,859,9]}) 9... Qe7 {[%eval 63,28] 
+[%wdl 226,769,5]} ({Mejor es} 9... h5 $11 {[%eval -5,28] [%wdl 30,929,41]}) 10.
+f4 {[%eval -52,26] [%wdl 7,826,167]} (10. c4 $14 {[%eval 63,28] [%wdl 226,769,
+5]}) 10... Nd5 $2 {[%eval 101,21] [%wdl 512,487,1] [#]} (10... h5 $15 {[%eval
+-52,26] [%wdl 7,826,167] mantiene la ventaja.}) 11. Bd2 {[%eval 36,22] [%wdl
+108,881,11]} (11. c4 $16 {[%eval 101,21] [%wdl 512,487,1]} N5f6 12. Nc3 (12. c5
+Nxc5 13. dxc5 Bxc5+ 14. Kh1 Ng4 $15)) 11... h6 {[%eval 130,22] [%wdl 729,271,0]
+} (11... N5f6 $14 {[%eval 36,22] [%wdl 108,881,11]}) 12. b4 {[%eval 99,26] 
+[%wdl 494,505,1]} ({Las blancas deberían jugar} 12. c4 {[%eval 130,22] [%wdl
+729,271,0]}) 12... a6 {[%eval 135,26] [%wdl 759,241,0]} (12... b5 $142 {
+[%eval 99,26] [%wdl 494,505,1]}) 13. a4 {[%eval 104,26] [%wdl 534,465,1]} (13.
+f5 $142 {[%eval 135,26] [%wdl 759,241,0]}) 13... N7f6 {[%eval 205,21] [%wdl
+970,30,0]} (13... b6 $16 {[%eval 104,26] [%wdl 534,465,1] podría funcionar
+mejor.}) {[%tqu "En","","","","b4b5","",10]} 14. b5 $1 $18 Bd7 15. bxa6 {
+[%eval 113,25] [%wdl 605,394,1]} (15. c4 $18 {[%eval 206,23] [%wdl 971,29,0]})
+15... bxa6 $16 16. f5 {[%eval 17,27] [%wdl 53,931,16]} (16. c4 $16 {[%eval 100,
+24] [%wdl 498,501,1]}) 16... e5 {[%eval 94,26] [%wdl 444,555,1]} (16... O-O $11
+{[%eval 17,27] [%wdl 53,931,16]}) {[%tqu "En","","","","c3c4","",10]} 17. dxe5
+$2 {[%eval -137,23] [%wdl 0,210,790]} (17. c4 $1 $16 {[%eval 94,26] [%wdl 444,
+555,1][%cal Rc4d5] y la vida brilla.}) 17... Bxe5 $17 ({No juegue} 17... Qxe5
+18. Nd4 Ne7 19. Re1 $14) 18. Rb1 {[%eval -225,25] [%wdl 0,10,990]} (18. Nf4 $17
+{[%eval -150,25] [%wdl 0,139,861] sigue luchando.}) 18... O-O $19 19. c4 Nb6
+20. Bb4 Bd6 {[%eval -81,25] [%wdl 1,670,329]} (20... c5 $19 {[%eval -197,22] 
+[%wdl 0,27,973] tiene mejores opciones de victoria.} 21. Bc3 {[%tqu "En","","",
+"","d7a4","",10]} Bxa4 $1) 21. c5 {[%eval -330,22] [%wdl 0,0,1000]} (21. Bxd6
+$17 {[%eval -81,25] [%wdl 1,670,329] era la única opción.} Qxd6 22. Ne4 Nxe4
+23. Bxe4 Qxd1 24. Rbxd1) 21... Bxc5+ 22. Bxc5 Qxc5+ 23. Kh1 Nfd5 $2 {[%eval 0,
+25] [%wdl 13,974,13]} ({No tome} 23... Nxa4 $2 24. Rc1 Qe5 25. Qc2 $19) ({
+Las negras deberían intentar} 23... Bxa4 $19 {[%eval -308,22] [%wdl 0,0,1000]}
+24. Qc1 Qxc1 25. Rfxc1 Nbd5) 24. Qd2 {[%eval -116,27] [%wdl 0,335,665]} (24.
+Ne4 $11 {[%eval 0,25] [%wdl 13,974,13]} Qa5 25. Qc1) 24... Bxa4 {Amenazando
+con fuerza ...Tfe8.} ({Más fuerte que} 24... Nxa4 25. Be4 Nab6 26. f6 $15) 25.
+f6 {[%mdl 64] [#] Y ahora fxg7 ganaría. Desviación} Nxf6 {[%eval 185,21] 
+[%wdl 979,21,0][%mdl 8192]} (25... Qe3 $17 {[%eval -123,26] [%wdl 0,263,737]
+sigue a rumbo.} 26. Qxe3 Nxe3) 26. Rxf6 $18 gxf6 {[%eval 32756,25] [%wdl 1000,
+0,0]} (26... Rad8 $18 {[%eval 166,24] [%wdl 959,41,0]}) 27. Qxh6 {[%csl Gd3]
+[%cal Rh6h7]} Qg5 28. Qh7# {Gravedad del error: Blancas=0.71/Negras=1.04} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "PabloErandio"]
+[Black "Erandio1"]
+[Result "0-1"]
+[ECO "C56"]
+[WhiteElo "1935"]
+[BlackElo "1565"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "28"]
+[EventDate "2026.??.??"]
+
+{[%evp 12,27,167,109,288,60,62,62,518,517,519,522,505,498,486,-29998,-29999,
+-29999]} 1. e4 e5 {[%cal Be7e5,Be5d4][%mdl 32]} 2. Nf3 Nc6 3. d4 exd4 4. Bc4
+Nf6 5. O-O d5 6. exd5 Nxd5 {[%tqu "En","","","","f3g5","",10]} 7. Re1+ {
+[%eval 109,24] [%wdl 576,423,1]} ({No juegue} 7. Nxd4 $6 Nxd4 8. Qxd4 Be6 $14)
+(7. Ng5 $1 $18 {[%eval 167,21] [%wdl 908,92,0]} f6 8. Nc3 (8. Qf3 Nce7 $14)
+8... dxc3 9. Bxd5 fxg5 10. Re1+ Be7 11. Bxg5 (11. Qf3 Bg4 $18) 11... cxb2 12.
+Bxc6+ bxc6 13. Qxd8+ (13. Bxe7 Qxd1 14. Raxd1 Kf7 $11) 13... Kxd8 14. Bxe7+ Ke8
+15. Ba3+ Kf7 16. Re7+ (16. Bxb2 Bf5 $14) 16... Kf6 17. Rb1) 7... Be6 $2 {
+[%eval 288,27] [%wdl 998,2,0] [#] C56: Defensa de los dos caballos.} (7... Be7
+$16 {[%eval 109,24] [%wdl 576,423,1] era necesario.}) {[%tqu "En","","","",
+"f3g5","",10]} 8. Nxd4 $2 {[%eval 60,27] [%wdl 200,796,4]} (8. Ng5 $1 $18 {
+[%eval 288,27] [%wdl 998,2,0][%cal Rg5e6]}) 8... Nxd4 $14 9. Qxd4 {[%tqu "En",
+"","","","d5b6","",10]} Qf6 $146 {[%eval 518,25] [%wdl 1000,0,0][%mdl 8192]} ({
+Predecesor:} 9... Be7 10. Qxg7 Bf6 11. Qh6 Bd4 12. Rxe6+ fxe6 13. Qxe6+ Ne7 14.
+Qf7+ Kd7 15. Nc3 Qf8 {1-0 (23) Beerdsen,T (2496)-Khamzin,O (2301) Chess.com
+INT 2022}) 10. Qxd5 $18 Be7 {[%tqu "En","","","","d5b7","",10]} 11. Qxb7 O-O
+12. Bxe6 fxe6 13. Nc3 $4 {[%eval -32763,23] [%wdl 0,0,1000][%mdl 8192] [#]} (
+13. Qf3 $18 {[%eval 486,26] [%wdl 1000,0,0]}) 13... Qxf2+ 14. Kh1 Qxe1# {
+Gravedad del error: Blancas=1.59/Negras=1.99} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "CipriErandio"]
+[Black "aitoruria"]
+[Result "0-1"]
+[ECO "D02"]
+[WhiteElo "1593"]
+[BlackElo "2083"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "68"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,67,6,19,16,61,9,17,19,32,30,84,45,53,18,27,-21,13,16,11,13,13,14,15,
+-20,22,-25,11,-12,-11,-264,-170,-246,-233,-247,-131,-266,329,328,325,292,320,
+312,319,307,311,312,303,102,321,0,0,0,34,-1029,-1008,-29999,-29997,-29997,
+-29996,-29999]} 1. d4 {Finkel,Alexander} d5 2. Nf3 Nf6 3. g3 e6 4. Bg2 Be7 5.
+c3 b5 6. O-O {D02: Apertura de peón de dama.} a6 $146 {[%eval 61,21] [%wdl
+230,764,6]} (6... O-O $11 {[%eval 16,28] [%wdl 67,907,26]}) ({Predecesor:} 6...
+a5 7. a4 b4 8. c4 Bb7 9. Ne5 Nbd7 10. Bf4 O-O 11. Nd2 Nxe5 12. Bxe5 Nd7 13. Bf4
+c5 14. cxd5 exd5 15. dxc5 Nxc5 {0-1 (46) Lautier,J (2666)-Anand,V (2766)
+Bastia 2003 CBM 098 [Finkel,Alexander]}) 7. a3 {[%eval 9,29] [%wdl 55,913,32]}
+(7. a4 $14 {[%eval 61,21] [%wdl 230,764,6]}) 7... Bb7 8. b4 {La posición
+está igualada.} Nbd7 9. Nbd2 c6 {[%eval 84,21] [%wdl 375,622,3]} (9... Ne4 $11
+{[%eval 30,26] [%wdl 100,883,17] permanece igual.}) 10. Bb2 {[%eval 45,27] 
+[%wdl 152,837,11]} (10. Nb3 $16 {[%eval 84,21] [%wdl 375,622,3]}) 10... a5 $14
+11. Rb1 {[%eval 18,28] [%wdl 71,905,24]} (11. Nb3 $14 {[%eval 53,27] [%wdl 186,
+806,8]}) 11... O-O 12. Nh4 {[%eval -21,27] [%wdl 22,899,79]} (12. Qc2 {[%eval
+27,24] [%wdl 92,890,18] es más adecuado.}) 12... Ne4 {[%eval 13,33] [%wdl 61,
+910,29]} (12... Ne8 $142 {[%eval -21,27] [%wdl 22,899,79]}) 13. Nxe4 $11 dxe4
+14. Bxe4 Bxh4 15. gxh4 Qxh4 16. Bg2 {[%eval -20,22] [%wdl 5,967,28]} (16. f3 {
+[%eval 15,26] [%wdl 23,971,6] debería considerarse.}) 16... Qg5 {[%eval 22,26]
+[%wdl 30,965,5]} (16... Nb6 $142 {[%eval -20,22] [%wdl 5,967,28]}) 17. f3 {
+[%eval -25,25] [%wdl 4,962,34]} (17. Kh1 $142 {[%eval 22,26] [%wdl 30,965,5]})
+17... Nf6 {[%eval 11,27] [%wdl 19,974,7]} (17... Nb6 $142 {[%eval -25,25] 
+[%wdl 4,962,34]}) 18. f4 Qg6 {[%cal Oc6c5]} 19. e4 $2 {[%eval -264,21] [%wdl 0,
+1,999][%mdl 8192]} (19. Qd3 $11 {[%eval -11,24] [%wdl 7,974,19] y Las blancas
+están bien.}) 19... Nxe4 {[%cal Oc6c5] [#] Las blancas deben ahora evitar ...
+c5!} 20. Qd3 {[%eval -246,21] [%wdl 0,1,999]} (20. Qe2 {[%eval -170,25] [%wdl
+0,40,960] era necesario.} Nd6 21. Ra1) 20... f5 $19 {[%cal Oc6c5] ...c5! es la
+amenaza fuerte.} 21. Rf3 a4 {[%eval -131,25] [%wdl 0,197,803]} (21... Rf6 $19 {
+[%eval -247,21] [%wdl 0,1,999] apuntando a ...Dg4.} 22. Qe2 axb4 23. cxb4 Qg4)
+22. Rh3 {[%eval -266,25] [%wdl 0,1,999]} (22. Bc1 $17 {[%eval -131,25] [%wdl 0,
+197,803]}) 22... Qxg2+ $4 {[%eval 329,19] [%wdl 1000,0,0][%mdl 8192]} 23. Kxg2
+$18 c5 24. Rf3 c4 25. Qe3 Rad8 26. Rbf1 Bd5 27. Kg1 Rf6 {[%tqu "En","","","",
+"f1f2","",10]} 28. Rg3 {[%eval 102,28] [%wdl 528,472,0] [#]} Rdf8 $2 {[%eval
+321,28] [%wdl 1000,0,0]} (28... Nxg3 $16 {[%eval 102,28] [%wdl 528,472,0]} 29.
+hxg3 Rh6) 29. Rh3 $2 {[%eval 0,41] [%wdl 4,991,5]} ({Las blancas deberían
+jugar} 29. Rff3 $18 {[%eval 321,28] [%wdl 1000,0,0]}) 29... Rg6+ $11 {[%tqu
+"En","","","","h3g3","",10]} 30. Rg3 $1 Rff6 {[%eval 34,31] [%wdl 28,971,1]} (
+30... Nxg3 $11 {[%eval 0,41] [%wdl 4,991,5] merece consideración.} 31. hxg3 h5
+) 31. Rxg6 $4 {[%eval -1029,25] [%wdl 0,0,1000][%mdl 8192]} (31. Rff3 $14 {
+[%eval 34,31] [%wdl 28,971,1]} Nxg3 32. hxg3 (32. Rxg3 Rxg3+ 33. hxg3 Rh6 $16))
+31... Rxg6+ $19 32. Kh1 Nd2+ {Las negras dan mate.} 33. Rf3 Nxf3 34. Qxf3 Bxf3#
+{Gravedad del error: Blancas=0.98/Negras=0.62} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Resken"]
+[Black "Hector_2017"]
+[Result "1-0"]
+[ECO "C42"]
+[WhiteElo "1638"]
+[BlackElo "763"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "75"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,75,-11,-10,-6,64,-9,54,47,54,11,16,15,41,-438,-414,-475,-475,-555,
+-554,-549,-515,-517,-509,-513,-447,-450,-441,-447,-431,-441,-344,-340,-313,
+-299,-158,-196,11,11,85,-40,0,0,31,33,148,-125,787,786,29998,29999,29999,907,
+29998,780,29997,857,29989,973,964,717,1124,1106,1112,1045,29992,29993,29993,
+29994]} 1. e4 e5 2. Nf3 Nf6 3. d3 d6 4. Nc3 Nc6 5. Bg5 h6 6. Bxf6 {C47:
+Apertura de los cuatro caballos.} gxf6 {[%eval 64,24] [%wdl 209,789,2]} (6...
+Qxf6 $11 {[%eval -6,26] [%wdl 26,935,39]} 7. d4 Nxd4) 7. h3 {[%eval -9,28] 
+[%wdl 18,949,33]} (7. Nd5 $14 {[%eval 64,24] [%wdl 209,789,2]}) 7... Nd4 {
+[%eval 54,29] [%wdl 156,841,3]} ({Mejor es} 7... f5 $11 {[%eval -9,28] [%wdl
+18,949,33]}) 8. Nxd4 $14 {Las blancas están ligeramente mejor.} exd4 {[%tqu
+"En","","","","c3e2","",10]} 9. Nd5 {[%eval 11,29] [%wdl 22,969,9]} (9. Ne2 $1
+$14 {[%eval 54,28] [%wdl 125,874,1]}) 9... c6 $146 ({Predecesor:} 9... Be6 10.
+Be2 Bxd5 11. exd5 Qe7 12. O-O O-O-O 13. Re1 Re8 14. Qd2 f5 15. Bf3 Qd7 {
+1-0 (43) Holland Letz,K-Rueckel,W freechess.de 2021}) 10. Nf4 h5 11. Nxh5 $2 {
+[%eval -438,22] [%wdl 0,0,1000][%mdl 8192] [#]} (11. Be2 $14 {[%eval 41,25] 
+[%wdl 76,922,2] mantiene la ventaja.}) 11... Qa5+ $19 12. Ke2 Qxh5+ ({Pero no} 
+12... Rxh5 $2 13. g3 $19) 13. f3 Bh6 14. g4 Qh4 15. Qe1 Qg5 16. Kf2 Qh4+ 17.
+Kg2 Qg5 18. h4 Qf4 19. Qg3 Qxg3+ 20. Kxg3 Rg8 21. Be2 f5 {[%eval -158,26] 
+[%wdl 0,36,964]} (21... Be3 $19 {[%eval -299,26] [%wdl 0,0,1000] Amenazan
+ganar con ...Ad7.} 22. f4 Kf8) 22. g5 {[%eval -196,25] [%wdl 0,4,996]} (22.
+exf5 $17 {[%eval -158,26] [%wdl 0,36,964] sigue luchando.} Bd2 23. Rad1) 22...
+Bxg5 $2 {[%eval 11,29] [%wdl 6,992,2] [#]} 23. hxg5 $11 Rxg5+ {[%eval 85,26] 
+[%wdl 300,700,0]} (23... fxe4 $11 {[%eval 11,25] [%wdl 6,992,2]} 24. fxe4 Rxg5+
+25. Kf4 Rg8) 24. Kf2 {[%eval -40,22] [%wdl 0,970,30]} (24. Kf4 $16 {[%eval 85,
+26] [%wdl 300,700,0]} Rg8 25. exf5) 24... f4 {[%eval 0,40] [%wdl 3,994,3]} (
+24... Rg8 $15 {[%eval -40,22] [%wdl 0,970,30]}) 25. Rh8+ Kd7 {[%eval 31,25] 
+[%wdl 18,982,0]} (25... Ke7 $11 {[%eval 0,40] [%wdl 3,994,3] era preferible.})
+{[%tqu "En","","","","a1h1","",10]} 26. Rah1 $1 $14 {Amenazando con fuerza Tf8.
+} {[%tqu "En","","","","d7e7","",10]} Rb8 {[%eval 148,27] [%wdl 943,57,0]} ({
+Las negras deberían intentar} 26... Ke7 $1 $14 {[%eval 33,31] [%wdl 20,980,0]}
+) {[%tqu "En","","","","h8f8","",10]} 27. Rg1 $2 {[%eval -125,28] [%wdl 0,191,
+809][%mdl 8192] &Bianco es más activo.} (27. Rf8 $1 $16 {[%eval 148,27] [%wdl
+943,57,0][%cal Rf8f7] sigue a rumbo.}) 27... b6 $2 {[%eval 787,23] [%wdl 1000,
+0,0][%mdl 8192]} 28. Rxg5 $18 f6 29. Rg7+ Ke6 30. Rgg8 {[%eval 907,25] [%wdl
+1000,0,0]} (30. Re8# $142 {[%eval 32766,25] [%wdl 1000,0,0]}) 30... Kd7 31. Kg2
+{[%eval 780,27] [%wdl 1000,0,0]} (31. Rg7+ $142 {[%eval 32764,245] [%wdl 1000,
+0,0]} Ke6 32. Re8#) 31... Rb7 32. Kh3 {[%eval 857,26] [%wdl 1000,0,0]} (32.
+Rh7+ $142 {[%eval 32762,245] [%wdl 1000,0,0]} Ke6 33. Re8+ Re7 34. Rhxe7#)
+32... c5 33. Kg4 {[%eval 973,25] [%wdl 1000,0,0]} (33. Rh7+ $142 {[%eval 32746,
+61] [%wdl 1000,0,0]} Kc6+ 34. Rxc8+ Kb5 35. Rxb7 Ka6 36. Rf7 d5 37. exd5 f5 38.
+Rc6) 33... Kc6+ 34. Kxf4 Rf7 35. Rxc8+ Kd7 36. Ra8 Kc7 37. Rxa7+ Kc6 38. Rxf7 {
+¡Vaya vuelta a la escena por parte de las piezas blancas!  Gravedad del error:
+Blancas=0.76/Negras=0.88} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio38"]
+[Black "txo1983"]
+[Result "0-1"]
+[ECO "C00"]
+[WhiteElo "1251"]
+[BlackElo "1783"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "62"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,61,-44,-43,-479,-460,-501,-496,-530,-493,-605,-543,-684,-683,-714,
+-590,-600,-603,-616,-490,-598,-461,-768,-766,-756,-745,-832,-819,-908,-908,
+-907,-904,-1107,-1094,-1149,-1048,-1036,-1009,-29992,-29993,-29995,-1122,
+-29993,-1375,-29994,-29990,-29994,-29994,-29998,-29998,-29998,-29996,-29998,
+-29999,-29999]} 1. e4 e6 2. Nf3 d5 3. exd5 exd5 4. Ne5 Nf6 5. Bb5+ c6 {[%tqu
+"En","","","","b5e2","",10]} 6. Nxc6 $146 {[%eval -479,21] [%wdl 0,0,1000]
+[%mdl 8192] [#] C00: Defensa Francesa (Segundas jugadas blancas inusuales).} ({
+Predecesor:} 6. Ba4 Bd6 7. Nf3 a5 8. O-O b5 9. Re1+ Be6 10. Bb3 a4 11. Nd4 Qd7
+12. Nxe6 fxe6 {0-1 (22) Manrique Garcia,A-Simsek,A (1372) Lichess.org INT 2022}
+) 6... Nxc6 7. Bxc6+ bxc6 8. Nc3 {Las negras están ganado claramente.} Bb4 9.
+Na4 O-O 10. c3 Re8+ 11. Kf1 Ba6+ 12. d3 Bd6 13. Bg5 Qa5 14. b3 Bb5 15. b4 {
+[%eval -768,22] [%wdl 0,0,1000]} (15. Bxf6 $142 {[%eval -461,25] [%wdl 0,0,
+1000]} gxf6 16. g3) 15... Qxa4 $19 16. Qxa4 Bxa4 17. a3 Bb5 18. a4 Bxd3+ 19.
+Kg1 Ne4 {[%csl LRc3,LRg5]} 20. g4 Nxg5 21. Rd1 Bc4 {[#] Esperando por ...Te4.}
+22. Kg2 Re2 23. Kg1 Rae8 24. a5 {[%tqu "En","","","","e2f2","",10]} Be5 {
+[%eval -1122,26] [%wdl 0,0,1000]} (24... Rxf2 $142 $3 {[%eval -32757,165] 
+[%wdl 0,0,1000]} 25. h4 {[%tqu "En","","","","f2g2","",10]} Rg2+ $3 {[%mdl 512]
+} 26. Kxg2 Re2+ 27. Kg1 Nf3+ 28. Kf1 Rd2#) 25. a6 Bxc3 {[%eval -1375,27] [%wdl
+0,0,1000]} (25... Nh3+ $142 {[%eval -32753,52] [%wdl 0,0,1000]} 26. Kg2 Nxf2
+27. Rde1 Nxh1+ 28. Rxe2 Bxe2 29. b5 {[%tqu "En","","","","c6b5","",10]} cxb5 $1
+30. g5 {[%tqu "En","","","","e5f4","",10]} Bf4 $1 31. c4 {[%tqu "En","","","",
+"e2g4","",10]} Bg4 $1 32. g6 Re2+ 33. Kxh1 Bxh2 34. gxf7+ Kxf7 35. cxd5 Bf3#)
+26. Rc1 d4 {Las negras dan mate.} 27. Kg2 Bd5+ 28. Kf1 Bxh1 29. Kg1 Bd5 30. Kf1
+Re1+ 31. Rxe1 Rxe1# {El bando de las piezas negras tomó el control tras la
+apertura.  Gravedad del error: Blancas=1.40/Negras=0.39} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "aitoruria"]
+[Black "PabloErandio"]
+[Result "0-1"]
+[ECO "C63"]
+[WhiteElo "2098"]
+[BlackElo "1925"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "56"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,55,12,8,-13,-14,-17,24,-38,-35,-43,-25,-144,-132,-152,-123,-123,-126,
+-483,-484,-563,-494,-496,-475,-522,-521,-517,-522,-544,-515,-517,-463,-29996,
+-544,-531,-532,-821,-584,-675,-664,-29993,-29991,-29992,-29993,-29993,-29994,
+-29996,-29997,-29999]} 1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. Nc3 Nf6 5. Bxc6 dxc6 6.
+Nxe5 {C63: Ruy López (Defensa Schliemann/Jaenisch).} fxe4 7. d4 Bd6 {[%eval
+24,27] [%wdl 51,941,8]} (7... exd3 $142 {[%eval -17,23] [%wdl 11,950,39]} 8.
+O-O Bd6 9. Qxd3 O-O) 8. Nc4 $146 {[%eval -38,23] [%wdl 5,912,83]} (8. O-O $11 {
+[%eval 24,27] [%wdl 51,941,8]}) ({Predecesor:} 8. O-O Qe7 9. Bg5 Bf5 10. Bxf6
+Qxf6 11. f4 exf3 12. Qxf3 O-O 13. Qe2 Rae8 14. Rae1 Qe6 {1-0 (35) Maghsoodloo,
+P (2698)-Timmermans,M (2385) Chess.com INT 2021}) 8... O-O 9. Nxd6 Qxd6 10. O-O
+{[%eval -144,20] [%wdl 0,123,877]} (10. Bg5 $11 {[%eval -25,24] [%wdl 4,961,35]
+}) 10... Ng4 $17 {[%csl Gg4][%cal Rd6h2] [#]} 11. g3 Qg6 {[%cal Og4h2]
+Esperando por ...Cxh2! NOTEXT-110336. NOTEXT-110329.} 12. Nxe4 Qxe4 $40 {
+[%mdl 128] Las negras van a por el rey.} 13. c3 $2 {[%eval -483,25] [%wdl 0,0,
+1000][%mdl 8192] Las blancas cometen un error y pierden.} (13. f3 $17 {[%eval
+-126,24] [%wdl 0,223,777] era la defensa crucial.} Qd5 14. fxg4 Rxf1+ 15. Qxf1)
+13... Nf6 $19 14. Bg5 Qg6 15. Bxf6 Rxf6 ({No tome} 15... gxf6 $2 16. Re1 $19)
+16. Qb3+ Be6 17. Qxb7 Raf8 18. Rae1 {inhibe De4.} Bd5 {...Dc2 es la amenaza
+fuerte.} 19. Qxc7 Qh5 {[%cal Oh5h2]} 20. Re5 {[%eval -32759,122] [%wdl 0,0,
+1000] [#]} (20. f4 $19 {[%eval -463,24] [%wdl 0,0,1000]} Bc4 21. Re5) {[%tqu
+"En","","","","h5h2","",10]} 20... Qf3 {[%eval -544,26] [%wdl 0,0,1000]} (20...
+Qxh2+ $142 $3 {[%eval -32759,122] [%wdl 0,0,1000][%mdl 512]} 21. Kxh2 Rh6+ 22.
+Rh5 Rxh5+ 23. Kg1 Rh1#) 21. Rxd5 cxd5 22. Qxa7 h5 {[%cal Oh5h4]} 23. Qa4 h4 {
+( -> ...h3)} 24. Qd7 Rf5 {Las negras dan mate.} 25. gxh4 R8f6 {[%cal Rf6g6]}
+26. Qd8+ Kh7 27. h3 Rg6+ 28. Kh2 Qg2# {Gravedad del error: Blancas=1.03/
+Negras=0.58} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "txo1983"]
+[Black "Resken"]
+[Result "1-0"]
+[ECO "C46"]
+[WhiteElo "1779"]
+[BlackElo "1642"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "71"]
+[EventDate "2026.??.??"]
+
+{[%evp 11,70,124,147,153,174,54,72,76,82,81,79,82,127,48,73,56,60,36,244,255,
+298,244,293,206,299,214,188,205,807,801,29998,401,927,249,261,258,254,261,249,
+243,231,26,32,-598,465,381,396,377,390,322,597,507,29991,29992,29990,7081,982,
+945,29978,29979,29999]} 1. e4 e5 2. Nf3 Nc6 3. Nc3 d6 4. d4 exd4 5. Nxd4 Nxd4
+6. Qxd4 Be6 7. f4 {C45: Partida Escocesa.} Nf6 8. Bc4 {[%eval 54,24] [%wdl 146,
+851,3]} (8. f5 $18 {[%eval 174,23] [%wdl 946,54,0]} Bd7 9. Be2) 8... Bxc4 $146
+({Predecesor:} 8... Be7 9. O-O O-O 10. Bd3 h6 11. f5 Bd7 12. Rf3 Nh7 13. Nd5
+Bg5 14. Rg3 c6 15. Bxg5 hxg5 {1-0 (28) Schreiner,P-Dimitriadis,P Aigen 2004})
+9. Qxc4 {Las blancas están mejor.} Be7 10. Be3 O-O 11. O-O-O Qc8 {[%eval 127,
+18] [%wdl 766,234,0]} (11... c6 $142 {[%eval 82,22] [%wdl 309,691,0]}) 12. h3 {
+[%eval 48,26] [%wdl 93,906,1]} ({Mejor es} 12. g4 $16 {[%eval 127,18] [%wdl
+766,234,0]}) 12... a6 13. g4 {[%cal Bg2g4,Bg4g5][%mdl 32] &Bianco es mucho
+más activo. NOTEXT-110329.} b5 14. Qd3 c5 $2 {[%eval 244,24] [%wdl 998,2,0]} (
+14... b4 $14 {[%eval 36,25] [%wdl 55,943,2]} 15. Nd5 Nxd5 16. Qxd5 a5) {
+[%tqu "En","","","","g4g5","",10]} 15. g5 $1 $18 c4 16. Qd4 Nd7 17. f5 {
+[%cal Of5f6] Esperando por f6!} f6 {[%eval 299,20] [%wdl 1000,0,0]} (17... Re8
+{[%eval 206,21] [%wdl 991,9,0] sigue luchando.} 18. f6 (18. Nd5 Bd8 $16) 18...
+Bf8) 18. Qd5+ Kh8 19. h4 fxg5 $2 {[%eval 807,21] [%wdl 1000,0,0]} (19... b4 {
+[%eval 205,22] [%wdl 990,10,0]}) 20. hxg5 {[%cal Oh1h7] [#] Las blancas
+amenazan Txh7+! y mate.} Ne5 {[%tqu "En","","","","h1h7","",10]} 21. f6 {
+[%eval 401,24] [%wdl 1000,0,0]} (21. Rxh7+ $142 $3 {[%eval 32764,20] [%wdl
+1000,0,0][%mdl 512]} Kxh7 22. Rh1#) 21... gxf6 {[%eval 927,21] [%wdl 1000,0,0]}
+(21... Bxf6 $142 {[%eval 401,24] [%wdl 1000,0,0]} 22. gxf6 Rxf6) 22. gxf6 $2 {
+[%eval 249,22] [%wdl 999,1,0]} (22. g6 {[%eval 927,21] [%wdl 1000,0,0][%csl
+Gg6][%cal Rh1h7]} Rf7 23. gxf7) 22... Rxf6 23. Bg5 $40 {[%mdl 128] apuntando a
+Dd4. Las blancas van a por el rey. ¡Gana o toma picante!} Re6 24. Bxe7 {
+[%mdl 64] [#] Eliminación del defensor} Rxe7 25. Qxd6 Qe6 {[%cal Oe5d3]} 26.
+Qxe6 $2 {[%eval 26,26] [%wdl 14,985,1]} ({Las blancas deberían intentar} 26.
+Qd4 $18 {[%eval 231,21] [%wdl 999,1,0]}) 26... Rxe6 $11 27. Rd7 $2 {[%eval
+-598,26] [%wdl 0,0,1000][%mdl 8192]} Rae8 $4 {[%eval 465,21] [%wdl 1000,0,0]
+[%mdl 8192]} (27... Nxd7 $19 {[%eval -598,26] [%wdl 0,0,1000] y todo está
+bien.} 28. Rd1 Nc5) 28. Rhxh7+ Kg8 29. Rdg7+ Kf8 30. Nd5 {para T6e7.} Nf3 $2 {
+[%eval 597,23] [%wdl 1000,0,0]} (30... Rh6 {[%eval 322,25] [%wdl 1000,0,0]} 31.
+Rxh6 Kxg7 32. Rxa6 Nf3) 31. Rg3 Rxe4 {[%eval 32750,24] [%wdl 1000,0,0]} (31...
+Ne5 $18 {[%eval 507,21] [%wdl 1000,0,0]} 32. Rhg7 Rg6) 32. Rxf3+ Kg8 33. Rff7 {
+[%eval 7081,21] [%wdl 1000,0,0]} (33. Nf6+ $142 {[%eval 32748,16] [%wdl 1000,0,
+0]} Kf8 34. Nxe4+ Kg8 35. Nf6+ Kf8 36. Nxe8+ Kxe8 37. Rf6 c3 38. Rxa6 cxb2+ 39.
+Kxb2 Kf8 40. Ra8#) 33... Re1+ $18 34. Kd2 {[%cal Rd5f6]} R8e2+ 35. Kc3 {
+[%cal Rd5f6]} Rc1 36. Nf6# {¡Vaya pesadilla para las piezas negras!  Gravedad
+del error: Blancas=1.18/Negras=1.36} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Hector_2017"]
+[Black "erandio38"]
+[Result "0-1"]
+[ECO "C57"]
+[WhiteElo "796"]
+[BlackElo "1242"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "76"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,76,60,261,256,390,-588,-600,-909,-638,-712,-681,-1195,-788,-29995,
+-29994,-29996,-1309,-1266,-1121,-29993,-1048,-1266,-1175,-1154,-1143,-1159,
+-1080,-1068,-995,-1001,-879,-871,-861,-970,-964,-954,-837,-782,-709,-747,-743,
+-719,-682,-661,-642,-886,-811,-795,-413,-402,-397,-406,-267,-261,-236,-264,
+-222,-8191,-1106,-29989,-29988,-29993,-29994,-29994,-29993,-29993,-29993,
+-29993,-29994]} 1. e4 e5 2. Nf3 {[%cal Bg1f3,Bf3g5,Bg5f7][%mdl 32]} Nf6 3. Bc4
+Nc6 4. Ng5 Bc5 5. Nxf7 {[%tqu "En","","","","c5f2","",10]} Qe7 $2 {[%eval 261,
+24] [%wdl 994,6,0]} (5... Bxf2+ $1 $14 {[%eval 60,26] [%wdl 217,777,6]} 6. Kf1
+(6. Kxf2 Nxe4+ 7. Kg1 Qh4 $11) 6... Qe7) 6. Nxh8 $18 {apuntando a Cc3. C57:
+Defensa de los dos caballos (Variante Fritz, Wilkes-Barre, Traxler).} Qf8 {
+[%eval 390,24] [%wdl 1000,0,0]} (6... d5 {[%eval 256,25] [%wdl 997,3,0] sigue
+luchando.}) 7. Qh5+ $146 {[%eval -588,21] [%wdl 0,0,1000][%mdl 8192]} ({
+Predecesor:} 7. Nf7 d6 8. O-O Bg4 9. Qe1 Kd7 10. h3 Bh5 11. Nc3 Rd8 12. Nd5
+Qxf7 13. Nb6+ axb6 14. Bxf7 Bxf7 {1-0 (40) Morocho Morocho,C-Santillan
+Tenecela,A Chess.com INT 2020}) 7... Nxh5 $19 8. Be2 {Las negras están ganado
+claramente.} Nf6 {[%cal Bh5f6,Bf6e4,Be4f2][%mdl 32]} 9. c4 Nxe4 10. Bd3 Nxf2
+11. Ke2 Nxh1 12. h4 Qxh8 {[%eval -1309,25] [%wdl 0,0,1000]} (12... Nd4+ $142 {
+[%eval -32759,245] [%wdl 0,0,1000]} 13. Kd1 Nf2+ 14. Ke1 Nxd3+ 15. Kd1 Qf1#)
+13. Bf5 g6 14. Bg4 Na5 {[%eval -1048,26] [%wdl 0,0,1000]} (14... Nd4+ $142 {
+[%eval -32753,53] [%wdl 0,0,1000]} 15. Kd3 Qf8 16. Ke3 Qf1 17. Bf3 Nf5+ 18. Ke4
+Qxc4+ 19. Kxe5 Qd4#) 15. Kd3 e4+ 16. Kc2 Nxc4 {[#] ( -> ...Dd4)} 17. Be2 Ne5
+18. Nc3 e3 19. dxe3 Bxe3 20. Bxe3 Ng3 21. Bf4 Nxe2 22. Nxe2 Nf3 {[%cal Od7d6]}
+23. gxf3 a5 24. Re1 Ra6 25. Nd4+ Kf8 26. Be5 Qg8 27. Nb5 Qd5 28. Nc3 Qxe5 29.
+Rxe5 {[%mdl 4096] Final RTA-RTC} d6 30. Rd5 c6 {[%cal Bc7c6,Bc6d5,Bd5e4,Be4e3]
+[%mdl 32]} 31. Rxd6 {[#] Las negras deben ahora evitar Td8+.} Ke7 {inhibe Td8.}
+32. Ne4 Bf5 {Amenazando con fuerza ...Axe4+.} 33. Rd5 $2 {[%eval -8191,22] 
+[%wdl 0,0,1000]} (33. Rd2 {[%eval -222,25] [%wdl 0,1,999]}) 33... cxd5 34. f4
+Rc6+ {Las negras dan mate.} 35. Kb3 dxe4 36. Ka3 Rc5 37. Ka4 Bd7+ 38. Kb3 e3 {
+Gravedad del error: Blancas=2.18/Negras=2.06} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Resken"]
+[Black "PabloErandio"]
+[Result "0-1"]
+[ECO "C50"]
+[WhiteElo "1644"]
+[BlackElo "1922"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "30"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,29,-33,-33,-60,-70,-94,-82,-125,-94,-243,-245,-242,-228,-344,-340,
+-370,-355,-1142,-1033,-29997,-29998,-29999]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 f5 4.
+exf5 Nf6 5. d3 d5 6. Bb5 {[#] Axc6+ es la amenaza fuerte. C50: Giuoco
+Pianissimo y Defensa Húngara.} {[%tqu "En","","","","f8d6","",10]} Bd6 $1 7.
+Bxc6+ bxc6 8. O-O {[%eval -125,22] [%wdl 0,280,720]} (8. Nh4 $142 {[%eval -82,
+26] [%wdl 1,661,338]}) 8... O-O {[%eval -94,25] [%wdl 1,560,439]} (8... Bxf5
+$142 {[%eval -125,22] [%wdl 0,280,720] Amenazando con fuerza ...0-0.} 9. Re1
+Bg4) 9. h3 $146 {[%eval -243,20] [%wdl 0,4,996]} (9. Nh4 $17 {[%eval -94,25] 
+[%wdl 1,560,439] valía la pena intentarlo.}) ({Predecesor:} 9. Bg5 Rb8 10. b3
+Bxf5 11. Nbd2 Qd7 12. Re1 e4 13. Bxf6 exf3 14. Bxg7 Qxg7 15. Nxf3 Bh3 16. g3
+Bg4 17. Re3 Rxf3 18. Rxf3 Bxf3 19. Qxf3 Qxa1+ {0-1 (19) Boetzer,F (1429)
+-Broszeit,J (1924) freechess.de 2025}) 9... Bxf5 $19 10. Nc3 Qd7 {[%cal Of5h3]}
+11. Ne2 {[%eval -344,21] [%wdl 0,0,1000]} (11. Nh2 {[%eval -228,23] [%wdl 0,7,
+993] sigue luchando.}) {[%tqu "En","","","","f5h3","",10]} 11... Bxh3 $1 {
+[%mdl 512]} 12. gxh3 (12. Nh2 Be6) 12... Qxh3 13. Ng3 $2 {[%eval -1142,16] 
+[%wdl 0,0,1000]} (13. Ng5 {[%eval -355,23] [%wdl 0,0,1000]} Qh4 14. Nf3 Qg4+
+15. Ng3) 13... Ng4 {[%cal Of8f3] ( -> ...Txf3!)} 14. Bg5 {[%tqu "En","","","",
+"f8f3","",10]} Rxf3 $1 {[%mdl 576] [#] Eliminación del defensor} 15. Qxf3 (15.
+Re1 Qh2+) 15... Qh2# {Las blancas ya no estaban a gusto en esta posición. 
+Gravedad del error: Blancas=1.21/Negras=0.03 (¡Impecable!)} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Erandio1"]
+[Black "aitoruria"]
+[Result "1-0"]
+[ECO "C02"]
+[WhiteElo "1544"]
+[BlackElo "2117"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "95"]
+[EventDate "2026.??.??"]
+
+{[%evp 10,94,43,-5,36,33,40,-13,15,16,60,57,72,79,158,85,98,85,136,18,107,37,
+48,-83,-31,-81,-85,-90,0,0,0,0,0,0,11,3,34,0,0,-35,0,0,0,-79,14,0,46,0,0,-38,
+147,-18,-19,-585,-576,-729,-729,-718,-704,-700,-666,-768,-682,-738,-725,-784,
+-756,-870,-857,-848,-817,-823,-819,-820,-813,-1153,-790,-794,-781,-821,-753,
+-804,-749,-701,29998,29999,29999]} 1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3
+Nge7 6. Bb5 {[%eval -5,32] [%wdl 36,916,48]} (6. Na3 $14 {[%eval 43,20] [%wdl
+143,846,11]}) 6... cxd4 {[%eval 36,25] [%wdl 114,874,12] C02: Defensa Francesa
+(Variante del avance).} (6... Qa5 $11 {[%eval -5,32] [%wdl 36,916,48]} 7. Bxc6+
+Nxc6) 7. cxd4 $14 Qb6 8. Bxc6+ {[%eval -13,28] [%wdl 17,941,42]} (8. Nc3 $14 {
+[%eval 40,29] [%wdl 121,869,10]}) 8... bxc6 {La posición está igualada.} {
+[%tqu "En","","","","e1g1","",10]} 9. O-O $1 Ba6 {[%eval 60,27] [%wdl 177,821,
+2]} (9... Bd7 $11 {[%eval 16,26] [%wdl 37,952,11]}) 10. Re1 Rc8 $146 ({
+Predecesor:} 10... Ng6 11. b3 c5 12. Nc3 cxd4 13. Qxd4 Qxd4 14. Nxd4 Bb4 15.
+Bb2 Rc8 16. Rac1 Nf4 {0-1 (49) Santos,P (1950)-Fares Jr,R (1602) Remote email
+2008}) 11. Nc3 c5 {[%eval 158,23] [%wdl 903,97,0]} (11... Nf5 $142 {[%eval 79,
+25] [%wdl 307,692,1]}) {[%tqu "En","","","","c3a4","",10]} 12. dxc5 {[%eval 85,
+24] [%wdl 359,640,1]} (12. Na4 $142 $1 {[%eval 158,23] [%wdl 903,97,0][%cal
+Ra4b6]} Qc6 13. Nxc5) 12... Qxc5 $16 13. Be3 Qb4 {[%eval 136,25] [%wdl 810,190,
+0]} (13... Qc7 $142 {[%eval 85,23] [%wdl 351,648,1]}) 14. Qd2 {[%eval 18,26] 
+[%wdl 35,957,8]} (14. a3 $16 {[%eval 136,25] [%wdl 810,190,0]} Qb7 15. Qa4+ Qc6
+16. Bxa7) 14... Qb8 {[%eval 107,19] [%wdl 575,425,0]} (14... Qb7 $11 {[%eval
+18,26] [%wdl 35,957,8]}) 15. Nd4 {[%eval 37,26] [%wdl 72,924,4] &Bianco es
+más activo.} (15. Qd1 $16 {[%eval 107,19] [%wdl 575,425,0] apuntando a Da4+.}
+Qb7 16. Qa4+ Qc6 17. Bxa7) 15... Ng6 $14 (15... Qxe5 $2 16. Bf4 Qf6 17. Ncb5
+Bxb5 18. Nxb5 $18) 16. Bf4 {[%eval -83,20] [%wdl 1,663,336]} (16. f4 $14 {
+[%eval 48,26] [%wdl 110,888,2] mantiene la ventaja.}) 16... Bb4 {[%eval -31,28]
+[%wdl 5,938,57]} (16... Nxf4 $17 {[%eval -83,20] [%wdl 1,663,336]} 17. Qxf4 Qb6
+) 17. Bg3 {[%eval -81,21] [%wdl 1,684,315]} (17. Be3 $15 {[%eval -31,28] [%wdl
+5,938,57]}) 17... O-O $17 18. Rac1 Bxc3 {[%eval 0,38] [%wdl 13,974,13]} (18...
+Bc5 $17 {[%eval -90,26] [%wdl 0,598,402] ...Axd4 es la amenaza fuerte.} 19. Nb3
+Bb4) 19. Rxc3 Rxc3 20. Qxc3 Rc8 21. Qd2 Qc7 22. f3 Qc5 {[%eval 34,25] [%wdl 29,
+970,1]} (22... h5 $11 {[%eval 3,28] [%wdl 6,990,4] es superior.}) 23. Kh1 {
+[%eval 0,35] [%wdl 5,990,5]} (23. b4 $14 {[%eval 34,25] [%wdl 29,970,1]} Qc3
+24. Qxc3 Rxc3 25. b5) 23... Qc4 24. h3 {[%eval -35,30] [%wdl 1,969,30]} (24. a3
+$11 {[%eval 0,38] [%wdl 5,990,5] merece consideración.}) 24... Qd3 {[%eval 0,
+37] [%wdl 3,994,3]} (24... Qxa2 $15 {[%eval -35,30] [%wdl 1,969,30] es más
+adecuado.} 25. f4 Qc4) 25. Qxd3 $11 Bxd3 26. Re3 {[%eval -79,28] [%wdl 0,774,
+226]} (26. Rd1 $11 {[%eval 0,37] [%wdl 3,994,3]} Ba6 27. Kg1) 26... Bc4 {
+[%eval 14,27] [%wdl 6,993,1]} (26... Rc1+ $17 {[%eval -79,28] [%wdl 0,774,226]}
+27. Kh2 Rd1) 27. Ra3 Rc7 {[%eval 46,32] [%wdl 40,960,0]} (27... Bf1 $11 {
+[%eval 0,30] [%wdl 3,994,3]}) {[%tqu "En","","","","a3c3","",10]} 28. b3 {
+[%eval 0,34] [%wdl 3,994,3]} (28. Rc3 $1 $14 {[%eval 46,32] [%wdl 40,960,0]
+debería considerarse.}) 28... Bd3 29. Kg1 {[%eval -38,30] [%wdl 0,974,26]} (
+29. b4 $11 {[%eval 0,34] [%wdl 3,994,3]} Bc4 30. b5) {[%tqu "En","","","",
+"h7h5","",10]} 29... Ne7 $2 {[%eval 147,27] [%wdl 942,58,0] [#]} (29... h5 $1
+$15 {[%eval -38,30] [%wdl 0,974,26] permanece por delante.}) 30. Kf2 $2 {
+[%eval -18,26] [%wdl 1,991,8]} (30. b4 $16 {[%eval 147,27] [%wdl 942,58,0]})
+30... Nf5 31. Bh2 $2 {[%eval -585,23] [%wdl 0,0,1000][%mdl 8192]} Nxd4 $19 32.
+Ke3 Nc2+ 33. Kxd3 Nxa3 34. Bg1 Nb5 35. Ke3 a6 36. f4 Nc3 37. Kd2 Nxa2 38. Kd3
+Nb4+ 39. Kd4 Nc6+ 40. Kc5 Nd8+ 41. Kd6 Rc1 42. Bb6 {[%tqu "En","","","","c1b1",
+"",10]} Rb1 $1 43. Bxd8 Rxb3 44. Ke7 Rg3 {Esperando por ...d4.} 45. f5 a5 46.
+fxe6 a4 $4 {[%eval 32764,22] [%wdl 1000,0,0][%mdl 8192] [#]} (46... fxe6 $19 {
+[%eval -701,28] [%wdl 0,0,1000]} 47. Kxe6 a4) 47. exf7+ Kh8 48. f8=Q# {¡Nunca
+hay que darse por vencido de manera precipitada!  Gravedad del error:
+Blancas=0.72/Negras=0.44} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Resken"]
+[Black "Hector_2017"]
+[Result "1-0"]
+[ECO "C50"]
+[WhiteElo "1644"]
+[BlackElo "799"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "57"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,56,165,185,155,175,146,201,152,136,148,281,206,295,231,597,351,344,
+279,428,431,500,491,591,557,29999,613,29999,609,606,585,758,749,1528,1053,
+29991,29992,29995,29994,29998,29995,29995,29996,29997,29998,29999,29997,29998,
+29998,29999]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 Ke7 4. c3 $146 ({Predecesor:} 4. Nc3
+Ke8 5. O-O d6 6. d3 Be6 7. Nd5 Nf6 8. c3 Be7 9. h3 Qd7 10. Ng5 Bxd5 11. Bxd5
+Nxd5 12. exd5 {1-0 (34) Drygalov,A (2493)-Solovchuk,A (2320) Chess.com INT 2021
+}) 4... Nf6 5. d3 d6 6. h3 {C50: Giuoco Pianissimo y Defensa Húngara.} Qd7 7.
+O-O Na5 {[%eval 201,23] [%wdl 959,41,0]} (7... h6 $16 {[%eval 146,24] [%wdl
+808,192,0]}) 8. Bb3 {Las blancas están claramente mejor.} Nxb3 9. axb3 Ke6 {
+[%eval 281,23] [%wdl 999,1,0]} (9... g6 $16 {[%eval 148,24] [%wdl 854,146,0]
+podría funcionar mejor.}) 10. Be3 b5 {[%eval 295,27] [%wdl 999,1,0]} (10...
+Ne8 $142 {[%eval 206,26] [%wdl 981,19,0]} 11. d4 (11. Rxa7 Rxa7 12. Bxa7 b6 $16
+) 11... f6) 11. Rxa7 Bb7 {[%eval 597,21] [%wdl 1000,0,0] [#]} (11... Rxa7 {
+[%eval 231,23] [%wdl 993,7,0]} 12. Bxa7 c5) 12. Rxa8 Bxa8 13. c4 {Esperando
+por Cc3.} bxc4 {[%eval 428,18] [%wdl 1000,0,0]} (13... b4 {[%eval 279,21] 
+[%wdl 1000,0,0] era lo que pedía.} 14. Nh4 Qe8) 14. bxc4 $18 Bc6 15. b4 Ba4
+16. Qd2 Be7 17. b5 {[%eval 613,24] [%wdl 1000,0,0]} (17. Ng5# $142 {[%eval
+32766,23] [%wdl 1000,0,0]}) 17... Bxb5 18. cxb5 {[%eval 609,26] [%wdl 1000,0,0]
+} (18. Ng5# $142 {[%eval 32766,22] [%wdl 1000,0,0]}) 18... Qxb5 19. Nc3 Qb3 20.
+Rb1 Qb7 21. Rxb7 Kd7 22. Qa2 {Las blancas dan mate.} d5 23. Nxd5 Ne8 24. Nxe7
+Kxe7 25. Nxe5 f6 26. Bc5+ Kd8 27. Nc6+ Kd7 28. Qd5+ Kc8 29. Rb8# {Gravedad del
+error: Blancas=0.86/Negras=1.24} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "PabloErandio"]
+[Black "aitoruria"]
+[Result "0-1"]
+[ECO "C56"]
+[WhiteElo "1926"]
+[BlackElo "2111"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "58"]
+[EventDate "2026.??.??"]
+
+{[%evp 16,57,34,0,33,9,43,6,51,43,46,-26,-31,-23,297,242,240,239,379,0,1,-421,
+0,0,116,-149,0,-345,-232,-253,57,28,210,-330,-328,-316,0,-301,-297,-991,-976,
+-982,-968,-29999]} 1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O d6 6. Nxd4
+Be7 7. Nxc6 bxc6 8. Nc3 O-O 9. Bg5 {[%eval 0,26] [%wdl 21,959,20]} (9. h3 $14 {
+[%eval 34,26] [%wdl 73,921,6]}) 9... Re8 {[%eval 33,26] [%wdl 70,924,6] C50:
+Giuoco Pianissimo y Defensa Húngara.} (9... Nxe4 $11 {[%eval 0,26] [%wdl 21,
+959,20]} 10. Bxe7 Qxe7) 10. Qd2 $146 ({Predecesor:} 10. Re1 Ng4 11. Bxe7 Qxe7
+12. g3 Ne5 13. Bf1 Bg4 14. Be2 Bxe2 15. Qxe2 Rab8 16. f4 {0-1 (54) Poceiro
+Solino,J (1715)-Garcia Dorado,A (2208) Mostoles 2019}) 10... Rb8 {[%eval 43,21]
+[%wdl 99,897,4]} (10... h6 $11 {[%eval 9,28] [%wdl 29,957,14]} 11. Bf4 Nd7) 11.
+Bb3 {[%eval 6,27] [%wdl 26,958,16]} (11. Rad1 $14 {[%eval 43,21] [%wdl 99,897,
+4] parece más fuerte.}) 11... Bd7 {[%eval 51,26] [%wdl 133,864,3]} (11... a5
+$11 {[%eval 6,27] [%wdl 26,958,16]}) 12. Rad1 $14 {[%cal Oe4e5]} h6 13. Bxh6 {
+[%eval -26,27] [%wdl 7,943,50]} gxh6 $11 14. Qxh6 Be6 $2 {[%eval 297,25] [%wdl
+1000,0,0][%mdl 8192]} (14... d5 15. exd5 cxd5 16. Nxd5 $14) (14... Bf8 $11 {
+[%eval -23,29] [%wdl 5,961,34]} 15. Qg6+ Kh8 16. Bxf7 Re5) 15. Rd3 {[#]
+Esperando por Axe6.} Ng4 {[%tqu "En","","","","h6h5","",10]} 16. Qh5 {[%mdl
+1024] apuntando a Axe6. Las blancas tienen fuerte compensación.} (16. Rg3 {
+[%tqu "En","","","","b8b3","",10]} Rxb3 $1 17. axb3 Bh4 $15) 16... d5 {[%eval
+379,22] [%wdl 1000,0,0]} (16... Rxb3 $2 17. axb3 (17. Rh3 Nh6 $14) 17... Bf6
+18. h3 (18. Rh3 Kf8 $11) 18... Bxc3 19. Rxc3 (19. bxc3 Nf6 $18)) (16... Bf8
+$142 {[%eval 239,23] [%wdl 998,2,0]}) 17. Rh3 $2 {[%eval 1,26] [%wdl 14,974,12]
+} (17. exd5 $18 {[%eval 379,22] [%wdl 1000,0,0]} cxd5 18. Bxd5 (18. Rh3 Bf6 $14
+)) {[%tqu "En","","","","e7f6","",10]} 17... Bf6 $1 {[%tqu "En","","","",
+"h3g3","",10]} 18. f3 $2 {[%eval -421,21] [%wdl 0,0,1000][%mdl 8192]} (18. Rg3
+$1 $11 {[%eval 1,26] [%wdl 14,974,12]} Kf8 19. exd5 cxd5 20. Nxd5 (20. Bxd5
+Bxc3 21. Bxe6 Rxe6 $15)) 18... Ne3 $2 {[%eval 0,27] [%wdl 13,974,13]} (18...
+Bd4+ $19 {[%eval -421,21] [%wdl 0,0,1000]} 19. Kh1 Nf2+ 20. Rxf2 Bxh3) 19. Rg3+
+{[%tqu "En","","","","f6g7","",10]} Kf8 {[%eval 116,26] [%wdl 662,338,0]} (
+19... Bg7 $1 $11 {[%eval 0,27] [%wdl 13,974,13] mantiene el equilibrio.} 20.
+Qh6 Ng4) 20. Re1 $2 {[%eval -149,25] [%wdl 0,106,894][%mdl 8192]} (20. Qh6+ $16
+{[%eval 116,26] [%wdl 662,338,0] es necesario para mantener la ventaja.} Ke7
+21. Qxe3) 20... d4 {[%eval 0,29] [%wdl 13,974,13]} (20... Nc4 $17 {[%eval -149,
+25] [%wdl 0,106,894] Amenazan ganar con ...Dd6.} 21. Qh6+ Ke7 22. exd5 (22.
+Bxc4 dxc4 23. Rd1 Bd4+ 24. Kf1 Rh8 $17) 22... cxd5 23. Bxc4 dxc4) {[%tqu "En",
+"","","","e4e5","",10]} 21. Ne2 $2 {[%eval -345,28] [%wdl 0,0,1000][%mdl 8192]}
+(21. Bxe6 $2 Rxe6 22. Ne2 (22. Qh7 $2 Ke7 $19) 22... Nxc2 $19) (21. e5 $1 $11 {
+[%eval 0,29] [%wdl 13,974,13] y Las blancas están bien.} dxc3 22. Qh6+ Ke7 23.
+Qxe3 (23. exf6+ Kd7 $15) 23... Bxb3 24. axb3 (24. exf6+ Kd7 $15)) 21... Rxb3
+22. axb3 c5 $2 {[%eval 57,23] [%wdl 106,894,0] ¡Un contraataque activo!} (
+22... Ke7 23. e5 Nxc2 24. exf6+ (24. Rc1 Bxe5 25. Qxe5 d3 $18) 24... Kd6 25.
+Rd1 Qxf6 26. Qa5 $18) (22... Nxc2 $19 {[%eval -253,28] [%wdl 0,0,1000]} 23. Rd1
+(23. Qc5+ $2 Qd6 $19) 23... Ne3) 23. Nf4 {Las negras deben ahora evitar e5.} ({
+No juegue} 23. Qxc5+ Qd6 24. Qxd6+ cxd6 $17) (23. f4 $5 {[%cal Re4e5]}) 23...
+Ke7 $2 {[%eval 210,24] [%wdl 996,4,0]} (23... Qd6 $11 {[%eval 28,26] [%wdl 27,
+971,2]} 24. Nd3 Bc8) {[%tqu "En","","","","e4e5","",10]} 24. Nd5+ $4 {[%eval
+-330,23] [%wdl 0,0,1000][%mdl 8192]} ({Es inferior} 24. Qxc5+ Qd6 25. Qxd6+ (
+25. Nxe6 Kxe6 26. Qxd6+ cxd6 $15) 25... cxd6 $15) (24. e5 $1 $18 {[%eval 210,
+24] [%wdl 996,4,0]} Bh8 25. Nxe6 Kxe6 26. f4) 24... Bxd5 $19 {Bailando en el
+filo de una navaja.} 25. exd5 Kd6 $2 {[%eval 0,25] [%wdl 5,991,4]} (25... Rh8
+$19 {[%eval -316,26] [%wdl 0,0,1000]} 26. Qf5 Kf8) 26. f4 $2 {[%eval -301,23] 
+[%wdl 0,0,1000][%mdl 8192]} (26. Qxf7 $11 {[%eval 0,25] [%wdl 5,991,4] y Las
+blancas siguen a salvo.} Qe7 27. Qg6) 26... Nxd5 {[%mdl 64] [#] Ataque a la
+descubierta} 27. Qf5 $2 {[%eval -991,20] [%wdl 0,0,1000]} (27. Qd1 {[%eval
+-297,24] [%wdl 0,0,1000]}) 27... Rxe1+ 28. Kf2 Qe7 {[%csl Ge1][%cal Re7e2]} 29.
+c3 Qe2# {Gravedad del error: Blancas=1.89/Negras=1.21} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "erandio38"]
+[Black "txo1983"]
+[Result "0-1"]
+[ECO "C00"]
+[WhiteElo "1246"]
+[BlackElo "1779"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "98"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,97,-323,-314,-433,-311,-307,-267,-321,374,-401,-400,-429,-426,-458,
+-428,-436,-426,-432,-386,-424,-394,-522,-447,-792,-787,-780,-744,-731,-727,
+-878,-749,-737,-598,-797,-791,-795,-787,-852,-845,-972,-940,-29989,-1198,
+-29992,-29993,-29990,-1153,-1102,-1078,-1698,-1075,-29991,-29989,-29992,-29990,
+-29990,-29991,-29991,-29992,-29992,-29993,-29993,-29993,-29995,-29993,-29995,
+-29994,-29995,-29995,-29995,-29992,-29991,-29992,-29992,-29993,-29994,-29994,
+-29994,-29995,-29995,-29996,-29997,-29998,-29998,-29997,-29997,-29997,-29997,
+-29998,-29999]} 1. e4 e6 2. Nf3 d5 3. d3 c5 4. Ng5 h6 5. Nxf7 $146 ({
+Predecesor:} 5. Nf3 Nc6 6. Nbd2 Nf6 7. b3 b6 8. Bb2 Be7 9. exd5 exd5 10. d4 O-O
+11. Bb5 {1-0 (83) Arnijas Fabregas,M (1936)-Toquero Gracia,P (1636) Llinars
+del Valles 2015}) 5... Kxf7 6. exd5 {B40: Defensa Siciliana (Sistema clásico
+con e7-e6).} Qxd5 ({No vaya por} 6... Nf6 $2 7. dxe6+ Bxe6 8. Nc3 $19) 7. Nc3
+Qd8 8. Be3 {Las negras tienen ventaja decisiva.} b6 $4 {[%eval 374,23] [%wdl
+1000,0,0][%mdl 8192]} (8... Nf6 $19 {[%eval -321,23] [%wdl 0,0,1000] Esperando
+por ...Cc6.} 9. g3 Qb6) 9. b4 $4 {[%eval -401,21] [%wdl 0,0,1000][%mdl 8192]} (
+9. Qf3+ $18 {[%eval 374,23] [%wdl 1000,0,0] era la única jugada ganadora.} Nf6
+10. Qxa8) 9... cxb4 $19 {Las negras convierten la ventaja en una victoria de
+manera convincente.} 10. Na4 Qd7 11. c3 bxc3 12. Nxc3 Bb4 13. Rc1 Ba6 14. a3 {
+[#] Dh5+ es la amenaza fuerte.} Bxa3 15. Ra1 Bb4 16. Qb1 {[%eval -792,22] 
+[%wdl 0,0,1000]} (16. Bd2 $142 {[%eval -447,28] [%wdl 0,0,1000]} Nf6 17. Ra4)
+16... Bxc3+ 17. Bd2 Bxa1 18. Qxa1 Bb7 19. g4 Nf6 20. g5 Nd5 21. d4 hxg5 22.
+Bxg5 Nc6 23. Bc4 Qd6 24. Qd1 Qb4+ 25. Ke2 Qxc4+ {[%eval -1198,26] [%wdl 0,0,
+1000]} (25... Nc3+ $142 {[%eval -32745,51] [%wdl 0,0,1000]} 26. Ke3 Nxd1+ 27.
+Rxd1 Qxc4 28. h4 Nb4 29. d5 Qb3+ 30. Ke4 Qxd1 31. Kf4 Nxd5+ 32. Ke5 Nf6 33. Kf4
+Qd4+ 34. Kg3 Qg4+ 35. Kh2 Qg2#) 26. Qd3 Nxd4+ 27. Kd2 Qxd3+ {[%eval -1153,23] 
+[%wdl 0,0,1000]} (27... Qb4+ $142 {[%eval -32747,25] [%wdl 0,0,1000]} 28. Kd1
+Nc3+ 29. Ke1 Bxh1 30. h3 {[%tqu "En","","","","b4b2","",10]} Qb2 $1 31. f3
+Nxf3+ 32. Qxf3+ Bxf3 33. Bd2 Rxh3 34. Kf2 Qxd2+ 35. Kg1 Rh1#) 28. Kxd3 Nf5 {
+[#] Amenazan ganar con ...Cb4+.} 29. Rd1 Nf6 {( -> ...Tad8+)} 30. Bc1 Rad8+ {
+Las negras dan mate.} 31. Kc2 Rxd1 32. Kxd1 Rxh2 33. Bd2 Rxf2 34. Be1 Ra2 35.
+Bd2 b5 36. Ke2 a5 37. Kf2 b4 38. Ke2 b3 39. Kd1 Rxd2+ 40. Kxd2 g5 41. Kc1 a4
+42. Kb1 g4 43. Ka1 g3 44. Kb1 g2 45. Kc1 g1=Q+ 46. Kd2 Qg2+ 47. Kc3 b2 48. Kb4
+b1=Q+ 49. Kxa4 Qga2# {Gravedad del error: Blancas=1.09/Negras=0.81} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "aitoruria"]
+[Black "Resken"]
+[Result "1/2-1/2"]
+[ECO "C62"]
+[WhiteElo "2121"]
+[BlackElo "1639"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "108"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,108,11,20,-2,33,13,66,0,1,3,23,-8,-2,-10,1,-12,-10,-26,-21,-19,-21,
+-30,-12,-12,-8,-8,-6,-12,0,0,4,-12,0,0,0,-10,-14,-17,0,0,0,0,0,0,0,0,16,17,91,
+0,0,0,0,0,0,0,24,0,0,0,459,450,456,446,433,392,488,495,483,483,464,468,445,442,
+437,413,29976,29979,29981,29982,29982,29983,29984,29986,29987,29985,29986,
+29987,29988,29988,29989,29990,29990,29991,29991,29992,29993,29994,29995,29994,
+29994]} 1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. Bxc6+ bxc6 6. Nxd4 {
+C62: Ruy López (Defensa Steinitz antigua).} Bb7 {[%eval 33,27] [%wdl 71,923,6]
+} (6... c5 $11 {[%eval -2,26] [%wdl 19,959,22] debería considerarse.} 7. Nf3
+Nf6) 7. O-O c5 {[%eval 66,26] [%wdl 210,788,2]} (7... g6 $11 {[%eval 13,25] 
+[%wdl 33,954,13]}) 8. Nb5 $146 {[%eval 1,32] [%wdl 22,959,19] &Bianco es más
+activo.} (8. Nb3 $14 {[%eval 66,26] [%wdl 210,788,2]}) ({Predecesor:} 8. Nf5 g6
+9. Ng3 Bg7 10. Re1 Qd7 11. c3 Ne7 12. Be3 O-O 13. Bxc5 Qb5 14. Ba3 {1-0 (45)
+Brozova,R (1596)-Frgalova,H Orlova 2011}) 8... a6 $11 9. N5c3 Nf6 10. Bg5 {
+[%eval -8,27] [%wdl 15,957,28]} (10. Re1 $142 {[%eval 23,29] [%wdl 49,943,8]})
+10... Be7 11. Nd2 h6 12. Bh4 O-O 13. Qe2 Nd7 14. Bxe7 Qxe7 15. Rfe1 Ne5 (15...
+f5 {es más complejo.} 16. Qc4+ Qf7 17. exf5 Ne5) 16. Nc4 Nxc4 (16... Rae8 {
+parece más agudo.} 17. Nxe5 Qxe5 18. f3 f5) 17. Qxc4 Qe6 18. Nd5 Bxd5 19. exd5
+Qd7 20. Re3 a5 21. Rae1 Rfe8 22. Qe2 {[%cal Re3e8]} Rxe3 23. Qxe3 {[%mdl 4096]
+Final RDT-RDT} Kf8 24. c4 Re8 {[%tqu "En","","","","e3e8","",10]} 25. Qxe8+
+Qxe8 26. Rxe8+ Kxe8 {RP-RP} 27. Kf1 Kd7 28. Ke2 c6 {[%eval 91,29] [%wdl 367,
+633,0]} (28... Ke7 $11 {[%eval 17,30] [%wdl 6,993,1]}) {[%tqu "En","","","",
+"e2d3","",10]} 29. dxc6+ {[%eval 0,40] [%wdl 2,996,2]} (29. Kd3 $1 $16 {
+[%eval 91,29] [%wdl 367,633,0]}) 29... Kxc6 30. Kd3 f5 31. b3 g5 32. f3 {
+[#] g4 es la amenaza fuerte.} h5 {para evitar g4} 33. g3 (33. h4 $5 gxh4 34.
+Ke3 $14) 33... g4 34. f4 d5 $2 {[%eval 459,31] [%wdl 1000,0,0][%mdl 8192]
+Ahora las blancas corren más riesgos.} (34... Kb6 $11 {[%eval 0,79] [%wdl 2,
+996,2] y Las negras siguen a salvo.}) 35. cxd5+ $18 Kxd5 36. a3 Kc6 37. Kc4 {
+[#] Amenazan ganar con a4.} Kb6 38. Kd5 {Esperando por a4.} Kb5 39. Ke5 {
+Y ahora Rd5 ganaría.} a4 40. bxa4+ Kxa4 {[%tqu "En","","","","e5d5","",10]}
+41. Kd5 Kb5 {[%tqu "En","","","","a3a4","",10]} 42. a4+ $1 Kxa4 {[%eval 32720,
+28] [%wdl 1000,0,0]} (42... Kb4 $18 {[%eval 413,24] [%wdl 1000,0,0]} 43. a5 c4)
+43. Kxc5 {R3P-R3P. Las blancas dan mate.} Kb3 44. Kd5 Kc3 45. Ke5 Kd3 46. Kxf5
+{R3P-RPP} Ke3 47. Kg5 Kf3 48. Kxh5 {RP-RP} Kg2 49. Kxg4 Kxh2 50. f5 Kg2 51. f6
+Kf2 52. f7 Ke2 53. f8=Q Kd2 54. Qf4+ Kc3 {[%mdl 32768] Gravedad del error:
+Blancas=0.09 (¡Impecable!) /Negras=0.39. Un resultado inesperado.} 1/2-1/2
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Hector_2017"]
+[Black "Erandio1"]
+[Result "0-1"]
+[ECO "C50"]
+[WhiteElo "807"]
+[BlackElo "1543"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "58"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,57,-322,-311,-323,-299,-326,-293,-514,-278,-643,-427,-606,-610,-576,
+-291,-277,-283,-747,-731,-798,-718,-1034,-1029,-1074,-1064,-1148,-982,-967,
+-909,-1127,-1048,-1176,-1168,-1160,-1048,-1147,-1144,-1141,-1110,-1270,-1261,
+-29993,-29984,-29992,-29990,-29982,-29983,-29995,-29994,-29999]} 1. e4 e5 2.
+Nf3 Nc6 3. Bc4 Bc5 4. g4 $146 ({Predecesor:} 4. d3 d6 5. c3 h6 6. a4 Bb6 7.
+Nbd2 Nge7 8. b4 a6 9. Bb3 O-O 10. Nc4 Ba7 11. Be3 Kh8 12. b5 Bxe3 13. fxe3 {
+½-½ (43) Nakamura,H (2810)-Liang,A (2714) Saint Louis 2026}) 4... d6 5. h4
+Bxg4 {[#] ...Cd4 es la amenaza fuerte.} 6. Rg1 {C50: Giuoco Pianissimo y
+Defensa Húngara.} Bh5 {[%cal Od6d5] Amenazan ganar con ...d5!} 7. Rg5 g6 8.
+Qe2 $2 {[%eval -514,20] [%wdl 0,0,1000]} (8. Rxh5 {[%eval -293,23] [%wdl 0,2,
+998]} gxh5 9. d3) 8... Qf6 9. Qd3 $2 {[%eval -643,23] [%wdl 0,0,1000] [#]} (9.
+Rxh5 {[%eval -278,23] [%wdl 0,3,997]} gxh5 10. d3) 9... O-O-O 10. Nc3 {[%eval
+-606,20] [%wdl 0,0,1000]} (10. Rxh5 $142 {[%eval -427,27] [%wdl 0,0,1000]} gxh5
+11. Qe2) 10... Bxf3 $19 11. Nd5 Qg7 12. Qxf3 Nd4 {[%csl LRc2,LRf3][%cal Bc6d4,
+Bd4c2,Bc2e3,Be3c4][%mdl 32]} 13. Qe3 {[%eval -747,22] [%wdl 0,0,1000]} (13.
+Qh3+ {[%eval -283,24] [%wdl 0,1,999]} Kb8 14. Ne3) 13... Nxc2+ 14. Ke2 Nxe3 15.
+Kf3 Nxc4 16. b3 Nb6 17. b4 Bxb4 18. Nxb4 Qf6+ 19. Ke3 Nh6 20. Rg3 Qf4+ 21. Kd3
+Nd7 22. Nd5 Qxf2 23. Re3 Nc5+ 24. Kc4 Ng4 25. Kb5 a6+ {Las negras dan mate.}
+26. Ka5 b6+ 27. Kb4 Nxe3 28. Kc3 Nxd5+ 29. Kc4 Qd4# {Gravedad del error:
+Blancas=1.37/Negras=0.79} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "txo1983"]
+[Black "PabloErandio"]
+[Result "0-1"]
+[ECO "C63"]
+[WhiteElo "1783"]
+[BlackElo "1921"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "48"]
+[EventDate "2026.??.??"]
+
+{[%evp 10,47,0,-6,13,13,66,20,36,-12,20,-118,-131,-440,-119,-147,-116,-258,
+-269,-253,-248,-497,-489,-508,-497,-505,-489,-537,-526,-531,-517,-517,-490,
+-489,-484,-485,-467,-573,-568,-29999]} 1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. Bxc6
+dxc6 5. Nc3 Nf6 6. Qe2 fxe4 {C63: Ruy López (Defensa Schliemann/Jaenisch).} 7.
+Nxe4 Bd6 {[%eval 66,26] [%wdl 210,788,2]} (7... Bg4 $11 {[%eval 13,30] [%wdl
+34,954,12]}) {[%tqu "En","","","","d2d4","",10]} 8. Nxf6+ {[%eval 20,29] [%wdl
+35,958,7]} (8. d4 $1 $14 {[%eval 66,26] [%wdl 210,788,2] debería considerarse.
+}) 8... Qxf6 {La posición está igualada.} {[%tqu "En","","","","d2d4","",10]}
+9. d3 $146 {[%eval -12,29] [%wdl 7,973,20]} (9. d4 $1 $14 {[%eval 36,25] [%wdl
+55,943,2] era preferible.} Qg6 10. Nxe5 (10. dxe5 Be7 $14) 10... Qxg2 11. Nf3+
+Kf8 12. Rg1) ({Predecesor:} 9. d4 Bg4 10. dxe5 Bxf3 11. exf6+ Bxe2 12. fxg7 Rg8
+13. Kxe2 Rxg7 14. g3 Kd7 15. Be3 {1-0 (36) Schulz,A (2033)-Wolf,I (1856)
+Dresden 2008}) 9... O-O {[%eval 20,28] [%wdl 29,966,5]} (9... Bg4 {[%eval -12,
+29] [%wdl 7,973,20] parece más fuerte.}) 10. Bg5 {[%eval -118,24] [%wdl 0,312,
+688]} (10. Nd2 $11 {[%eval 20,28] [%wdl 29,966,5] permanece igual.}) 10... Qg6
+$17 {[%cal Of8f3] [#] Amenazan ganar con ...Txf3!} 11. O-O-O $2 {[%eval -440,
+22] [%wdl 0,0,1000][%mdl 8192]} (11. h4 $17 {[%eval -131,23] [%wdl 0,205,795]
+era la defensa crucial.}) {[%tqu "En","","","","f8f3","",10]} 11... Bg4 $2 {
+[%eval -119,25] [%wdl 0,299,701]} (11... Rxf3 $1 $19 {[%eval -440,22] [%wdl 0,
+0,1000][%mdl 512]} 12. gxf3 (12. Qxf3 Qxg5+) 12... Qxg5+ 13. Qe3 Qh5) 12. Be3
+Qe6 {[%eval -116,24] [%wdl 0,335,665]} (12... Rae8 $142 {[%eval -147,25] [%wdl
+0,112,888]} 13. h3 Bxf3 14. gxf3 Qf7) 13. h3 {[%eval -258,24] [%wdl 0,1,999]} (
+13. Kb1 $17 {[%eval -116,24] [%wdl 0,335,665]}) 13... Bxf3 $19 14. gxf3 Qxa2 {
+[#] apuntando a ...Da1+.} 15. Kd2 $2 {[%eval -497,19] [%wdl 0,0,1000]} (15. c4
+{[%eval -248,25] [%wdl 0,1,999]}) 15... Bb4+ 16. c3 Qxb2+ 17. Ke1 Bxc3+ 18. Bd2
+Bxd2+ 19. Rxd2 Qc1+ 20. Rd1 Qc3+ 21. Kf1 Rf4 {[%cal Bf8f4,Bf4f3,Bf3f2][%mdl 32]
+} 22. Rg1 Raf8 23. Qe3 Rxf3 24. Qg5 {[%csl Gg1][%cal Rg5g7]} Rxf2# {Gravedad
+del error: Blancas=1.42/Negras=0.43} 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "aitoruria"]
+[Black "erandio38"]
+[Result "1-0"]
+[ECO "C42"]
+[WhiteElo "2120"]
+[BlackElo "1247"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "43"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,42,234,423,429,758,753,757,759,753,743,743,739,816,799,874,868,1125,
+1116,1237,999,995,980,989,985,1007,980,29978,1022,1006,960,29992,29993,29992,
+29994,29999]} 1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5 4. Nxe5 Qe7 5. d4 Nxe4 $2 {
+[%eval 423,19] [%wdl 1000,0,0] [#]} (5... O-O {[%eval 234,22] [%wdl 987,13,0]
+era necesario.} 6. O-O (6. dxc5 Qxe5 7. O-O Qxc5 $14) 6... Bb6) 6. O-O $146 {
+C42: Defensa Petroff.} ({Predecesor:} 6. Qe2 Bxd4 7. Qxe4 Qxe5 8. Qxe5+ Bxe5 9.
+O-O O-O 10. Re1 d6 11. Nc3 Bxc3 12. bxc3 {½-½ (32) Rabe,M (1367)-Walther,J 
+(1802) Verden 2017}) 6... f6 {[%eval 758,20] [%wdl 1000,0,0]} (6... O-O $142 {
+[%eval 429,24] [%wdl 1000,0,0]} 7. Re1 Nxf2) 7. Qh5+ ({Menos fuerte es} 7. dxc5
+fxe5 8. Qh5+ Kd8 $16) 7... g6 {[%tqu "En","","","","e5g6","",10]} 8. Nxg6 $1 {
+[%mdl 512] Las blancas están ganado claramente.} hxg6 9. Qxh8+ Qf8 10. Qh4 Nd6
+11. dxc5 {[#] Y ahora Te1+ ganaría.} Nxc4 12. Qxc4 d6 13. Re1+ Kd8 14. cxd6
+cxd6 15. Nc3 Bd7 16. Bf4 Nc6 17. Rad1 Na5 18. Qb4 {[%eval 1022,26] [%wdl 1000,
+0,0]} (18. Qd5 $142 {[%eval 32724,26] [%wdl 1000,0,0]} Nc4 19. Qxc4 Rc8 20. Qd5
+Rc6 21. Qa5+ b6 22. Qxa7 Rc7 23. Qb8+ Bc8 24. Bxd6) 18... Nc6 19. Qxb7 Rc8 20.
+Rxd6 {Las blancas dan mate.} Qxd6 21. Bxd6 Rc7 22. Qxc7# {Las negras se
+quedaron fuera de juego tras la apertura.  Gravedad del error: Blancas=0.16 
+(Muy preciso.) /Negras=2.30} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Resken"]
+[Black "Hector_2017"]
+[Result "1-0"]
+[ECO "B01"]
+[WhiteElo "1638"]
+[BlackElo "811"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "75"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,74,135,221,0,441,0,0,-411,-404,-563,-554,-577,-577,-610,-403,-520,
+-327,-333,-327,-349,-295,-291,-179,-166,52,-207,892,866,879,784,29988,29988,
+29995,1164,29994,29995,29995,29989,29993,29993,29993,29994,29994,29989,29989,
+29990,29992,29993,29993,29993,29994,29994,29996,29995,29995,29995,29995,29996,
+29996,29995,29998,29995,29997,29998,29998,29998,29999]} 1. e4 d5 2. exd5 c6 3.
+dxc6 Nxc6 {[%cal Bb8c6,Bc6b4,Bb4c2][%mdl 32]} 4. Nc3 Nb4 $146 ({Predecesor:} 
+4... e5 5. Nf3 Bc5 6. Be2 Nf6 7. O-O O-O 8. d3 h6 9. Be3 Bxe3 10. fxe3 Qb6 11.
+Qc1 Be6 {1-0 (35) Erigaisi,A (2559)-Fedoseev,V (2687) Lichess.org INT 2021}) 5.
+d4 Bf5 {[%eval 221,21] [%wdl 984,16,0]} (5... Qxd4 $16 {[%eval 135,27] [%wdl
+765,235,0]} 6. Bd2 Nf6) 6. Bd3 $2 {[%eval 0,27] [%wdl 33,935,32] [#] B01:
+Defensa Escandinava.} ({Las blancas deberían jugar} 6. Bb5+ $18 {[%eval 221,
+21] [%wdl 984,16,0]} Bd7 7. Qe2) 6... Qd7 $2 {[%eval 441,20] [%wdl 1000,0,0]
+[%mdl 8192]} (6... Bxd3 $11 {[%eval 0,27] [%wdl 33,935,32]} 7. cxd3 Qxd4) {
+[%tqu "En","","","","d3b5","",10]} 7. Bxf5 $2 {[%eval 0,28] [%wdl 18,963,19]} (
+7. Bb5 $1 $18 {[%eval 441,20] [%wdl 1000,0,0][%cal Rb5d7]} Nc6 8. d5) 7... Qxf5
+$11 8. a3 $2 {[%eval -411,24] [%wdl 0,0,1000][%mdl 8192]} (8. Rb1 $11 {[%eval
+0,28] [%wdl 18,963,19] y Las blancas siguen a salvo.}) 8... Nxc2+ $19 9. Qxc2
+Qxc2 10. Be3 Nf6 11. Nf3 Ne4 12. O-O Qxb2 13. Nxe4 Qb5 14. Rab1 Qd5 15. Nc3 Qc4
+16. Rfc1 {[#] Y ahora Cb5 ganaría.} {[%tqu "En","","","","a7a6","",10]} Rc8 $2
+{[%eval 52,31] [%wdl 70,930,0]} ({Las negras deberían intentar} 16... a6 $1
+$19 {[%eval -166,27] [%wdl 0,29,971][%cal Oe7e5] Amenazando con fuerza ...e5!}
+17. Ne5 Qe6) {[%tqu "En","","","","c3d5","",10]} 17. Ne4 $2 {[%eval -207,25] 
+[%wdl 0,3,997][%mdl 8192]} (17. Nd5 $1 $14 {[%eval 52,31] [%wdl 70,930,0]
+permanece por delante.} e6 18. Rxc4 Rxc4 {[%tqu "En","","","","f3d2","",10]}
+19. Nd2 $1) 17... Qd3 $4 {[%eval 892,25] [%wdl 1000,0,0][%mdl 8192]} 18. Rxc8+
+$18 Kd7 19. Nc5+ Kd6 20. Nxd3 e6 21. Rd8+ {[%eval 1164,24] [%wdl 1000,0,0]} (
+21. Rxb7 $142 {[%eval 32758,62] [%wdl 1000,0,0]} Be7 22. Rc5 Bd8 23. Nfe5 Bc7
+24. Rbxc7 h6 25. Nxf7#) 21... Kc6 22. Nfe5+ {[%cal Bf3e5,Be5f7,Bf7h8][%mdl 32]
+Las blancas dan mate.} Kc7 23. Nxf7 Rg8 24. Rc1+ Kb6 25. d5+ Kb5 26. dxe6 b6
+27. Rcc8 Rh8 28. Nxh8 Bxa3 29. Rd5+ Ka6 30. Rc3 Bb2 31. Rb3 Bf6 32. Nb4+ Kb7
+33. Rd7+ Kc8 34. Rc3+ Kb8 35. Rd8+ Kb7 36. Rd7+ Kb8 37. Bf4+ Ka8 38. Rc8# {
+Gravedad del error: Blancas=1.42/Negras=1.64} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Erandio1"]
+[Black "txo1983"]
+[Result "1-0"]
+[ECO "C02"]
+[WhiteElo "1526"]
+[BlackElo "1792"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "45"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,45,18,20,-20,-24,-20,-26,-64,6,4,697,686,688,693,713,710,709,630,646,
+618,674,606,613,605,659,647,664,648,702,699,699,681,654,619,29997,29998,29998,
+29999]} 1. e4 e6 2. Nf3 d5 3. e5 c5 4. d4 Bd7 5. c3 Nc6 6. Bf4 {[%eval -20,27]
+[%wdl 23,901,76] C02: Defensa Francesa (Variante del avance).} (6. Be2 $142 {
+[%eval 20,26] [%wdl 76,901,23]}) 6... Qb6 $11 7. Qd2 cxd4 (7... f6 {es más
+complejo.} 8. h4 Be7 9. Be2 Nh6) 8. Nxd4 $146 {[%eval -64,21] [%wdl 4,765,231]}
+(8. cxd4 $11 {[%eval -26,23] [%wdl 17,899,84]} Nge7 9. Nc3) ({Predecesor:} 8.
+cxd4 Bb4 9. Nc3 Nge7 10. Be2 Nf5 11. Be3 Nxe3 12. Qxe3 O-O 13. O-O Rac8 14. a3
+{0-1 (38) Safont Tria Sastre,B (1500)-Francia,C (1571) Barcelona 2019}) 8...
+Nxd4 {[%eval 6,22] [%wdl 34,945,21]} (8... Nge7 $15 {[%eval -64,21] [%wdl 4,
+765,231]}) 9. cxd4 Qxd4 $2 {[%eval 697,24] [%wdl 1000,0,0][%mdl 8192] [#]
+Pierde la partida.} 10. Qxd4 $18 Ne7 11. Nc3 Nf5 12. Qd2 Bb4 13. O-O-O Rc8 14.
+Be3 Ba4 15. Re1 {[%cal Bd1e1,Be1e3,Be3f3][%mdl 32]} O-O 16. Kb1 Nxe3 17. Qxe3
+Bxc3 18. bxc3 Rc6 19. Qxa7 b5 20. Re3 Rfc8 21. Rf3 Rc5 22. Qxf7+ Kh8 {[%tqu
+"En","","","","f7f8","",10]} 23. Qf8+ $1 {Gravedad del error: Blancas=0.34/
+Negras=0.91} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "PabloErandio"]
+[Black "aitoruria"]
+[Result "1-0"]
+[ECO "C56"]
+[WhiteElo "1910"]
+[BlackElo "2136"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "69"]
+[EventDate "2026.??.??"]
+
+{[%evp 16,69,-2,-3,4,-1,0,-117,-16,-97,25,26,316,307,566,-9,12,27,230,0,400,90,
+87,-7,-7,-9,-7,-11,-11,-249,-243,-420,-301,-354,-348,-418,-377,-420,-390,-436,
+-385,-591,-480,-473,-467,-508,-503,-719,-359,-351,-10,-11,0,0,732,620]} 1. e4
+e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3
+Qa5 9. Nxe4 {[#] Amenazando mate con Cf6+.} Be7 {para Cf6+. C56: Defensa de
+los dos caballos.} 10. Bd2 Qb6 {[%tqu "En","","","","d2g5","",10]} 11. Qe2 $146
+{[%eval -117,21] [%wdl 0,341,659]} (11. Bg5 $1 $11 {[%eval 0,25] [%wdl 18,963,
+19]}) ({Predecesor:} 11. b3 O-O 12. Bf4 Bg4 13. a3 Rfe8 14. c3 f5 15. Ng3 dxc3
+16. h3 Rad8 17. Qc2 Bxf3 18. gxf3 {0-1 (30) Shook,R (1717)-Bass,S (1788) IECC
+email 2000}) 11... Be6 {[%eval -16,26] [%wdl 10,955,35]} (11... Qxb2 12. Nxd4
+O-O 13. Nxc6 bxc6 14. Bc3 $11) (11... O-O $17 {[%eval -117,21] [%wdl 0,341,659]
+} 12. Qd3 Bg4) 12. Nfg5 {[%eval -97,25] [%wdl 0,533,467]} (12. Neg5 $11 {
+[%eval -16,26] [%wdl 10,955,35]} Bxg5 13. Nxg5) 12... Bxg5 {[%eval 25,27] 
+[%wdl 40,955,5]} (12... Qxb2 $2 13. Nxe6 fxe6 14. Qc4 $18) ({Las negras
+deberían jugar} 12... Bf5 $17 {[%eval -97,25] [%wdl 0,533,467] Amenazando con
+fuerza ...0-0.} 13. Qf3 Bg6) 13. Nxg5 $11 Nd8 {[%eval 316,20] [%wdl 1000,0,0]
+[%mdl 8192]} (13... O-O-O $11 {[%eval 26,27] [%wdl 35,962,3]}) {[%tqu "En","",
+"","","e2h5","",10]} 14. Qh5 $1 $18 h6 $2 {[%eval 566,22] [%wdl 1000,0,0]} (
+14... Kd7 {[%eval 307,23] [%wdl 1000,0,0] sigue luchando.} 15. Nxe6 fxe6) {
+[%tqu "En","","","","e1e6","",10]} 15. Nf3 $2 {[%eval -9,30] [%wdl 7,977,16]} (
+{Mejor es} 15. Rxe6+ $1 $18 {[%eval 566,22] [%wdl 1000,0,0][%mdl 512]} Qxe6 16.
+Nxe6 Nxe6 17. Bb4) 15... Qxb2 16. Rab1 Qxc2 {[%eval 230,22] [%wdl 998,2,0]} (
+16... Qxa2 $11 {[%eval 27,24] [%wdl 34,963,3] y Las negras siguen a salvo.} 17.
+Qc5 (17. Nxd4 O-O $11) 17... b6 18. Qxc7 O-O) {[%tqu "En","","","","d2b4","",
+10]} 17. Nxd4 $2 {[%eval 0,34] [%wdl 8,983,9]} Qxa2 $2 {[%eval 400,25] [%wdl
+1000,0,0][%mdl 8192]} (17... Qxd2 $11 {[%eval 0,34] [%wdl 8,983,9]} 18. Nxe6
+Nxe6 19. Rxe6+ Kf8) 18. Nb5 $2 {[%eval 90,25] [%wdl 377,623,0]} O-O $16 {
+[%tqu "En","","","","d2h6","",10]} 19. Bxh6 {[%eval -7,38] [%wdl 5,985,10]
+&Bianco es mucho más activo.} gxh6 $11 20. Qxh6 {[%tqu "En","","","","a2c2",
+"",10]} Qc2 $1 {[#] Y ahora ...Dh7 ganaría.} {[%tqu "En","","","","b5c7","",
+10]} 21. Nxc7 $1 {[%cal Ob1b5] ¡Verdaderamente agresivo!} Rc8 {Amenazan ganar
+con ...Dh7.} (21... Qxc7 22. Qg5+ Kh8 23. Qf6+ Kg8 24. Rb5) 22. Nxe6 $2 {
+[%eval -249,23] [%wdl 0,0,1000]} (22. Rb3 $11 {[%eval -11,32] [%wdl 3,988,9] y
+Las blancas no tienen de que preocuparse.} Bxb3 23. Ne8) 22... Nxe6 $19 23. Qh3
+$2 {[%eval -420,22] [%wdl 0,0,1000]} (23. Rxb7 {[%eval -243,22] [%wdl 0,0,1000]
+} Qc3 24. Reb1) 23... Qh7 {apuntando a ...Dxh3.} 24. Qg3+ Qg7 {Esperando por ..
+.Dxg3.} 25. Qd3 Rcd8 ({No tome} 25... Nf4 $2 26. Qg3 Qxg3 27. fxg3 $19) 26. Qe2
+Rd6 ({Es erróneo} 26... Nf4 $2 27. Qf3 Rd4 28. h3 $19) 27. g3 Rfd8 28. Rbd1 {
+[%eval -591,27] [%wdl 0,0,1000]} (28. Rxb7 {[%eval -385,23] [%wdl 0,0,1000]
+era lo que pedía.} a5 29. Qe5) 28... Ng5 29. Rxd6 Rxd6 30. Qe8+ Qf8 31. Qe2
+Nh3+ {[%eval -359,25] [%wdl 0,0,1000]} (31... Re6 $142 {[%eval -719,23] [%wdl
+0,0,1000]} 32. h4 Rxe2 33. Rxe2 Nf3+ 34. Kg2 Nd4) 32. Kg2 {[%tqu "En","","","",
+"d6e6","",10]} Qh6 $2 {[%eval -10,26] [%wdl 2,993,5]} (32... Re6 $1 $19 {
+[%eval -351,24] [%wdl 0,0,1000]} 33. Qg4+ Qg7 34. Qxg7+ Kxg7) 33. Qg4+ $11 Rg6
+34. Qxh3 Qg7 $2 {[%eval 732,28] [%wdl 1000,0,0][%mdl 8192]} (34... Qxh3+ $11 {
+[%eval 0,54] [%wdl 3,994,3]} 35. Kxh3 b5) 35. Re8+ {Gravedad del error:
+Blancas=0.92/Negras=1.17} 1-0
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "Hector_2017"]
+[Black "Erandio1"]
+[Result "0-1"]
+[ECO "C50"]
+[WhiteElo "821"]
+[BlackElo "1525"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "12"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,11,-713,-696,-29999]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Ng5 Qxg5 5. h4
+Qxg2 {[%csl Gc5][%cal Rg2f2] [#]} 6. Rg1 $146 {C50: Giuoco Pianissimo y
+Defensa Húngara.} ({Predecesor:} 6. Ke2 Qxe4+ 7. Kf1 Qxh1+ 8. Ke2 Nd4+ 9. Kd3
+Qxd1 10. Nc3 Qf3# {0-1 (10) Rancurel,A (1089)-Balaggan,K (700) London 2018})
+6... Qxf2# 0-1
+
+[Event "Erandio SP Arena"]
+[Site "lichess.org"]
+[Date "2026.04.10"]
+[Round "?"]
+[White "txo1983"]
+[Black "Resken"]
+[Result "1-0"]
+[ECO "C62"]
+[WhiteElo "1788"]
+[BlackElo "1642"]
+[Annotator "Análisis táctico 5.2 (5s)"]
+[PlyCount "75"]
+[EventDate "2026.??.??"]
+
+{[%evp 9,75,-1,70,-32,-33,-48,3,-8,12,-14,11,-233,10,-280,-37,-39,-34,-87,-72,
+-294,-293,-286,-158,-157,-156,-257,-262,-270,-228,-228,-225,-315,-196,-225,-61,
+-500,-198,-399,-394,-375,830,822,941,926,964,805,970,848,835,834,818,769,948,
+929,935,931,946,913,29993,29992,29993,29993,29993,29993,29993,29994,29994,
+29994]} 1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. Qe2 Bd7 5. Bxc6 Bxc6 {[%eval 70,24] 
+[%wdl 249,749,2]} (5... bxc6 $11 {[%eval -1,26] [%wdl 31,936,33]} 6. Nc3 c5) 6.
+c3 {[%eval -32,28] [%wdl 8,918,74] C62: Ruy López (Defensa Steinitz antigua).}
+(6. d4 $14 {[%eval 70,24] [%wdl 249,749,2]}) 6... Nf6 $15 7. d4 $146 ({
+Predecesor:} 7. d3 g6 8. Bg5 Bg7 9. d4 h6 10. Bxf6 Qxf6 11. d5 Bd7 12. O-O Bg4
+13. Nbd2 {0-1 (25) Richards,E (878)-Eriksson,C (976) Gold Coast 2005}) 7...
+exd4 {[%eval 3,29] [%wdl 25,955,20]} (7... Nxe4 $15 {[%eval -48,23] [%wdl 4,
+866,130]} 8. dxe5 Qe7) 8. cxd4 {La posición está igualada.} Be7 ({No juegue} 
+8... Nxe4 9. d5 Bxd5 10. Nc3 $16) 9. Nc3 O-O 10. Be3 $2 {[%eval -233,26] [%wdl
+0,6,994]} (10. d5 $11 {[%eval 11,26] [%wdl 31,955,14] y Las blancas están
+bien.} Bd7 11. O-O) 10... h6 $2 {[%eval 10,31] [%wdl 30,956,14]} (10... Nxe4
+$19 {[%eval -233,26] [%wdl 0,6,994] Amenazando con fuerza ...Dc8.} 11. O-O Re8)
+11. O-O-O $2 {[%eval -280,24] [%wdl 0,1,999][%mdl 8192]} (11. d5 $11 {[%eval
+10,31] [%wdl 30,956,14]} Bd7 12. O-O) 11... a6 $2 {[%eval -37,24] [%wdl 5,913,
+82]} ({Las negras deberían intentar} 11... Nxe4 $19 {[%eval -280,24] [%wdl 0,
+1,999]} 12. Qd3 Nxc3 13. bxc3 Re8) {[%tqu "En","","","","d4d5","",10]} 12. d5
+$1 {[%tqu "En","","","","c6d7","",10]} Bd7 {[%tqu "En","","","","f3d4","",10]}
+13. Rhe1 {[%eval -87,22] [%wdl 1,624,375]} (13. Nd4 $1 $15 {[%eval -34,26] 
+[%wdl 6,922,72]}) 13... b5 {[%cal Bb7b5,Bb5b4][%mdl 32]} 14. h3 $2 {[%eval
+-294,21] [%wdl 0,1,999]} (14. e5 $17 {[%eval -72,25] [%wdl 1,747,252] valía
+la pena intentarlo.} dxe5 15. Nxe5) 14... b4 $19 15. Nb1 a5 {[%eval -158,23] 
+[%wdl 0,97,903]} ({Más fuerte que} 15... Nxe4 16. Qc4 Ng5 17. Nd4 $17) (15...
+c6 $19 {[%eval -286,20] [%wdl 0,1,999]} 16. e5 Nxd5) 16. Nbd2 $17 c6 17. Kb1 {
+[%eval -257,22] [%wdl 0,2,998]} (17. dxc6 $17 {[%eval -156,24] [%wdl 0,104,896]
+} Bxc6 18. Kb1) 17... cxd5 $19 18. exd5 Bf5+ 19. Ka1 Nxd5 20. Bd4 Bf6 {
+Esperando por ...Cf4.} 21. Bxf6 Qxf6 {[%eval -61,29] [%wdl 1,861,138]} ({
+No capture} 21... gxf6 22. Nc4 Be6 23. Nd4 $18) ({Mejor es} 21... Nxf6 $19 {
+[%eval -225,24] [%wdl 0,4,996]} 22. Qb5 d5) 22. g4 $2 {[%eval -500,24] [%wdl 0,
+0,1000][%mdl 8192]} (22. Ne4 $15 {[%eval -61,29] [%wdl 1,861,138]} Qe6 23. Nd4
+Qxe4 24. Qxe4 Bxe4 25. Rxe4) {[%tqu "En","","","","d5c3","",10]} 22... Bg6 $2 {
+[%eval -198,25] [%wdl 0,10,990]} (22... Nc3 $1 {[%eval -500,24] [%wdl 0,0,1000]
+[%mdl 512]} 23. Qc4 Nxd1 24. Rxd1 Bh7) 23. Qc4 {[%eval -399,24] [%wdl 0,0,1000]
+} (23. Ne4 {[%eval -198,25] [%wdl 0,10,990]} Bxe4 24. Qxe4) 23... Nf4 24. Ne4
+d5 $4 {[%eval 830,25] [%wdl 1000,0,0][%mdl 8192]} 25. Nxf6+ $18 {[%mdl 64] [#]
+Ataque a la descubierta} gxf6 26. Qxf4 Kg7 27. h4 Rfe8 28. g5 fxg5 29. hxg5
+hxg5 {[%tqu "En","","","","e1e8","",10]} 30. Rxe8 $1 {[%cal Be1e8,Be8a8,Ba8a5]
+[%mdl 32]} gxf4 (30... Rxe8 31. Qxg5) 31. Rxa8 Be4 32. Nd4 f3 33. Rxa5 {
+[#] Con la intención de Tb5 y mate.} f5 34. a3 {[%cal Ba2a3,Ba3b4,Bb4b5,Bb5b6]
+[%mdl 32] Las blancas dan mate.} Kf6 35. axb4 Ke5 36. b5 Kd6 37. b6 Kd7 38. Rc1
+{Gravedad del error: Blancas=1.13/Negras=1.02} 1-0
+
