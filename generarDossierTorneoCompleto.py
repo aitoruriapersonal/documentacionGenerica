@@ -62,6 +62,10 @@ def show_input_dialog() -> argparse.Namespace:
     root = tk.Tk()
     root.title('Dossier Torneo Completo — Parámetros de entrada')
     root.resizable(False, False)
+    root.lift()
+    root.attributes('-topmost', True)
+    root.after(100, lambda: root.attributes('-topmost', False))
+    root.focus_force()
 
     pad = {'padx': 8, 'pady': 4}
 
@@ -279,7 +283,16 @@ def main() -> None:
                 print(f'ERROR: Archivo no encontrado: {path}', file=sys.stderr)
                 sys.exit(1)
     else:
-        args = show_input_dialog()
+        try:
+            args = show_input_dialog()
+        except tk.TclError as exc:
+            print(
+                f'ERROR: No se pudo abrir la ventana gráfica: {exc}\n'
+                'Prueba a ejecutar el script pasando los argumentos por consola:\n'
+                '  python3 generarDossierTorneoCompleto.py --errores F1 --partidas F2 --salida-pgn F3',
+                file=sys.stderr,
+            )
+            sys.exit(1)
 
     # ── Paso 1: Unificar PGN ─────────────────────────────────────────────────
     print('=' * 60)
