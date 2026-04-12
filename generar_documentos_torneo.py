@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-genera_torneo.py — Generate documentation for Lichess Arena chess tournaments.
+generar_documentos_torneo.py — Generate documentation for Lichess Arena chess tournaments.
 
 Usage:
-    python3 genera_torneo.py --pgn FILE [--url URL] [--out DIR] [--name NAME] [--no-pdf]
-    python3 genera_torneo.py        (launches an interactive dialog window)
+    python3 generar_documentos_torneo.py --pgn FILE [--url URL] [--out DIR] [--name NAME] [--no-pdf]
+    python3 generar_documentos_torneo.py        (launches an interactive dialog window)
 
 Accepted input file extensions: .pgn, .txt  (PGN is plain text, so .txt works too)
 """
@@ -745,6 +745,9 @@ def _parse_single_game(block, game_num):
         (ply_count is not None and ply_count == 0) or len(move_tokens) == 0
     ) and result in ('1-0', '0-1')
 
+    white_berserk = headers.get('WhiteBerserk', '').lower() == 'true'
+    black_berserk = headers.get('BlackBerserk', '').lower() == 'true'
+
     return {
         'game_num': game_num,
         'event': headers.get('Event', ''),
@@ -760,6 +763,8 @@ def _parse_single_game(block, game_num):
         'err_white': err_white,
         'err_black': err_black,
         'is_forfeit': is_forfeit,
+        'white_berserk': white_berserk,
+        'black_berserk': black_berserk,
         'clean_moves': clean,
         'headers': headers,
         'moves_text': moves_text,
@@ -798,7 +803,7 @@ def extract_tournament_id(url):
 def _fetch_url(url, accept=None):
     """Fetch URL content, return bytes."""
     req = urllib.request.Request(url)
-    req.add_header('User-Agent', 'genera-torneo/1.0')
+    req.add_header('User-Agent', 'generar-documentos-torneo/1.0')
     if accept:
         req.add_header('Accept', accept)
     with urllib.request.urlopen(req, timeout=30) as resp:
@@ -951,7 +956,7 @@ def compute_player_stats(games, api_data=None):
             'err_white': game['err_white'],
             'err_black': game['err_black'],
             'is_forfeit': game['is_forfeit'],
-            'berserk': False,
+            'berserk': game.get('white_berserk', False),
         })
         b_list.append({
             'game_idx': len(b_list) + 1,
@@ -964,7 +969,7 @@ def compute_player_stats(games, api_data=None):
             'err_white': game['err_white'],
             'err_black': game['err_black'],
             'is_forfeit': game['is_forfeit'],
-            'berserk': False,
+            'berserk': game.get('black_berserk', False),
         })
 
     # Lichess API overrides
@@ -982,9 +987,16 @@ def compute_player_stats(games, api_data=None):
     players = {}
     for name, pgames in player_games.items():
         game_results = [g['result'] for g in pgames]
-        berserk_count = api_berserks.get(name, 0)
 
-        computed_score = compute_arena_score(game_results, berserk_wins=berserk_count)
+        # Berserk counts from PGN headers (fallback when API not available)
+        pgn_berserk_count = sum(1 for g in pgames if g.get('berserk'))
+        pgn_berserk_wins = sum(1 for g in pgames if g.get('berserk') and g['result'] == 'win')
+
+        berserk_count = api_berserks.get(name, pgn_berserk_count)
+        # Berserk wins (used for arena score bonus): prefer PGN per-game data when available
+        berserk_wins = pgn_berserk_wins if pgn_berserk_count > 0 else api_berserks.get(name, 0)
+
+        computed_score = compute_arena_score(game_results, berserk_wins=berserk_wins)
         lichess_pts = api_scores.get(name, computed_score)
 
         # ELO tracking
@@ -1024,8 +1036,9 @@ def compute_player_stats(games, api_data=None):
         avg_err_white = sum(err_as_white) / len(err_as_white) if err_as_white else None
         avg_err_black = sum(err_as_black) / len(err_as_black) if err_as_black else None
 
-        # Per-game arena gains
-        gains = compute_arena_gains(game_results)
+        # Per-game arena gains (berserk win = berserk played AND won)
+        berserk_per_game = [g.get('berserk', False) and g['result'] == 'win' for g in pgames]
+        gains = compute_arena_gains(game_results, berserk_per_game=berserk_per_game)
 
         # Annotate game history with gains
         for i, g in enumerate(pgames):
@@ -1686,7 +1699,7 @@ def generate_html_completo(games, players_sorted, global_stats, tournament_info,
 {chess_viewer}
 
 <footer>
-  Generado con genera_torneo.py · {h(name)} · {h(date_display)}
+  Generado con generar_documentos_torneo.py · {h(name)} · {h(date_display)}
 </footer>
 
 <script>
@@ -1823,7 +1836,7 @@ def generate_html_final(games, players_sorted, global_stats, tournament_info,
 </section>
 
 <footer>
-  Generado con genera_torneo.py · {h(name)} · {h(date_display)}
+  Generado con generar_documentos_torneo.py · {h(name)} · {h(date_display)}
 </footer>
 </body>
 </html>
@@ -2174,7 +2187,7 @@ def show_input_dialog():
     result = {}
 
     root = tk.Tk()
-    root.title('Genera Torneo — Parámetros de entrada')
+    root.title('Generar Documentos Torneo — Parámetros de entrada')
     root.resizable(False, False)
 
     pad = {'padx': 8, 'pady': 4}
