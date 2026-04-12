@@ -5,6 +5,8 @@ genera_torneo.py — Generate documentation for Lichess Arena chess tournaments.
 Usage:
     python3 genera_torneo.py --pgn FILE [--url URL] [--out DIR] [--name NAME] [--no-pdf]
     python3 genera_torneo.py        (launches an interactive dialog window)
+
+Accepted input file extensions: .pgn, .txt  (PGN is plain text, so .txt works too)
 """
 
 import argparse
@@ -2187,7 +2189,7 @@ def show_input_dialog():
     def browse_pgn():
         path = filedialog.askopenfilename(
             title='Seleccionar archivo PGN',
-            filetypes=[('PGN files', '*.pgn'), ('All files', '*.*')]
+            filetypes=[('PGN / TXT files', '*.pgn *.txt'), ('PGN files', '*.pgn'), ('Text files', '*.txt')]
         )
         if path:
             pgn_var.set(path)
@@ -2235,6 +2237,10 @@ def show_input_dialog():
         if not pgn:
             messagebox.showerror('Error', 'El archivo PGN es obligatorio.')
             return
+        ext = os.path.splitext(pgn)[1].lower()
+        if ext not in ('.pgn', '.txt'):
+            messagebox.showerror('Error', 'Solo se permiten archivos con extensión .pgn o .txt.')
+            return
         if not os.path.exists(pgn):
             messagebox.showerror('Error', f'Archivo PGN no encontrado:\n{pgn}')
             return
@@ -2277,7 +2283,7 @@ def main():
         parser = argparse.ArgumentParser(
             description='Generate chess tournament documentation from a PGN file.'
         )
-        parser.add_argument('--pgn', required=True, help='Path to annotated PGN file')
+        parser.add_argument('--pgn', required=True, help='Path to PGN or TXT file with annotated games')
         parser.add_argument('--url', default=None,
                             help='Lichess tournament URL (e.g. https://lichess.org/tournament/2wCiE6DW)')
         parser.add_argument('--out', default=None,
@@ -2290,6 +2296,10 @@ def main():
         args = show_input_dialog()
 
     pgn_path = os.path.abspath(args.pgn)
+    pgn_ext = os.path.splitext(pgn_path)[1].lower()
+    if pgn_ext not in ('.pgn', '.txt'):
+        print('ERROR: Solo se permiten archivos con extensión .pgn o .txt.', file=sys.stderr)
+        sys.exit(1)
     if not os.path.exists(pgn_path):
         print(f'ERROR: PGN file not found: {pgn_path}', file=sys.stderr)
         sys.exit(1)
