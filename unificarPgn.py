@@ -129,15 +129,69 @@ def _moves_signature(game_text: str) -> str:
     return ' '.join(moves[:10])
 
 
-def _add_error_to_movetext(movetext: str, error_comment: str) -> str:
-    """Insert an error comment just before the final result token."""
+def _format_movetext(movetext: str, error_comment: str, moves_per_line: int = 10) -> str:
+    """
+    Format the movetext for output:
+    - Every *moves_per_line* complete moves (white + black) break to a new line.
+    - The result token is treated as an extra unit: stays on the last line when
+      there is still room (< moves_per_line complete moves on that line), or moves
+      to a new line when the last line is already full.
+    - The error comment is always written on its own line after the result.
+    """
     result_re = re.compile(r'(1-0|0-1|1/2-1/2|\*)\s*$')
     m = result_re.search(movetext)
     if m:
-        before = movetext[:m.start()].rstrip()
-        return f'{before} {{{error_comment}}} {m.group(1)}'
-    # No result found — append comment at the end
-    return movetext + f' {{{error_comment}}}'
+        result_token = m.group(1)
+        moves_text = movetext[:m.start()].strip()
+    else:
+        result_token = None
+        moves_text = movetext.strip()
+
+    # Tokenise and group into complete moves (move_number + white + [black])
+    tokens = moves_text.split()
+    move_groups = []  # each element: list of tokens for one "complete" move
+    i = 0
+    while i < len(tokens):
+        tok = tokens[i]
+        if re.match(r'^\d+\.+$', tok):
+            group = [tok]
+            # White's move
+            if i + 1 < len(tokens) and not re.match(r'^\d+\.+$', tokens[i + 1]):
+                group.append(tokens[i + 1])
+                i += 1
+            # Black's move (only if the following token is not another move number)
+            if i + 1 < len(tokens) and not re.match(r'^\d+\.+$', tokens[i + 1]):
+                group.append(tokens[i + 1])
+                i += 1
+            move_groups.append(group)
+        i += 1
+
+    # Build lines of moves_per_line complete moves each
+    line_parts = []
+    for chunk_start in range(0, len(move_groups), moves_per_line):
+        chunk = move_groups[chunk_start:chunk_start + moves_per_line]
+        tokens_in_chunk = [t for group in chunk for t in group]
+        line_parts.append(' '.join(tokens_in_chunk))
+
+    if not line_parts:
+        line_parts = ['']
+
+    # Place the result token (treated as an extra unit for line-breaking)
+    last_line_move_count = len(move_groups) % moves_per_line
+    if result_token:
+        if last_line_move_count == 0 and move_groups:
+            # Last line is full → result on a new line
+            line_parts.append(result_token)
+        else:
+            # Room left on the last line → append result to it
+            sep = ' ' if line_parts[-1] else ''
+            line_parts[-1] += sep + result_token
+
+    # Error comment always on its own line after the result
+    formatted = '\n'.join(line_parts)
+    if error_comment:
+        formatted += '\n{' + error_comment + '}'
+    return formatted
 
 
 _DRAW_RESULTS = {'1/2-1/2', '0.5-0.5'}
@@ -278,7 +332,7 @@ def unificar(errores_path: str, partidas_path: str, salida_path: str) -> int:
                 file=sys.stderr,
             )
 
-        merged_movetext = _add_error_to_movetext(prt_movetext, error_comment)
+        merged_movetext = _format_movetext(prt_movetext, error_comment)
         output_parts.append(_headers_text(prt_headers) + '\n\n' + merged_movetext)
 
     result_text = '\n\n\n'.join(output_parts) + '\n'
