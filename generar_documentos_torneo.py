@@ -534,7 +534,7 @@ td { padding: 0.65rem 0.9rem; vertical-align: middle; white-space: nowrap; }
 .error-low { color: #81c784; } .error-mid { color: #ffb74d; } .error-high { color: #ef9a9a; }
 .section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; margin-bottom: 1.5rem; }
 .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.5rem; }
-.stat-card .big { font-size: 2.2rem; font-weight: 800; color: var(--accent); }
+.stat-card .big { font-size: 2.2rem; font-weight: 800; color: #ffffff; }
 .stat-card .label { font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem; }
 .encounter-cell { font-size: 0.78rem; white-space: nowrap; padding: 0.4rem 0.5rem; }
 .ec-win { color: var(--win); } .ec-lose { color: #ef9a9a; } .ec-draw { color: var(--draw); } .ec-none { color: var(--border); }
@@ -612,12 +612,11 @@ BOARD_CSS = """
 PRINT_CSS = """
 @media print {
   @page { size: A4 landscape; margin: 12mm 15mm; }
-  body { background: #fff !important; color: #000 !important; }
+  * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   header, footer, .tab-nav, .notice { display: none; }
-  #portada { break-after: page; min-height: unset; padding: 20mm 30mm; background: #fff !important; color: #000 !important; }
+  #portada { break-after: page; min-height: unset; padding: 20mm 30mm; }
   #indice { break-after: page; }
-  h2 { break-before: avoid; color: #1a1a2e !important; }
-  h3 { color: #e94560 !important; }
+  h2 { break-before: avoid; }
   table { font-size: 0.7rem; }
   td, th { padding: 0.3rem 0.4rem; }
   .player-section + .player-section { break-before: page; }
@@ -1450,9 +1449,9 @@ def build_section3_html(players_sorted):
 
 
 def build_section4_html(players_sorted):
-    """Section 4: per-player analysis."""
+    """Section 4: per-player analysis, ordered alphabetically."""
     parts = []
-    for p in players_sorted:
+    for p in sorted(players_sorted, key=lambda p: p['name'].lower()):
         name = h(p['name'])
         elo_s = p['elo_start'] or '—'
         elo_e = p['elo_end'] or '—'
@@ -1742,7 +1741,7 @@ def generate_html_final(games, players_sorted, global_stats, tournament_info,
         date = h(game.get('date') or '')
         raw = _esc(game['moves_text'])
         pgn_blocks.append(f"""
-<div style="margin-bottom:1.5rem;">
+<div class="pgn-game">
   <div style="font-weight:700;margin-bottom:0.3rem;">
     g{game['game_num']}: {white} vs {black} — {result}
     {f'({eco})' if eco else ''} {date}
@@ -1782,6 +1781,15 @@ def generate_html_final(games, players_sorted, global_stats, tournament_info,
   word-break: break-word;
   color: var(--text);
   margin-bottom: 1rem;
+}}
+.pgn-game {{
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 1.5rem;
+}}
+.pgn-columns {{
+  column-count: 2;
+  column-gap: 2rem;
 }}
 #portada {{
   min-height: 80vh;
@@ -1831,7 +1839,9 @@ def generate_html_final(games, players_sorted, global_stats, tournament_info,
 <section id="pgn-section">
   <div class="container">
     <h2>5. Partidas PGN</h2>
-    {''.join(pgn_blocks)}
+    <div class="pgn-columns">
+      {''.join(pgn_blocks)}
+    </div>
   </div>
 </section>
 
