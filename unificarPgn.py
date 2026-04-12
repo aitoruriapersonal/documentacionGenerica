@@ -140,6 +140,48 @@ def _add_error_to_movetext(movetext: str, error_comment: str) -> str:
     return movetext + f' {{{error_comment}}}'
 
 
+_DRAW_RESULTS = {'1/2-1/2', '0.5-0.5'}
+_BERSERK_TAGS = ('WhiteBerserk', 'BlackBerserk')
+
+
+def _has_moves(movetext: str) -> bool:
+    """Return True if the movetext contains at least one actual move."""
+    stripped = re.sub(r'(1-0|0-1|1/2-1/2|0\.5-0\.5|\*)\s*$', '', movetext).strip()
+    # Remove comments
+    stripped = re.sub(r'\{[^{}]*\}', '', stripped).strip()
+    return bool(stripped)
+
+
+def _fallback_error_comment(result: str, has_moves: bool) -> str:
+    """
+    Build a default 'Gravedad del error' comment when no annotation is found.
+
+    Rules:
+      Has moves:
+        1-0  → Blancas=0.20 / Negras=1.00
+        0-1  → Blancas=1.00 / Negras=0.20
+        draw → Blancas=0.50 / Negras=0.50
+      No moves (forfeit / connectivity issue):
+        1-0  → Blancas=0.00 / Negras=2.00
+        0-1  → Blancas=2.00 / Negras=0.00
+        draw → Blancas=0.50 / Negras=0.50
+    """
+    if result in _DRAW_RESULTS:
+        w, b = 0.50, 0.50
+        note = ' (estimado)'
+    elif result == '1-0':
+        w, b = (0.20, 1.00) if has_moves else (0.00, 2.00)
+        note = ' (estimado)' if has_moves else ' (abandono)'
+    elif result == '0-1':
+        w, b = (1.00, 0.20) if has_moves else (2.00, 0.00)
+        note = ' (estimado)' if has_moves else ' (abandono)'
+    else:
+        w, b = 0.50, 0.50
+        note = ' (estimado)'
+
+    return f'Gravedad del error: Blancas={w:.2f}/Negras={b:.2f}{note}'
+
+
 # ── Core merging logic ────────────────────────────────────────────────────────
 
 def unificar(errores_path: str, partidas_path: str, salida_path: str) -> int:
@@ -191,6 +233,7 @@ def unificar(errores_path: str, partidas_path: str, salida_path: str) -> int:
         prt_black = prt_headers.get('Black', '?')
 
         error_comment = None
+        err_candidate = None  # keep reference to merge Berserk headers if needed
 
         # ── Strategy 1: positional match ──────────────────────────────────
         if idx < len(err_by_pos):
@@ -199,31 +242,43 @@ def unificar(errores_path: str, partidas_path: str, salida_path: str) -> int:
             if (cand_h.get('White', '').lower() == prt_white.lower() and
                     cand_h.get('Black', '').lower() == prt_black.lower()):
                 error_comment = _extract_error_comment(candidate)
+                err_candidate = candidate
 
         # ── Strategy 2: move-signature fallback ───────────────────────────
         if error_comment is None:
             sig = _moves_signature(prt_game)
             if sig in err_by_sig:
                 candidates = err_by_sig[sig]
-                # prefer positional candidate if available
                 for cand in candidates:
                     ec = _extract_error_comment(cand)
                     if ec:
                         error_comment = ec
+                        err_candidate = cand
                         break
 
+        # ── Merge Berserk headers from annotated file when absent in clean ──
+        if err_candidate is not None:
+            cand_headers = _parse_headers(err_candidate)
+            for tag in _BERSERK_TAGS:
+                if tag not in prt_headers and tag in cand_headers:
+                    prt_headers[tag] = cand_headers[tag]
+
+        # ── Build error comment (annotation or fallback) ───────────────────
         if error_comment:
-            merged_movetext = _add_error_to_movetext(prt_movetext, error_comment)
             matched += 1
         else:
-            merged_movetext = prt_movetext
+            result_tag = prt_headers.get('Result', '*')
+            has_moves = _has_moves(prt_movetext)
+            error_comment = _fallback_error_comment(result_tag, has_moves)
             unmatched += 1
+            reason = 'sin jugadas (abandono)' if not has_moves else 'sin anotación'
             print(
-                f'  AVISO: no se encontró tasa de error para la partida '
-                f'{idx + 1} ({prt_white} vs {prt_black})',
+                f'  AVISO: tasa de error estimada para la partida '
+                f'{idx + 1} ({prt_white} vs {prt_black}) [{reason}]',
                 file=sys.stderr,
             )
 
+        merged_movetext = _add_error_to_movetext(prt_movetext, error_comment)
         output_parts.append(_headers_text(prt_headers) + '\n\n' + merged_movetext)
 
     result_text = '\n\n\n'.join(output_parts) + '\n'
@@ -231,9 +286,9 @@ def unificar(errores_path: str, partidas_path: str, salida_path: str) -> int:
     with open(salida_path, 'w', encoding='utf-8') as f:
         f.write(result_text)
 
-    print(f'  Con tasa de error:   {matched}')
-    print(f'  Sin tasa de error:   {unmatched}')
-    print(f'  Archivo generado:    {salida_path}')
+    print(f'  Con tasa de error anotada:  {matched}')
+    print(f'  Con tasa de error estimada: {unmatched}')
+    print(f'  Archivo generado:           {salida_path}')
     return len(prt_games)
 
 
