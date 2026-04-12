@@ -22,10 +22,50 @@ Uso con ventana (sin argumentos):
 """
 
 import argparse
+import logging
 import os
 import sys
+import traceback
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
+
+# ── Logging setup ─────────────────────────────────────────────────────────────
+
+_LOG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'generarDossierTorneoCompleto.log')
+
+
+class _Tee:
+    """Duplica escrituras a dos streams (p. ej. stdout y un fichero de log)."""
+
+    def __init__(self, *streams):
+        self._streams = streams
+
+    def write(self, data):
+        for s in self._streams:
+            s.write(data)
+            s.flush()
+
+    def flush(self):
+        for s in self._streams:
+            s.flush()
+
+    def fileno(self):
+        return self._streams[0].fileno()
+
+
+def _setup_logging() -> None:
+    """Configura logging a fichero y redirige stdout/stderr al mismo fichero."""
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format='%(asctime)s [%(levelname)s] %(message)s',
+        handlers=[
+            logging.FileHandler(_LOG_PATH, encoding='utf-8'),
+        ],
+    )
+    log_file = open(_LOG_PATH, 'a', encoding='utf-8')  # noqa: WPS515
+    sys.stdout = _Tee(sys.__stdout__, log_file)
+    sys.stderr = _Tee(sys.__stderr__, log_file)
+    logging.info('=== Inicio de ejecución ===')
 
 # ── Import logic from the two sub-programs ────────────────────────────────────
 
@@ -395,4 +435,13 @@ def main() -> None:
 
 
 if __name__ == '__main__':
-    main()
+    _setup_logging()
+    try:
+        main()
+        logging.info('=== Fin de ejecución (éxito) ===')
+    except SystemExit as exc:
+        logging.info('=== Fin de ejecución (sys.exit código %s) ===', exc.code)
+        raise
+    except Exception:
+        logging.critical('Error no controlado:\n%s', traceback.format_exc())
+        raise
